@@ -61,7 +61,7 @@ function noquizload() {
   );
 }
 
-function PrizeGallery({ resource, change, pic }) {
+function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
   const [Show, setShow] = useState(false);
 
   const source = [
@@ -71,15 +71,19 @@ function PrizeGallery({ resource, change, pic }) {
     "https://www.cnn.com",
   ];
 
-  //   const [Url, setUrl] = useState("https://www.theflipchallenge.com"); // State for iframe src
+  const [Url, setUrl] = useState("https://www.theflipchallenge.com"); // State for iframe src
 
-  const [Url, setUrl] = useState(Array(12).fill(null)); // State for iframe src
+  // const [Url, setUrl] = useState(Array(12).fill(null)); // State for iframe src
 
   function changeSrc() {
     setUrl(source[1]);
   }
   function changeSrc2() {
     setUrl(source[2]);
+  }
+
+  function changeSrc3() {
+    setUrl(source[3]);
   }
 
   function Showing() {
@@ -138,8 +142,8 @@ function PrizeGallery({ resource, change, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
-              <img className="notReady" src={england} />
+            <figure className="disable" onClick={change2}>
+              <img className="notReady" src={england} onClick={change2} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -150,7 +154,7 @@ function PrizeGallery({ resource, change, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change3}>
               <img className="notReady" src={laptop_} />
             </figure>
             <figcaption
@@ -162,7 +166,7 @@ function PrizeGallery({ resource, change, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze">
+            <figure className="pryze" onClick={change4}>
               <img className="ready" src={money} />
             </figure>
             <figcaption
