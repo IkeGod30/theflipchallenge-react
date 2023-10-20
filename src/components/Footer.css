@@ -1,0 +1,21 @@
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-div {
+    background-color: bisque;
+    /* border-radius: 20%; */
+}
+
+.footer-a {
+    text-decoration: underline;
+    color: black;
+    font-size: 14px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
