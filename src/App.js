@@ -13,7 +13,7 @@ import Frame from "./components/Quiz";
 function App() {
   const source = ['https://www.bbc.com', 'https://www.go.com', 'https://www.info.com', 'https://www.abcnews.com', 'https://www.msnbc.com']
   
-  const [Url, setUrl] = useState('https://www.theflipchallenge.com'); // State for iframe src 
+  const [Url, setUrl] = useState(); // State for iframe src 
 
   function changeSrc() {
     setUrl(source[0])
@@ -35,6 +35,9 @@ function App() {
     setUrl(source[4])
   }
  
+  function changeSource() {
+    changeSrc()
+  }
 
   return (
     <div>
@@ -45,7 +48,7 @@ function App() {
       <Nav />
       <Banner />  
       {/* <HowtoWin /> */}
-      <PrizeGallery change2={changeSrc1} change={changeSrc} change3={changeSrc3} change4={changeSrc4} />
+      <PrizeGallery change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} />
       {/* <Main /> */}
       {/* <Second title={'The Secondary Content'} /> */}
       <Frame resource={Url} />

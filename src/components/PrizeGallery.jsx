@@ -62,39 +62,39 @@ function noquizload() {
 }
 
 function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
-  const [Show, setShow] = useState(false);
+  // const [Show, setShow] = useState(false);
 
-  const source = [
-    "https://www.bbc.com",
-    "https://www.go.com",
-    "https://www.info.com",
-    "https://www.cnn.com",
-  ];
+  // const source = [
+  //   "https://www.bbc.com",
+  //   "https://www.go.com",
+  //   "https://www.info.com",
+  //   "https://www.cnn.com",
+  // ];
 
-  const [Url, setUrl] = useState("https://www.theflipchallenge.com"); // State for iframe src
+  // const [Url, setUrl] = useState("https://www.theflipchallenge.com"); // State for iframe src
 
   // const [Url, setUrl] = useState(Array(12).fill(null)); // State for iframe src
 
-  function changeSrc() {
-    setUrl(source[1]);
-  }
-  function changeSrc2() {
-    setUrl(source[2]);
-  }
+  // function changeSrc() {
+  //   setUrl(source[1]);
+  // }
+  // function changeSrc2() {
+  //   setUrl(source[2]);
+  // }
 
-  function changeSrc3() {
-    setUrl(source[3]);
-  }
+  // function changeSrc3() {
+  //   setUrl(source[3]);
+  // }
 
-  function Showing() {
-    setShow(true);
-  }
+  // function Showing() {
+  //   setShow(true);
+  // }
 
-  function showTwo() {
-    setShow(false);
-  }
+  // function showTwo() {
+  //   setShow(false);
+  // }
 
-  console.log(Show);
+  // console.log(Show);
 
   return (
     <>
@@ -178,7 +178,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(1)}>
               <img className="notReady" src={scholarship} />
             </figure>
             <figcaption
@@ -190,7 +190,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(0)}>
               <img className="notReady" src={rent} />
             </figure>
             <figcaption
@@ -202,7 +202,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(2)}>
               <img className="notReady" src={iphone} />
             </figure>
             <figcaption
@@ -214,7 +214,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(3)}>
               <img className="notReady" src={naira} />
             </figure>
             <figcaption
@@ -226,7 +226,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(4)}>
               <img className="notReady" src={airtime} />
             </figure>
             <figcaption
@@ -250,7 +250,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={change(5)}>
               <img className="notReady" src={accra} />
             </figure>
             <figcaption
