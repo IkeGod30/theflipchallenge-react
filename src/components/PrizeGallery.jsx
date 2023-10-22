@@ -61,7 +61,16 @@ function noquizload() {
   );
 }
 
-function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
+function PrizeGallery({
+  resource,
+  change,
+  change2,
+  change3,
+  change4,
+  pic,
+  sus,
+  source,
+}) {
   // const [Show, setShow] = useState(false);
 
   // const source = [
@@ -117,8 +126,9 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
       <section className="container-lg">
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={noquizload}>
-              <img className="notReady" src={vacation} />
+            <figure className="disable" onClick={change(resource)}>
+              {/* <figure className="disable" onClick={noquizload}> */}
+              <img className="notReady" alt="cruise" src={vacation} />
               {/* <PrizeImg /> */}
             </figure>
             <figcaption
@@ -130,8 +140,15 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={quiziFrame}>
-              <img className="notReady" height="160" width="300" src={dollar} />
+            <figure className="disable" onClick={change(resource)}>
+              {/* <figure className="disable" onClick={quiziFrame}> */}
+              <img
+                className="notReady"
+                alt="dollar"
+                height="160"
+                width="300"
+                src={dollar}
+              />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -142,8 +159,9 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2}>
-              <img className="notReady" src={england} onClick={change2} />
+            <figure className="disable" onClick={change()}>
+              {/* <figure className="disable" onClick={change2}> */}
+              <img className="notReady" alt="england" src={england} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -154,8 +172,9 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change3}>
-              <img className="notReady" src={laptop_} />
+            <figure className="disable" onClick={change()}>
+              {/* <figure className="disable" onClick={change3}> */}
+              <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -166,8 +185,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze" onClick={change4}>
-              <img className="ready" src={money} />
+            <figure className="pryze" onClick={change()}>
+              <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -178,8 +197,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change(1)}>
-              <img className="notReady" src={scholarship} />
+            <figure className="disable" onClick={change(source)}>
+              <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -190,8 +209,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change(0)}>
-              <img className="notReady" src={rent} />
+            <figure className="disable" onClick={change()}>
+              <img className="notReady" alr="lease document" src={rent} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -202,8 +221,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change(2)}>
-              <img className="notReady" src={iphone} />
+            <figure className="disable" onClick={change()}>
+              <img className="notReady" alt="iphone" src={iphone} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -214,8 +233,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change(3)}>
-              <img className="notReady" src={naira} />
+            <figure className="disable" onClick={change()}>
+              <img className="notReady" alt="naira" src={naira} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -226,8 +245,8 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change(4)}>
-              <img className="notReady" src={airtime} />
+            <figure className="disable" onClick={change()}>
+              <img className="notReady" alt="airtime" src={airtime} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -239,7 +258,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable">
-              <img className="notReady" src={voucher} />
+              <img className="notReady" alt="voucher" src={voucher} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
@@ -251,7 +270,7 @@ function PrizeGallery({ resource, change, change2, change3, change4, pic }) {
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={change(5)}>
-              <img className="notReady" src={accra} />
+              <img className="notReady" alt="vacation" src={accra} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"

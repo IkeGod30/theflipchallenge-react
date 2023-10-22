@@ -11,12 +11,13 @@ import Frame from "./components/Quiz";
 // import './App.css';
 
 function App() {
-  const source = ['https://www.bbc.com', 'https://www.go.com', 'https://www.info.com', 'https://www.abcnews.com', 'https://www.msnbc.com']
+  const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
   const [Url, setUrl] = useState(); // State for iframe src 
+  // const [Url, setUrl] = useState(Array(5).fill(null)); // State for iframe src 
 
   function changeSrc() {
-    setUrl(source[0])
+    setUrl(source)
   }
 
   function changeSrc1() {
@@ -35,8 +36,8 @@ function App() {
     setUrl(source[4])
   }
  
-  function changeSource() {
-    changeSrc()
+  function changeSource(resource) {
+    changeSrc(source)
   }
 
   return (
@@ -48,7 +49,7 @@ function App() {
       <Nav />
       <Banner />  
       {/* <HowtoWin /> */}
-      <PrizeGallery change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} />
+      <PrizeGallery resource={Url} change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} />
       {/* <Main /> */}
       {/* <Second title={'The Secondary Content'} /> */}
       <Frame resource={Url} />
