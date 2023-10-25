@@ -6,7 +6,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
-import Frame from "./components/Quiz";
+import Frame from "./pages/QuizForm/Quiz";
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
 // import HowtoWin from "./components/How"; //
 
