@@ -1,4 +1,5 @@
 import PrizeGallery from "./components/PrizeGallery";
+import React, { Suspense } from 'react';
 // import Main from "./components/Pages.js";
 // import { Second } from './components/Pages.js';
 import Nav from "./components/Nav";
@@ -6,6 +7,7 @@ import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
 import Frame from "./components/Quiz";
+import {Route, Routes, BrowserRouter } from 'react-router-dom';
 // import HowtoWin from "./components/How"; //
 
 // import './App.css';
@@ -46,23 +48,39 @@ function App() {
   console.log(Url) ///
 
   return (
+    <Suspense fallback={(<div>Loading...</div>)}>
     <div>
       <header>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        
       </header>
+      
+      
+      <div>
+        
       <Nav />
-      <Banner />  
+      <Banner />
+      <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
+        <BrowserRouter>
+        <Routes>
+          {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
+          <Route exact path="/" component={(PrizeGallery, null)} />
+        </Routes>
+        </BrowserRouter>
+        </div>
+
+        <Footer />
+      </div>  
       {/* <HowtoWin /> */}
       {/* <PrizeGallery resource={Url} alter={changeSrc} change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} /> */}
-      <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />
+      {/* <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> */}
       {/* <Main /> */}
       {/* <Second title={'The Secondary Content'} /> */}
       <Frame resource={Url} />
       {/* <button onClick={changeSrc2}>Change Source</button> */}
-      <Footer />
-
+    
     </div>
+    </Suspense>
   );
 }
 

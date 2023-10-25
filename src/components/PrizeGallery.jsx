@@ -15,6 +15,7 @@ import scholarship from "./assets/scholarship-min.jpg";
 import vacation from "./assets/vacate.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
+import { BrowserRouter } from "react-router-dom";
 
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
@@ -288,3 +289,5 @@ function PrizeGallery({
 }
 
 export default PrizeGallery;
+
+// export default BrowserRouter(PrizeGallery);
