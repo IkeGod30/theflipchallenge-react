@@ -2,7 +2,7 @@ import PrizeGallery from "./components/PrizeGallery";
 import React, { Suspense } from 'react';
 // import Main from "./components/Pages.js";
 // import { Second } from './components/Pages.js';
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
@@ -13,7 +13,8 @@ import {Route, Routes, BrowserRouter } from 'react-router-dom';
 import Frame from "./pages/QuizForm/Quiz";
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
-import NoPage from './pages/NoPage/NoPage'
+import NoPage from './pages/NoPage/NoPage';
+import Nav from "./pages/Nav/Nav";
 
 // import HowtoWin from "./components/How"; //
 
@@ -71,10 +72,11 @@ function App() {
         <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route exact path="/" component={<PrizeGallery />} />
+          <Route exact path="/" element={<PrizeGallery />} />
           <Route path="how" element={<HowtoWin />} />
           <Route path="quiz" element={<Frame />}/>
           <Route path="*" element={<NoPage />} />
+          <Route path="nav" element={<Nav />} />
         </Routes>
         </BrowserRouter>
         </div>
