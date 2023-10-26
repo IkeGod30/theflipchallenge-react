@@ -72,7 +72,7 @@ function App() {
         <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route exact path="/" element={<PrizeGallery />} />
+          <Route exact path="/" element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} />
           <Route path="how" element={<HowtoWin />} />
           <Route path="quiz" element={<Frame />}/>
           <Route path="*" element={<NoPage />} />
