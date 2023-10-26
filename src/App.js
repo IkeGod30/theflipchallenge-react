@@ -6,8 +6,15 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
-import Frame from "./pages/QuizForm/Quiz";
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
+
+
+// Pages for routing
+import Frame from "./pages/QuizForm/Quiz";
+import Contact from './pages/Contact/Contact';
+import HowtoWin from './pages/How/How';
+import NoPage from './pages/NoPage/NoPage'
+
 // import HowtoWin from "./components/How"; //
 
 // import './App.css';
@@ -64,7 +71,10 @@ function App() {
         <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route exact path="/" component={(PrizeGallery, null)} />
+          <Route exact path="/" component={<PrizeGallery />} />
+          <Route path="how" element={<HowtoWin />} />
+          <Route path="quiz" element={<Frame />}/>
+          <Route path="*" element={<NoPage />} />
         </Routes>
         </BrowserRouter>
         </div>

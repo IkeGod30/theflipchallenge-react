@@ -5,6 +5,10 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Contact from './pages/Contact/Contact';
+// import HowtoWin from './pages/How/How';
+// import Frame from './pages/QuizForm/Quiz';
+
 // import HowtoWin from './components/How';
 // import HowtoWin from './components/How';
 
@@ -14,16 +18,16 @@ root.render(
   <React.StrictMode>
     <Provider store={store} >
 
-    {/* <BrowserRouter>
+    {/* <BrowserRouter> */}
             <App />
-    </BrowserRouter> */}
+    {/* </BrowserRouter> */}
       {/* <BrowserRouter>
       <Routes>
         <Route path="/How" element={<HowtoWin />} />
       </Routes>
       
       </BrowserRouter> */}
-    <App />
+    {/* <App /> */}
     </Provider>
   </React.StrictMode>
 );
