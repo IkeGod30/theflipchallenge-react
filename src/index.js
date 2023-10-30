@@ -21,12 +21,7 @@ root.render(
     {/* <BrowserRouter> */}
             <App />
     {/* </BrowserRouter> */}
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/How" element={<HowtoWin />} />
-      </Routes>
       
-      </BrowserRouter> */}
     {/* <App /> */}
     </Provider>
   </React.StrictMode>
