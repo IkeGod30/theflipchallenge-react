@@ -16,7 +16,7 @@ import HowtoWin from './pages/How/How';
 import NoPage from './pages/NoPage/NoPage';
 import Nav from "./pages/Nav/Nav";
 
-// import HowtoWin from "./components/How"; //
+
 
 // import './App.css';
 
