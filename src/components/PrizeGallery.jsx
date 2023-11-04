@@ -15,7 +15,7 @@ import scholarship from "./assets/scholarship-min.jpg";
 import vacation from "./assets/vacate.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
@@ -109,6 +109,18 @@ function PrizeGallery({
 
   return (
     <>
+      <div>
+        <h4>Home</h4>
+        <Link to="/how">How To Win</Link>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <Link to="/how">Contact Us</Link>
+      </div>
+      <div>
+        <h4>Quiz</h4>
+        <Link to="/quiz">Quiz Page</Link>
+      </div>
       {/* <div>
         {Show ? (
           <h1 style={{ color: "tomato" }}>I am showing</h1>
