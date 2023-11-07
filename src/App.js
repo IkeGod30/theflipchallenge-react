@@ -10,7 +10,7 @@ import {Route, Routes, BrowserRouter } from 'react-router-dom';
 
 
 // Pages for routing
-import Frame from "./pages/QuizForm/Quiz";
+import Frame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import NoPage from './pages/NoPage/NoPage';

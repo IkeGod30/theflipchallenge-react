@@ -8,7 +8,7 @@ function Frame({ resource, change }) {
         <Link to="/">Home</Link>
       </div>
       <div>
-        <h4>How to Win</h4>
+        <h4>Home</h4>
         <Link to="/how">How To Win</Link>
       </div>
       <div>
