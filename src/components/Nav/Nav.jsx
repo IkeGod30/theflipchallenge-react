@@ -6,7 +6,6 @@ import { CiCircleChevRight } from "react-icons/ci";
 function Nav() {
   return (
     <>
-      
       <header className="priNav">
         <nav className="flexContainer">
           <BrowserRouter>
