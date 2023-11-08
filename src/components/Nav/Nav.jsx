@@ -9,7 +9,7 @@ function Nav() {
       <header className="priNav">
         <nav className="flexContainer">
           <BrowserRouter>
-            <Link className="brand" href="#">
+            <Link className="brand" to="/">
               The Flip Challenge
             </Link>
           </BrowserRouter>
