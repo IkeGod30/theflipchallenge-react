@@ -14,7 +14,7 @@ import Frame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import NoPage from './pages/NoPage/NoPage';
-import Nav from "./pages/Nav/Nav";
+import Nav from "./components/Nav/Nav";
 
 
 
