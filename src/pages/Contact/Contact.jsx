@@ -15,6 +15,11 @@ function Contact() {
         <h4>Contact Us</h4>
         <Link to="/contact">Contact Us</Link>
       </div>
+
+      <div>
+        <h4>Quiz Form</h4>
+        <Link to="/quiz">Play the Quiz</Link>
+      </div>
     </>
   );
 }

@@ -17,6 +17,7 @@ function Frame({ resource, change }) {
       </div> */}
 
       <div>
+        {/* <Frame resource={Url} /> */}
         <iframe
           title="Welcome to The Challenge"
           src={resource}
