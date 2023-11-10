@@ -7,14 +7,16 @@ import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
+import Nav from "./components/Nav/Nav";
 
 
 // Pages for routing
+// import PrizeGallery from './pages/PrizeGallery';
 import Frame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import NoPage from './pages/NoPage/NoPage';
-import Nav from "./components/Nav/Nav";
+
 
 
 
