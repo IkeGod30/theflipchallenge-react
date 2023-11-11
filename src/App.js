@@ -91,7 +91,7 @@ function App() {
       {/* <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> */}
       {/* <Main /> */}
       {/* <Second title={'The Secondary Content'} /> */}
-      {/* <Frame resource={Url} /> */}
+      <Frame resource={Url} />
       {/* <button onClick={changeSrc2}>Change Source</button> */}
     
     </div>
