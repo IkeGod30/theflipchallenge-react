@@ -8,6 +8,7 @@ import Banner from "./components/Banner";
 import { useState } from 'react';
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
 import Nav from "./components/Nav/Nav";
+// import ShowFrame from "./components/TheFrame";
 
 
 // Pages for routing
@@ -16,6 +17,7 @@ import Frame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import NoPage from './pages/NoPage/NoPage';
+import ShowFrame from "./components/TheFrame";
 
 
 
@@ -59,14 +61,11 @@ function App() {
 
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
-    <div>
+    <>
       <header>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        
       </header>
-      
-      
-      <div>
         
       <Nav />
       <Banner />
@@ -76,25 +75,27 @@ function App() {
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
           <Route exact path="/" element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} />
           <Route path="how" element={<HowtoWin />} />
-          <Route path="quiz" element={<Frame />}/>
+          {/* <Route path="quiz" element={<Frame />}/> */}
+          <Route path="quiz" element={<ShowFrame />}/>
           <Route path="contact" element={<Contact />} />
           {/* <Route path="*" element={<NoPage />} /> */}
           {/* <Route path="nav" element={<Nav />} /> */}
         </Routes>
         </BrowserRouter>
-        </div>
+      </div>
 
-        <Footer />
-      </div>  
+     
+    
       {/* <HowtoWin /> */}
       {/* <PrizeGallery resource={Url} alter={changeSrc} change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} /> */}
       {/* <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> */}
       {/* <Main /> */}
       {/* <Second title={'The Secondary Content'} /> */}
-      <Frame resource={Url} />
+      {/* <Frame resource={Url} /> */}
+      {/* <ShowFrame /> */}
       {/* <button onClick={changeSrc2}>Change Source</button> */}
-    
-    </div>
+      <Footer />
+    </>
     </Suspense>
   );
 }

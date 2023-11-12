@@ -3,6 +3,7 @@
 function Frame({ resource, change }) {
   return (
     <>
+      <h2>Welcome to the Quiz Page</h2>
       {/* <div>
         <h4>Home</h4>
         <Link to="/">Home</Link>
