@@ -1,0 +1,24 @@
+.howBannerVideo {
+  width: 100%;
+  margin-top: -15px;
+}
+
+h2.howColText {
+  /*For column headings*/
+  text-align: center;
+}
+
+.howColDiv {
+  /*For column div*/
+  margin-top: 30px;
+}
+
+img.imgSelect {
+  border-radius: 20px;
+  width: 100%;
+}
+
+ul.listStyle {
+  list-style-type: square !important;
+  list-style-type: disc;
+}

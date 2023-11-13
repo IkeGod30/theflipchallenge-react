@@ -14,7 +14,7 @@ function Nav() {
             </Link>
           </BrowserRouter>
           <ul className="main-nav-ul">
-            <li>
+            <li className="nav-li">
               <BrowserRouter>
                 <Link to="/how">
                   <CiCircleChevRight
@@ -24,7 +24,7 @@ function Nav() {
                 </Link>
               </BrowserRouter>
             </li>
-            <li>
+            <li className="nav-li">
               <BrowserRouter>
                 <Link to="/contact">
                   <CiCircleChevRight
