@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import "./How.css";
+import select from "../../components/assets/select.jpg";
+import question from "../../components/assets/question_.jpg";
+import win from "../../components/assets/win (1).jpg";
+// import dollar from "../assets../dollar.jpg";
 
 function HowtoWin() {
   return (
@@ -27,7 +31,7 @@ function HowtoWin() {
           <div className="container-fluid row">
             <div className="col-sm-4">
               <h2 className="howColText">Select the Prize</h2>
-              <img className="imgSelect" src="select.jpg" />
+              <img className="imgSelect" src={select} />
               <br />
               <br />
 
@@ -59,7 +63,7 @@ function HowtoWin() {
 
             <div className="col-sm-4">
               <h2 className="howColText">Answer the Questions</h2>
-              <img className="imgSelect" src="question_.jpg" />
+              <img className="imgSelect" src={question} />
               <br />
               <br />
 
@@ -88,7 +92,7 @@ function HowtoWin() {
 
             <div className="col-sm-4">
               <h2 className="howColText">Win the Prize</h2>
-              <img className="imgSelect" src="win.jpg" />
+              <img className="imgSelect" src={win} />
               <br />
               <br />
               <ul className="listStyle">
