@@ -63,9 +63,10 @@ function Contact() {
 
         <form className="container cont">
           <div className="row mb-3 formInputs">
-            <label for="inputEmail" className="col-sm-2 col-form-label inputs">
-              Email
-            </label>
+            <label
+              for="inputEmail"
+              className="col-sm-2 col-form-label inputs"
+            ></label>
             <div className="col-sm-10">
               <input
                 type="email"
@@ -78,9 +79,10 @@ function Contact() {
           </div>
 
           <div className="row mb-3 formInputs">
-            <label for="inputName" className="col-sm-2 col-form-label inputs">
-              Full Name
-            </label>
+            <label
+              for="inputName"
+              className="col-sm-2 col-form-label inputs"
+            ></label>
             <div className="col-sm-10">
               <input
                 type="text"
@@ -92,9 +94,10 @@ function Contact() {
             </div>
           </div>
           <div className="row mb-3 formInputs">
-            <label for="textarea" className="col-sm-2 col-form-label inputs">
-              Message
-            </label>
+            <label
+              for="textarea"
+              className="col-sm-2 col-form-label inputs"
+            ></label>
             <div className="col-sm-10">
               <textarea
                 className="form-control inputs inputColor"
