@@ -1,0 +1,23 @@
+img.imgFaq {
+    height: 300px;
+    
+}
+
+
+div.faqCont {
+    text-align: center;
+}
+
+div.faqText {
+    
+    width: 100%;
+    background-color: rgb(180, 172, 172);
+}
+
+div.faqText ul {
+    text-align: center;
+}
+
+.faqText ul li {
+    list-style-type: none;
+}

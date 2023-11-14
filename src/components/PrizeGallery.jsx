@@ -122,6 +122,11 @@ function PrizeGallery({
         <h4>Quiz</h4>
         <Link to="/quiz">Quiz Page</Link>
       </div>
+
+      <div>
+        <h4>Frequently Asked Questions</h4>
+        <Link to="/faq">Faq Page</Link>
+      </div>
       {/* <div>
         {Show ? (
           <h1 style={{ color: "tomato" }}>I am showing</h1>
