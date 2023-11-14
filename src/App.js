@@ -16,6 +16,7 @@ import Nav from "./components/Nav/Nav";
 import Frame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
+import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
 import ShowFrame from "./components/TheFrame";
 
@@ -78,6 +79,7 @@ function App() {
           {/* <Route path="quiz" element={<Frame />}/> */}
           <Route path="quiz" element={<ShowFrame />}/>
           <Route path="contact" element={<Contact />} />
+          <Route path="faq" element={<Faq />} />
           {/* <Route path="*" element={<NoPage />} /> */}
           {/* <Route path="nav" element={<Nav />} /> */}
         </Routes>
