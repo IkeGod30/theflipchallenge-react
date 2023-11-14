@@ -2,7 +2,54 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer-div">
+    <>
+      <footer class="footer py-4">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-4 text-lg-start">
+              Copyright &copy; Zillion Services 2023
+            </div>
+            <div className="col-lg-4 my-3 my-lg-0">
+              <a
+                className="btn btn-dark btn-social mx-2"
+                href="https://www.twitter.com/theflipchall"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                className="btn btn-dark btn-social mx-2"
+                href="https://www.facebook.com/profile.php?id=100092369855002"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                className="btn btn-dark btn-social mx-2"
+                href="https://www.instagram.com/flipchall/"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div className="col-lg-4 text-lg-end">
+              <a className="text-decoration-none me-3 legal" href="faq.html">
+                Faq
+              </a>
+              <a
+                className="text-decoration-none me-3 legal"
+                href="privacy.html"
+              >
+                Privacy Policy
+              </a>
+              <a className="text-decoration-none legal" href="Terms.html">
+                Terms of Use
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* <div className="footer-div">
       <nav className="footer-nav">
         <ul>
           <li className="nav-li">
@@ -30,7 +77,8 @@ function Footer() {
       <div className="copyright">
         <p>Copyright &copy; Zillion Services 2024</p>
       </div>
-    </div>
+    </div> */}
+    </>
   );
 }
 
