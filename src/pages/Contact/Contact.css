@@ -1,0 +1,62 @@
+button.btnContact {
+  width: 40%;
+}
+
+.contact {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button button {
+  width: 15%;
+  height: 50px;
+}
+
+form {
+  margin: auto 0;
+}
+
+/* label.inputs {
+  visibility: hidden;
+} */
+
+/* label.checkText {
+  visibility: inherit;
+} */
+
+#inputText {
+  width: 70%;
+  height: 200px;
+}
+
+#inputEmail,
+#inputName {
+  width: 70%;
+}
+
+.inputs {
+  border-radius: 15px;
+}
+
+#inputEmail,
+#inputName,
+#inputText {
+  color: green;
+}
+
+textarea {
+  resize: none;
+}
+
+.button2 {
+  margin: 6px;
+}
+
+/* .cont {
+  visibility: hidden;
+} */

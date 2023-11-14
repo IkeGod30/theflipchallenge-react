@@ -20,6 +20,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
+// import "./Contact.css";
 
 const prizeClick = () => {
   const wini = document.getElementsByClassName("pryze"); //pass function prop to each element

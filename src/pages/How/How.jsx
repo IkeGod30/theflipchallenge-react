@@ -3,7 +3,6 @@ import "./How.css";
 import select from "../../components/assets/select.jpg";
 import question from "../../components/assets/question_.jpg";
 import win from "../../components/assets/win (1).jpg";
-// import dollar from "../assets../dollar.jpg";
 
 function HowtoWin() {
   return (
@@ -27,6 +26,8 @@ function HowtoWin() {
       </div>
 
       <section>
+        <h2>How to Win</h2>
+
         <div className="container howColDiv">
           <div className="container-fluid row">
             <div className="col-sm-4">
