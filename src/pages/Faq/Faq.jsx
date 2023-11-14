@@ -4,7 +4,7 @@ import faqImg from "../../components/assets/faq.jpg";
 function Faq() {
   return (
     <div>
-      <h2>Frequently Asked Questions</h2>
+      <h2 className="faq-header">Frequently Asked Questions</h2>
 
       <div className="row container-fluid faqCont">
         <div className="col-sm-12">
