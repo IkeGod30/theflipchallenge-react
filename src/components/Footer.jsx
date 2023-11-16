@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { BrowserRouter, Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -33,7 +34,8 @@ function Footer() {
               </a>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <a className="text-decoration-none me-3 legal" href="faq.html">
+              <a className="text-decoration-none me-3 legal" href="faq">
+                {/* <Link className="text-decoration-none me-3 legal" to="/"></Link> */}
                 Faq
               </a>
               <a
