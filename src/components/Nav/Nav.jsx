@@ -1,6 +1,6 @@
 import "./Nav.css";
 
-import { Outlet, Link, BrowserRouter } from "react-router-dom";
+import { Outlet, Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { CiCircleChevRight } from "react-icons/ci";
 
 function Nav() {
@@ -36,6 +36,34 @@ function Nav() {
             </li>
           </ul>
         </nav>
+
+        {/* <section className="nav-flex">
+          <div>
+            <BrowserRouter>
+              <h4>Home</h4>
+              <Link to="/how">How To Win</Link>
+            </BrowserRouter>
+          </div>
+          <div>
+            <BrowserRouter>
+              <h4>Contact Us</h4>
+              <Link to="/how">Contact Us</Link>
+            </BrowserRouter>
+          </div>
+          <div>
+            <BrowserRouter>
+              <h4>Quiz</h4>
+              <Link to="/quiz">Quiz Page</Link>
+            </BrowserRouter>
+          </div>
+
+          <div>
+            <BrowserRouter>
+              <h4>Frequently Asked Questions</h4>
+              <Link to="/faq">Faq Page</Link>
+            </BrowserRouter>
+          </div>
+        </section> */}
 
         <Outlet />
       </header>
