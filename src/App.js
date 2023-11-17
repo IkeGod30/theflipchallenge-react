@@ -80,7 +80,7 @@ function App() {
           <Route path="quiz" element={<ShowFrame />}/>
           <Route path="contact" element={<Contact />} />
           <Route path="faq" element={<Faq />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="*" element={<NoPage />} />
           {/* <Route path="nav" element={<Nav />} /> */}
         </Routes>
         </BrowserRouter>
