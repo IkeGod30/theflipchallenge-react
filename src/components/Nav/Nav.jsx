@@ -1,5 +1,11 @@
 import "./Nav.css";
 
+// import Frame from "../../pages/QuizForm/Quiz";
+// import Contact from "../../pages/Contact/Contact";
+// import HowtoWin from "../../pages/How/How";
+// import Faq from "../../pages/Faq/Faq";
+// import ShowFrame from "../../components/TheFrame";
+
 import { Outlet, Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { CiCircleChevRight } from "react-icons/ci";
 
@@ -64,6 +70,13 @@ function Nav() {
             </BrowserRouter>
           </div>
         </section> */}
+        {/* <BrowserRouter>
+          <Routes>
+            <Route path="quiz" element={<ShowFrame />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="faq" element={<Faq />} />
+          </Routes>
+        </BrowserRouter> */}
 
         <Outlet />
       </header>
