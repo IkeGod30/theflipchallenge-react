@@ -15,8 +15,9 @@ import scholarship from "./assets/scholarship-min.jpg";
 import vacation from "./assets/vacate.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link, Outlet } from "react-router-dom";
 
+import Nav from './Nav/Nav';
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
@@ -110,6 +111,7 @@ function PrizeGallery({
 
   return (
     <>
+    <Nav />
       <div>
         <h4>Home</h4>
         <Link to="/how">How To Win</Link>
@@ -301,6 +303,7 @@ function PrizeGallery({
             </figcaption>
           </div>
         </div>
+        <Outlet />
       </section>
     </>
   );

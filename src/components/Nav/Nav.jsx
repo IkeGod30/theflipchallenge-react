@@ -14,34 +14,42 @@ function Nav() {
     <>
       <header className="priNav">
         <nav className="flexContainer">
-          <BrowserRouter>
-            <Link className="brand" to="/">
-              The Flip Challenge
-            </Link>
-          </BrowserRouter>
+          {/* <BrowserRouter> */}
+          <Link className="brand" to="/">
+            The Flip Challenge
+          </Link>
+          {/* </BrowserRouter> */}
           <ul className="main-nav-ul">
             <li className="nav-li">
-              <BrowserRouter>
-                <Link to="/how">
-                  <CiCircleChevRight
-                    style={{ color: "white", fontSize: "50px" }}
-                  />
-                  How to Win
-                </Link>
-              </BrowserRouter>
+              {/* <BrowserRouter> */}
+              <Link to="/how">
+                <CiCircleChevRight
+                  style={{ color: "white", fontSize: "50px" }}
+                />
+                How to Win
+              </Link>
+              {/* </BrowserRouter> */}
             </li>
             <li className="nav-li">
-              <BrowserRouter>
-                <Link to="/contact">
-                  <CiCircleChevRight
-                    style={{ color: "white", fontSize: "50px" }}
-                  />
-                  Contact Us
-                </Link>
-              </BrowserRouter>
+              {/* <BrowserRouter> */}
+              <Link to="/contact">
+                <CiCircleChevRight
+                  style={{ color: "white", fontSize: "50px" }}
+                />
+                Contact Us
+              </Link>
+              {/* </BrowserRouter> */}
             </li>
           </ul>
         </nav>
+
+        {/* <nav>
+          <ul>
+            <li>Home</li>
+            <li>Quiz</li>
+            <li>Contact</li>
+          </ul>
+        </nav> */}
 
         {/* <section className="nav-flex">
           <div>
@@ -77,8 +85,8 @@ function Nav() {
             <Route path="faq" element={<Faq />} />
           </Routes>
         </BrowserRouter> */}
-
-        <Outlet />
+        {/* 
+        <Outlet /> */}
       </header>
     </>
   );

@@ -68,7 +68,7 @@ function App() {
        
       </header>
         
-      <Nav />
+      {/* <Nav /> */}
       <Banner />
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <BrowserRouter>
@@ -83,14 +83,13 @@ function App() {
         </nav> */}
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route exact path="/" element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} />
+          <Route path="/" element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} >
           <Route path="how" element={<HowtoWin />} />
-          {/* <Route path="quiz" element={<Frame />}/> */}
-          <Route path="quiz" element={<ShowFrame />}/>
+          <Route path="quiz" element={<ShowFrame /> }/>
           <Route path="contact" element={<Contact />} />
           <Route path="faq" element={<Faq />} />
           <Route path="*" element={<NoPage />} />
-          {/* <Route path="nav" element={<Nav />} /> */}
+          </Route>
         </Routes>
         </BrowserRouter>
       </div>
