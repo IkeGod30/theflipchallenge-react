@@ -69,7 +69,7 @@ function App() {
       </header>
         
       {/* <Nav /> */}
-      <Banner />
+      {/* <Banner /> */}
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <BrowserRouter>
         {/* <Nav /> */}

@@ -17,7 +17,7 @@ import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 import { BrowserRouter, Link, Outlet } from "react-router-dom";
 
-import Nav from './Nav/Nav';
+import Nav from "./Nav/Nav";
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
@@ -111,8 +111,8 @@ function PrizeGallery({
 
   return (
     <>
-    <Nav />
-      <div>
+      <Nav />
+      {/* <div>
         <h4>Home</h4>
         <Link to="/how">How To Win</Link>
       </div>
@@ -128,7 +128,8 @@ function PrizeGallery({
       <div>
         <h4>Frequently Asked Questions</h4>
         <Link to="/faq">Faq Page</Link>
-      </div>
+      </div> */}
+
       {/* <div>
         {Show ? (
           <h1 style={{ color: "tomato" }}>I am showing</h1>
