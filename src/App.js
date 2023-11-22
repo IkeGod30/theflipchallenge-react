@@ -73,14 +73,6 @@ function App() {
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <BrowserRouter>
         {/* <Nav /> */}
-        {/* <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Quiz</li>
-            <li>Contact</li>
-          </ul>
-        </nav> */}
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
           <Route path="/" element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} >
