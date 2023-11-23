@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-      <div>
+      {/* <div>
         <h4>Home</h4>
         <Link to="/">Home</Link>
       </div>
@@ -20,7 +20,7 @@ function Contact() {
       <div>
         <h4>Quiz Form</h4>
         <Link to="/quiz">Play the Quiz</Link>
-      </div>
+      </div> */}
 
       <section>
         {/* <h2>CONTACT US</h2>
