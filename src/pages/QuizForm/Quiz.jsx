@@ -23,7 +23,7 @@ function Frame({ resource, change }) {
           title="Welcome to The Challenge"
           src={resource}
           onLoad={change}
-          width="100%"
+          width="60%"
           height="250px"
         ></iframe>
         {/* <button onClick={change}>Change Source</button> */}
