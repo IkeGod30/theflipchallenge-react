@@ -58,8 +58,6 @@ function App() {
     // changeSrc(source)
   }
 
-  console.log(Url) ///
-
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
     <>
