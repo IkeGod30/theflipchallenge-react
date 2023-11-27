@@ -111,7 +111,7 @@ function PrizeGallery({
 
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       {/* <div>
         <h4>Home</h4>
         <Link to="/how">How To Win</Link>
@@ -304,7 +304,7 @@ function PrizeGallery({
             </figcaption>
           </div>
         </div>
-        <Outlet />
+        {/* <Outlet /> */}
       </section>
     </>
   );

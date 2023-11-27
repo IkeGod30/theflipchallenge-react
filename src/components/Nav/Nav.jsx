@@ -88,6 +88,7 @@ function Nav() {
         {/* 
         <Outlet /> */}
       </header>
+      {/* <Outlet /> */}
     </>
   );
 }
