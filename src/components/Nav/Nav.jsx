@@ -19,25 +19,30 @@ function Nav() {
       </nav> */}
       <header className="priNav">
         <nav className="flexContainer">
-          <Link className="brand" to="/">
+          <a className="brand" href="/">
             The Flip Challenge
-          </Link>
+          </a>
+          {/* <Link className="brand" to="/">
+            The Flip Challenge
+          </Link> */}
           <ul className="main-nav-ul">
             <li className="nav-li">
-              <Link to="/how">
+              <a href="/how">How to Win</a>
+              {/* <Link to="/how">
                 <CiCircleChevRight
                   style={{ color: "white", fontSize: "50px" }}
                 />
                 How to Win
-              </Link>
+              </Link> */}
             </li>
             <li className="nav-li">
-              <Link to="/contact">
+              <a href="/contact">Contact Us</a>
+              {/* <Link to="/contact">
                 <CiCircleChevRight
                   style={{ color: "white", fontSize: "50px" }}
                 />
                 Contact Us
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </nav>
