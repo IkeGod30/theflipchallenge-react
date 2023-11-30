@@ -47,14 +47,6 @@ function Nav() {
           </ul>
         </nav>
 
-        {/* <nav>
-          <ul>
-            <li>Home</li>
-            <li>Quiz</li>
-            <li>Contact</li>
-          </ul>
-        </nav> */}
-
         {/* <section className="nav-flex">
           <div>
             <BrowserRouter>
