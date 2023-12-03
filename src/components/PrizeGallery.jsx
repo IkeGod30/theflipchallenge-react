@@ -32,7 +32,7 @@ const prizeClick = () => {
 };
 
 function quiziFrame() {
-  window.open("Quiz_Form.html", "_self"); //Load page for actual quiz
+  window.open("quiz", "_self"); //Load page for actual quiz
 }
 
 function quizLoad() {
@@ -109,6 +109,10 @@ function PrizeGallery({
 
   // console.log(Show);
 
+  function BidOffer() {
+    prompt("Please type in your bid offer");
+  }
+
   return (
     <>
       {/* <Nav /> */}
@@ -151,7 +155,12 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={change2}>
               {/* <figure className="disable" onClick={noquizload}> */}
-              <img className="notReady" alt="cruise" src={vacation} />
+              <img
+                onClick={BidOffer}
+                className="notReady"
+                alt="cruise"
+                src={vacation}
+              />
               {/* <PrizeImg /> */}
             </figure>
             <figcaption
@@ -166,6 +175,7 @@ function PrizeGallery({
             <figure className="disable" onClick={change3}>
               {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
+                onClick={quizLoad}
                 className="notReady"
                 alt="dollar"
                 height="160"
