@@ -26,7 +26,7 @@ function HowtoWin() {
       </div> */}
 
       <section>
-        <h2>How to Win</h2>
+        {/* <h2>How to Win</h2> */}
 
         <div className="container howColDiv">
           <div className="container-fluid row">
