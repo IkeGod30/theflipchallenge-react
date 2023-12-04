@@ -7,7 +7,7 @@ import win from "../../components/assets/win (1).jpg";
 function HowtoWin() {
   return (
     <>
-      <div>
+      {/* <div>
         <h4>Home</h4>
         <Link to="/">Home</Link>
       </div>
@@ -23,7 +23,7 @@ function HowtoWin() {
       <div>
         <h4>Quiz Form</h4>
         <Link to="/quiz">Play the Quiz</Link>
-      </div>
+      </div> */}
 
       <section>
         <h2>How to Win</h2>
