@@ -110,6 +110,10 @@ function PrizeGallery({
   // console.log(Show);
 
   function BidOffer() {
+    // let bid = prompt("Please type in your bid offer");
+    // if (bid != null) {
+    //   return bid;
+    // }
     prompt("Please type in your bid offer");
   }
 

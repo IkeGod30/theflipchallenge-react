@@ -40,7 +40,7 @@ a:hover {
 }
 
 .priNav {
-  background-color: tomato;
+  /* background-color: tomato; */
   justify-content: space-evenly;
   /* width: 100%; */
   height: 150px;
