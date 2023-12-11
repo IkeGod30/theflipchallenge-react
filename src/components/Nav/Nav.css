@@ -37,13 +37,19 @@ a:hover {
 }
 
 .flexContainer {
+  /* display: flex; */
+  /* justify-content: space-between; Find out and resolve style conflict and remove the !important */
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 35px;
+  column-gap: 11px;
 }
 
 .priNav {
   background-color: lightgray;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* width: 100%; */
   height: 150px;
   /* margin-top: 0; */

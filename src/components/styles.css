@@ -1,9 +1,11 @@
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   row-gap: 35px;
   column-gap: 11px;
+
+
   /* gap: 25px; */
   /* align-items:baseline; */
   /* flex-flow: row wrap; */
@@ -17,7 +19,7 @@
 } */
 
 body {
-  /* background-image: url(./assets/book.jpg); */
+  background-image: url(./assets/book.jpg);
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -99,10 +101,10 @@ body {
 
 /* ### Brand banner ### */
 
-.navbar-brand {
+/* .navbar-brand {
   color: goldenrod !important;
   font-family: "Dancing Script", cursive;
-}
+} */
 
 .nav-link {
   color: purple !important;
