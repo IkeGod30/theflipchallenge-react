@@ -32,6 +32,8 @@ const prizeClick = () => {
 };
 
 function quiziFrame() {
+  // ******** Put the iframe src change state function here ******* ////////
+
   window.open("quiz", "_self"); //Load page for actual quiz
 }
 
@@ -109,13 +111,9 @@ function PrizeGallery({
 
   // console.log(Show);
 
-  function BidOffer() {
-    // let bid = prompt("Please type in your bid offer");
-    // if (bid != null) {
-    //   return bid;
-    // }
-    prompt("Please type in your bid offer");
-  }
+  // function BidOffer() {
+  //   prompt("Please type in your bid offer");
+  // }
 
   return (
     <>
@@ -157,14 +155,10 @@ function PrizeGallery({
       <section className="container-lg">
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2}>
+            <figure className="disable" onClick={noquizload}>
+              {/* <figure className="disable" onClick={change2}> */}
               {/* <figure className="disable" onClick={noquizload}> */}
-              <img
-                onClick={BidOffer}
-                className="notReady"
-                alt="cruise"
-                src={vacation}
-              />
+              <img className="notReady" alt="cruise" src={vacation} />
               {/* <PrizeImg /> */}
             </figure>
             <figcaption
@@ -196,8 +190,8 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change4}>
-              {/* <figure className="disable" onClick={change2}> */}
+            <figure className="disable" onClick={quizLoad}>
+              {/* <figure className="disable" onClick={change4}> */}
               <img className="notReady" alt="england" src={england} />
             </figure>
             <figcaption

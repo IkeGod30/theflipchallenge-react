@@ -1,12 +1,12 @@
 .nav-li {
   list-style-type: none;
   margin: 10px;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .main-nav-ul {
   display: flex;
-  /* justify-content:flex-end; */
+  /* justify-content: flex-end; */
   /* display: inline-block; */
 }
 
@@ -17,18 +17,20 @@
 
 li a {
   text-decoration: none;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  color: inherit;
 }
 
 a:hover {
-  color: black;
+  color: green;
 }
 
 .brand {
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: tomato;
   font-size: 1.4rem;
   margin: 10px;
   font-family: Dancing Script;
@@ -40,7 +42,7 @@ a:hover {
 }
 
 .priNav {
-  /* background-color: tomato; */
+  background-color: lightgray;
   justify-content: space-evenly;
   /* width: 100%; */
   height: 150px;
