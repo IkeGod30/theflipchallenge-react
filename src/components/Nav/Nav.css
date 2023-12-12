@@ -37,9 +37,6 @@ a:hover {
 }
 
 .flexContainer {
-  /* display: flex; */
-  /* justify-content: space-between; Find out and resolve style conflict and remove the !important */
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
