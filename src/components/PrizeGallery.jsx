@@ -18,6 +18,7 @@ import england from "./assets/england2-min.jpg";
 import { BrowserRouter, Link, Outlet } from "react-router-dom";
 
 import Nav from "./Nav/Nav";
+import BannCarousel from "./BannerCarousel/BannerCarousel";
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
@@ -117,6 +118,7 @@ function PrizeGallery({
 
   return (
     <>
+      <BannCarousel />
       {/* <Nav /> */}
       {/* <div>
         <h4>Home</h4>

@@ -12,7 +12,7 @@ function FaqAccordion() {
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-              Accordion Item #1
+              Is there an age restriction?
             </button>
           </h2>
           <div
@@ -22,9 +22,10 @@ function FaqAccordion() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
+              Answer: You must be of legal age to participate in the contest
+              {/* Placeholder content for this accordion, which is intended to
               demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body.
+              first item's accordion body. */}
             </div>
           </div>
         </div>
