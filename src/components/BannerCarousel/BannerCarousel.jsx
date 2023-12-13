@@ -1,4 +1,5 @@
 import laptop from "../assets/laptop.jpg";
+import './BannerCarousel.css';
 
 function BannCarousel() {
   return (
