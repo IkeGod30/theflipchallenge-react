@@ -5,6 +5,7 @@ function BannCarousel() {
   return (
     <>
       {/* <h2>Carousel</h2> */}
+      <section className="carousel-section">
       <div
         id="carouselExampleCaptions"
         className="carousel slide"
@@ -86,6 +87,7 @@ function BannCarousel() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      </section>
     </>
   );
 }
