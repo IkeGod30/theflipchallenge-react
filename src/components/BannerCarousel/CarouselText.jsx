@@ -4,7 +4,7 @@ function CarouselText() {
   return (
     <>
       <div>
-        <h1>Episode One Winner</h1>
+        <h1>Episode 1 Winner</h1>
         <p>"I thought it was a joke until I was handed my $1000 winning"</p>
         <p>
           {" "}

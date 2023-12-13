@@ -1,0 +1,15 @@
+.accordion {
+  /* display: flex;
+    flex-wrap: wrap; */
+  width: 70%;
+  margin: 0 auto;
+  color: rgb(238, 130, 111);
+  font-size: 1.3rem;
+}
+
+.FaqHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
