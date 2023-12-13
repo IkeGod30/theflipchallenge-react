@@ -1,4 +1,5 @@
 import laptop from "../assets/vacate.jpg";
+import CarouselText from "./CarouselText";
 import "./BannerCarousel.css";
 
 function BannCarousel() {
@@ -36,6 +37,7 @@ function BannCarousel() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={laptop} className="d-block w-100" alt={"First"} />
+              <CarouselText />
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>
