@@ -262,11 +262,15 @@ p.mail {
 
 iframe {
   border: 10px ridge rgb(0, 128, 0);
-  width: 100%;
+  width: 60%;
   border-radius: 10px;
   margin-bottom: 17px;
   height: 810px;
   overflow-y: scroll;
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .Qsource {
