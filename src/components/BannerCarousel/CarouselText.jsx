@@ -1,6 +1,6 @@
 import "./CarouselText.css";
 
-function CarouselText() {
+function CarouselText({ secondText }) {
   return (
     <>
       <div>
@@ -10,6 +10,13 @@ function CarouselText() {
           {" "}
           - <em>Chioma Nkemdilim</em>
         </p>
+
+        {/* <h1>Episode 2 Winner</h1>
+        <p>{secondText}</p>
+        <p>
+          {" "}
+          - <em>Chioma Nkemdilim</em>
+        </p> */}
       </div>
     </>
   );

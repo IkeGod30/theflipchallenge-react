@@ -1,4 +1,4 @@
-import laptop from "../assets/vacate.jpg";
+// import laptop from "../assets/vacate.jpg";
 import CarouselText from "./CarouselText";
 import "./BannerCarousel.css";
 
@@ -36,7 +36,7 @@ function BannCarousel() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={laptop} className="d-block w-100" alt={"First"} />
+              {/* <img src={laptop} className="d-block w-100" alt={"First"} /> */}
               <CarouselText />
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
@@ -46,15 +46,17 @@ function BannCarousel() {
               </div>
             </div>
             <div className="carousel-item">
+              <CarouselText />
               {/* <img src={} className="d-block w-100" alt={}> */}
               <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h5>Episode Two Winner</h5>
                 <p>
                   Some representative placeholder content for the second slide.
                 </p>
               </div>
             </div>
             <div className="carousel-item">
+              <CarouselText />
               {/* <img src={} className="d-block w-100" alt={}> */}
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
