@@ -37,7 +37,13 @@ function BannCarousel() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               {/* <img src={laptop} className="d-block w-100" alt={"First"} /> */}
-              <CarouselText />
+              <CarouselText
+                carouselHeading={"Episode 1 Winner"}
+                carouselFeedback={
+                  "I thought it was a joke until I was handed my $1000 winning"
+                }
+                carouselName={"- Chioma Nkemdilim"}
+              />
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>
@@ -46,7 +52,14 @@ function BannCarousel() {
               </div>
             </div>
             <div className="carousel-item">
-              <CarouselText />
+              <CarouselText
+                carouselHeading={"Episode 2 Winner"}
+                carouselFeedback={
+                  "I am so happy to have discovered The Flip Challenge"
+                }
+                carouselName={"- Stacey Morgan"}
+              />
+              {/* <CarouselText /> */}
               {/* <img src={} className="d-block w-100" alt={}> */}
               <div className="carousel-caption d-none d-md-block">
                 <h5>Episode Two Winner</h5>
