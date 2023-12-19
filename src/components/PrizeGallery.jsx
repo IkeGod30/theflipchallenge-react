@@ -118,7 +118,13 @@ function PrizeGallery({
 
   return (
     <>
+    <marquee direction="left">
+      <p>Monday</p>
+      <p>Tuesday</p>
+      <p>Wednesday</p>
+    </marquee>
       <BannCarousel />
+
       {/* <Nav /> */}
       {/* <div>
         <h4>Home</h4>

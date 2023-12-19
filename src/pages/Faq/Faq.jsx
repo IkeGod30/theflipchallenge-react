@@ -5,10 +5,11 @@ import FaqAccordion from "./Accordion";
 function Faq() {
   return (
     <>
-    <img className="imgFaq" src={faqImg}  alt="faq image"/>
-    <FaqAccordion />
+      <img className="imgFaq" src={faqImg} alt="faq image" />
 
-    {/* // <div>
+      <FaqAccordion />
+
+      {/* // <div>
     //   <h2 className="faq-header">Frequently Asked Questions</h2>
 
     //   <div className="row container-fluid faqCont">
@@ -50,7 +51,6 @@ function Faq() {
     //     </ul>
     //   </div>
     // </div> */}
-
     </>
   );
 }
