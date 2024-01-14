@@ -22,7 +22,7 @@ function Frame({ resource, change }) {
         <iframe
           title="Welcome to The Challenge"
           src={resource}
-          onLoad={change}
+          // onLoad={change}
           width="60%"
           height="250px"
         ></iframe>

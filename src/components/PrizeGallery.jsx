@@ -70,13 +70,14 @@ function noquizload() {
 function PrizeGallery({
   resource,
   change,
-  change2,
+  change2, //
   change3,
   change4,
   pic,
   sus,
   source,
   alter,
+  theUrl,
 }) {
   // const [Show, setShow] = useState(false);
 
@@ -118,11 +119,11 @@ function PrizeGallery({
 
   return (
     <>
-    <marquee direction="left">
-      <p>Monday</p>
-      <p>Tuesday</p>
-      <p>Wednesday</p>
-    </marquee>
+      {/* <marquee direction="left">
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+      </marquee> */}
       <BannCarousel />
 
       {/* <Nav /> */}
@@ -178,7 +179,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change3}>
+            <figure className="disable" onClick={change2([2])}>
               {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
                 onClick={quizLoad}
@@ -211,7 +212,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2}>
+            <figure className="disable" onClick={change2(source)}>
               {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>
@@ -308,8 +309,13 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
-              <img className="notReady" alt="vacation" src={accra} />
+            <figure className="disable" onClick={theUrl}>
+              <img
+                onClick={quizLoad}
+                className="notReady"
+                alt="vacation"
+                src={accra}
+              />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"

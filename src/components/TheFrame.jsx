@@ -12,11 +12,30 @@ function ShowFrame() {
     "https://www.onlinequizcreator.com/animal-farm/quiz-492141",
   ];
 
+  //  #### Put all data in a separate util directory and export to components that need them ###
+
+  const frameUrl = {
+    cruise: source[0],
+    corolla: source[1],
+    london: source[2],
+    laptop: source[3],
+    onethousandD: source[4],
+    scholarship: source[5],
+    rent: source[6],
+    voucher: source[7],
+    twentyTNaira: source[8],
+    airtime: source[9],
+    voucher2: source[10],
+    ghana: source[11],
+  };
+
+  // Option 1: const [Url, setUrl] = useState(source); // State for iframe src
+  // Option 2: const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src
+  
   const [Url, setUrl] = useState(source); // State for iframe src
-  // const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src
 
   function changeSrc(source) {
-    setUrl(source);
+    setUrl(source[0]);
   }
 
   function changeSrc1() {
@@ -37,7 +56,7 @@ function ShowFrame() {
 
   return (
     <div>
-      <Frame resource={Url} />
+      <Frame resource={Url} onLoad={changeSrc} />
     </div>
   );
 }

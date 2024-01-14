@@ -37,8 +37,9 @@ function App() {
     setUrl(source)
   }
 
-  function changeSrc1() {
-    setUrl(source[3])
+  function changeSrc1(source) { //
+    // setUrl(source[3])
+    setUrl(source)
   }
 
   function changeSrc2() {
