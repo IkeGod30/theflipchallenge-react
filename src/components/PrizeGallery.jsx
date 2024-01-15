@@ -39,6 +39,7 @@ function quiziFrame() {
 }
 
 function quizLoad() {
+ 
   // User to confirm that he/she wants to proceed
 
   // if (
@@ -78,6 +79,7 @@ function PrizeGallery({
   source,
   alter,
   theUrl,
+  LoadUrl,
 }) {
   // const [Show, setShow] = useState(false);
 
@@ -165,7 +167,7 @@ function PrizeGallery({
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={noquizload}>
-              {/* <figure className="disable" onClick={change2}> */}
+              {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={noquizload}> */}
               <img className="notReady" alt="cruise" src={vacation} />
               {/* <PrizeImg /> */}
@@ -179,7 +181,8 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2([2])}>
+            {/* <figure className="disable" onClick={change2([2])}> */}
+            <figure className="disable" onClick={LoadUrl}>
               {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
                 onClick={quizLoad}
@@ -212,7 +215,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2(source)}>
+            <figure className="disable" onClick={LoadUrl}>
               {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>

@@ -31,13 +31,18 @@ function ShowFrame() {
 
   // Option 1: const [Url, setUrl] = useState(source); // State for iframe src
   // Option 2: const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src
-  
-  const [Url, setUrl] = useState(source); // State for iframe src
 
-  function changeSrc(source) {
-    setUrl(source[0]);
+  const [Url, setUrl] = useState(frameUrl.cruise); // State for iframe src
+
+  // function changeSrc(source) {
+  //   setUrl(source[0]);
+  // }
+
+  function changeSrc() {
+    setUrl(frameUrl.london);
+    // setUrl(alert(frameUrl.london));
   }
-
+  // console.log(frameUrl.london);
   function changeSrc1() {
     setUrl(source[3]);
   }
@@ -56,7 +61,7 @@ function ShowFrame() {
 
   return (
     <div>
-      <Frame resource={Url} onLoad={changeSrc} />
+      <Frame resource={Url} LoadUrl={changeSrc} />
     </div>
   );
 }
