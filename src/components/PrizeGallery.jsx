@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Prize from "./Prize";
 import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
@@ -33,13 +35,18 @@ const prizeClick = () => {
 };
 
 function quiziFrame() {
+  // const [frameUrl, setframeUrl] = useState();
+
   // ******** Put the iframe src change state function here ******* ////////
 
   window.open("quiz", "_self"); //Load page for actual quiz
 }
 
+// function changeframeUrl() {
+//   setframeUrl("www.yahoo.com");
+// }
+
 function quizLoad() {
- 
   // User to confirm that he/she wants to proceed
 
   // if (

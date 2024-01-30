@@ -18,11 +18,9 @@ function Frame({ resource, change }) {
       </div> */}
 
       <div>
-        {/* <Frame resource={Url} /> */}
         <iframe
           title="Welcome to The Challenge"
           src={resource}
-          // onLoad={change}
           width="60%"
           height="250px"
         ></iframe>
