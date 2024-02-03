@@ -63,7 +63,8 @@ function ShowFrame() {
 
   return (
     <div>
-      <Frame resource={Url} LoadUrl={changeSrc} />
+      <Frame resource={Url} LoadUrl={() => changeSrc(source)} />
+      {/* <Frame resource={Url} LoadUrl={changeSrc} /> */}
     </div>
   );
 }

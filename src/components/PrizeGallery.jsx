@@ -3,7 +3,6 @@ import { useState } from "react";
 import Prize from "./Prize";
 import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
-// import { useState } from "react";
 import laptop from "./assets/laptop.jpg";
 import dollar from "./assets/dollar.jpg";
 import accra from "./assets/accra-min.jpg";
@@ -174,6 +173,7 @@ function PrizeGallery({
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={noquizload}>
+              {/* <figure className="disable" onClick={() => noquizload(resource)}> */}
               {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={noquizload}> */}
               <img className="notReady" alt="cruise" src={vacation} />
@@ -189,10 +189,11 @@ function PrizeGallery({
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             {/* <figure className="disable" onClick={change2([2])}> */}
+            {/* <figure className="disable" onClick={LoadUrl}> */}
             <figure className="disable" onClick={LoadUrl}>
               {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
-                onClick={quizLoad}
+                // onClick={quizLoad}
                 className="notReady"
                 alt="dollar"
                 height="160"
@@ -344,4 +345,4 @@ function PrizeGallery({
 
 export default PrizeGallery;
 
-// export default BrowserRouter(PrizeGallery);
+
