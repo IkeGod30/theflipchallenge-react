@@ -344,5 +344,3 @@ function PrizeGallery({
 }
 
 export default PrizeGallery;
-
-
