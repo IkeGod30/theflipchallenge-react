@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 
-function Frame({ resource, change }) {
+function Frame({ resource }) {
   return (
     <>
       <h2>Welcome to the Quiz Page</h2>

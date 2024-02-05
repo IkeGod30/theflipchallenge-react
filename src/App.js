@@ -33,17 +33,17 @@ function App() {
   const [Url, setUrl] = useState(source); // State for iframe src 
   // const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src 
 
-  function changeSrc(source) {
+  function changeSrc() {
     setUrl(source)
   }
 
   function changeSrc1(source) { //
     // setUrl(source[3])
-    setUrl(source)
+    setUrl(source[1])
   }
 
   function changeSrc2() {
-    setUrl(source[3])
+    setUrl(source[2])
   }
 
   function changeSrc3() {

@@ -33,13 +33,17 @@ const prizeClick = () => {
   }
 };
 
-function quiziFrame() {
-  // const [frameUrl, setframeUrl] = useState();
-
-  // ******** Put the iframe src change state function here ******* ////////
-
+const quiziFrame = () => {
   window.open("quiz", "_self"); //Load page for actual quiz
-}
+};
+
+// function quiziFrame() {
+// const [frameUrl, setframeUrl] = useState();
+
+// ******** Put the iframe src change state function here ******* ////////
+
+// window.open("quiz", "_self"); //Load page for actual quiz
+// }
 
 // function changeframeUrl() {
 //   setframeUrl("www.yahoo.com");
@@ -121,10 +125,6 @@ function PrizeGallery({
 
   // console.log(Show);
 
-  // function BidOffer() {
-  //   prompt("Please type in your bid offer");
-  // }
-
   return (
     <>
       {/* <marquee direction="left">
@@ -188,9 +188,9 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            {/* <figure className="disable" onClick={change2([2])}> */}
-            {/* <figure className="disable" onClick={LoadUrl}> */}
-            <figure className="disable" onClick={LoadUrl}>
+            <figure className="disable" onClick={change2}>
+              {/* <figure className="disable" onClick={LoadUrl}> */}
+              {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
                 // onClick={quizLoad}
