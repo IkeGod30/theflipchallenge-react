@@ -189,6 +189,12 @@ function PrizeGallery({
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={change2}>
+            {/* <figure
+              className="disable"
+              onClick={() => {
+                setUrl(source[0]);
+              }}
+            > */}
               {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={quiziFrame}> */}

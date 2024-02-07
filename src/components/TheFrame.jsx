@@ -3,7 +3,8 @@ import { useState } from "react";
 import Frame from "../pages/QuizForm/Quiz";
 // import App from "../App";
 
-function ShowFrame() { //receive iframe source as prop from parent
+function ShowFrame() {
+  //receive iframe source as prop from parent
   const source = [
     "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
     "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
@@ -63,7 +64,8 @@ function ShowFrame() { //receive iframe source as prop from parent
 
   return (
     <div>
-      <Frame resource={Url} LoadUrl={() => changeSrc(source)} /> 
+      <Frame resource={Url} LoadUrl={() => changeSrc(source)} />
+      {/* <Frame resource={Url} LoadUrl={() => setUrl(source)} /> */}
       {/* <Frame resource={Url} LoadUrl={changeSrc} /> */}
     </div>
   );
