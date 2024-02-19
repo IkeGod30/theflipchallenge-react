@@ -29,9 +29,9 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
-  /* color: white; */
-  color: tomato;
-  font-size: 1.4rem;
+  color: rgb(35, 35, 202);
+  font-size: 2rem;
+  font-weight: bold;
   margin: 10px;
   font-family: Dancing Script;
 }
