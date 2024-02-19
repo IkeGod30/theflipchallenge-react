@@ -167,9 +167,10 @@ function PrizeGallery({
       <button onClick={changeSrc2}>Four</button>
       <h1>{Url}</h1> */}
 
-      <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
-
       <section className="container-lg">
+        <marquee>
+          <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
+        </marquee>
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={noquizload}>
@@ -189,7 +190,7 @@ function PrizeGallery({
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={change2}>
-            {/* <figure
+              {/* <figure
               className="disable"
               onClick={() => {
                 setUrl(source[0]);
