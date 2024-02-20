@@ -1,4 +1,4 @@
-function Frame({ resource }) {
+function Frame({ resource, quizSrc }) {
   return (
     <>
       <h2>Welcome to the Quiz Page</h2>
@@ -18,7 +18,8 @@ function Frame({ resource }) {
       <div>
         <iframe
           title="Welcome to The Challenge"
-          src={resource}
+          // src={resource}
+          src={quizSrc}
           width="60%"
           height="250px"
         ></iframe>

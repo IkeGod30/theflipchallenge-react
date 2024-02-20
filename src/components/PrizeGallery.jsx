@@ -90,6 +90,7 @@ function PrizeGallery({
   alter,
   theUrl,
   LoadUrl,
+  changeUrl,
 }) {
   // const [Show, setShow] = useState(false);
 
@@ -189,7 +190,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2}>
+            <figure className="disable" onClick={changeUrl}>
               {/* <figure
               className="disable"
               onClick={() => {
@@ -230,7 +231,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={LoadUrl}>
+            <figure className="disable" onClick={changeUrl}>
               {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>

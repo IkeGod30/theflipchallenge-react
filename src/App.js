@@ -30,29 +30,22 @@ import ShowFrame from "./components/TheFrame";
 function App() {
   const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
-  const [Url, setUrl] = useState(source); // State for iframe src 
+  const [Url, setUrl] = useState(quizes); // State for iframe src 
   // const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src 
 
-  function changeSrc() {
-    setUrl(source)
+  function changeQuiz(quiz) {
+    // setUrl(source)
+    setUrl(
+      Url.map((q) => {
+        if(q.id === quiz.id) {
+          return quiz;
+        } else {
+          return q;
+        }
+      })
+    );
   }
 
-  function changeSrc1(source) { //
-    // setUrl(source[3])
-    setUrl(source[1])
-  }
-
-  function changeSrc2() {
-    setUrl(source[2])
-  }
-
-  function changeSrc3() {
-    setUrl(source[0])
-  }
-
-  function changeSrc4() {
-    setUrl(source[4])
-  }
  
   function changeSource(i) {
     const nextUrl = Url.slice();
@@ -83,7 +76,7 @@ function App() {
         {/* <Nav /> */}
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route path='/' element={<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} />} />
+          <Route path='/' element={<PrizeGallery changeUrl={changeQuiz} quizSrc={Url} />} />
           <Route path='how' element={<HowtoWin />} />
           <Route path='quiz' element={<ShowFrame /> }/>
           <Route path='contact' element={<Contact />} />
@@ -110,5 +103,12 @@ function App() {
     </Suspense>
   );
 }
+
+const quizes = [
+  {id: 0, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884'},
+  {id: 1, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/animal-farm/quiz-493767'},
+  {id: 2, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496'},
+  {id: 3, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'}
+];
 
 export default App;
