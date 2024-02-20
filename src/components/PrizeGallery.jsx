@@ -80,16 +80,16 @@ function noquizload() {
 
 function PrizeGallery({
   resource,
-  change,
-  change2, //
-  change3,
-  change4,
-  pic,
-  sus,
-  source,
-  alter,
-  theUrl,
-  LoadUrl,
+  // change,
+  // change2, //
+  // change3,
+  // change4,
+  // pic,
+  // sus,
+  // source,
+  // alter,
+  // theUrl,
+  // LoadUrl,
   changeUrl,
 }) {
   // const [Show, setShow] = useState(false);
@@ -128,11 +128,6 @@ function PrizeGallery({
 
   return (
     <>
-      {/* <marquee direction="left">
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-      </marquee> */}
       <BannCarousel />
 
       {/* <Nav /> */}
@@ -244,7 +239,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze" onClick={change4}>
+            <figure className="pryze" onClick={""}>
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -256,7 +251,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={change2}>
+            <figure className="disable" onClick={""}>
               <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
@@ -328,7 +323,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={theUrl}>
+            <figure className="disable" onClick={""}>
               <img
                 onClick={quizLoad}
                 className="notReady"
