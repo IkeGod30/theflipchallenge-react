@@ -52,7 +52,7 @@ function FaqAccordion() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Answer: Wiinnings are not transferable. Only the winner can claim
+              Answer: Winnings are not transferable. Only the winner can claim
               the prize
             </div>
           </div>
