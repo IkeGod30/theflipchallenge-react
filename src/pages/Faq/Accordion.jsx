@@ -26,9 +26,6 @@ function FaqAccordion() {
           >
             <div className="accordion-body">
               Answer: You must be of legal age to participate in the contest
-              {/* Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body. */}
             </div>
           </div>
         </div>
