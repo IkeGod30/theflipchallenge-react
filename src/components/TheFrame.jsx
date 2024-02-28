@@ -41,11 +41,11 @@ function ShowFrame() {
   //   setUrl(source[0]);
   // }
 
-  function changeSrc() {
+  function changeSrc(source) {
     setUrl(Url.london);
-    // setUrl(alert(frameUrl.london));
   }
-  // console.log(frameUrl.london);
+  // console.log(frameUrl.laptop);
+
   function changeSrc1() {
     setUrl(source[3]);
   }
@@ -64,7 +64,7 @@ function ShowFrame() {
 
   return (
     <div>
-      <Frame resource={Url} LoadUrl={() => changeSrc(source)} />
+      <Frame resource={Url} LoadUrl={(source) => changeSrc(source)} />
       {/* <Frame resource={Url} LoadUrl={() => setUrl(source)} /> */}
       {/* <Frame resource={Url} LoadUrl={changeSrc} /> */}
     </div>

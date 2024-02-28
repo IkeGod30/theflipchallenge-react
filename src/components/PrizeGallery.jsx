@@ -89,9 +89,21 @@ function PrizeGallery({
   // source,
   // alter,
   // theUrl,
-  // LoadUrl,
+  LoadUrl,
   changeUrl,
+  // source,
 }) {
+  const source = [
+    {
+      quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
+    },
+    { quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767" },
+    { quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496" },
+    { quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336" },
+    { quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141" },
+  ];
+  const [Url, setUrl] = useState(source); //////////
+
   // const [Show, setShow] = useState(false);
 
   // const source = [
@@ -226,7 +238,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={changeUrl}>
+            <figure className="disable" onClick={LoadUrl}>
               {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>
@@ -323,9 +335,14 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={""}>
+            <figure
+              className="disable"
+              onClick={() => {
+                setUrl({ quiz: source[1] }); ///
+              }}
+            >
               <img
-                onClick={quizLoad}
+                // onClick={quizLoad}
                 className="notReady"
                 alt="vacation"
                 src={accra}
@@ -345,5 +362,22 @@ function PrizeGallery({
     </>
   );
 }
+
+//  #### Put all data in a separate util directory and export to components that need them ###
+
+// const frameUrl = {
+//   cruise: source[0],
+//   corolla: source[1],
+//   london: source[2],
+//   laptop: source[3],
+//   onethousandD: source[4],
+//   scholarship: source[5],
+//   rent: source[6],
+//   voucher: source[7],
+//   twentyTNaira: source[8],
+//   airtime: source[9],
+//   voucher2: source[10],
+//   ghana: source[11],
+// };
 
 export default PrizeGallery;

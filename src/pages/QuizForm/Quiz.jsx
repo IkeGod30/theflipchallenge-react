@@ -18,8 +18,8 @@ function Frame({ resource, quizSrc }) {
       <div>
         <iframe
           title="Welcome to The Challenge"
-          // src={resource}
-          src={quizSrc}
+          src={resource}
+          // src={quizSrc}
           width="60%"
           height="250px"
         ></iframe>

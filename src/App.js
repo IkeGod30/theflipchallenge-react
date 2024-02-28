@@ -1,3 +1,4 @@
+
 import PrizeGallery from "./components/PrizeGallery";
 import React, { Suspense } from 'react';
 // import Main from "./components/Pages.js";
@@ -88,7 +89,7 @@ function App() {
       </div>
 
      
-    
+   
       {/* <HowtoWin /> */}
       {/* <PrizeGallery resource={Url} alter={changeSrc} change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} /> */}
       {/* <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> */}
