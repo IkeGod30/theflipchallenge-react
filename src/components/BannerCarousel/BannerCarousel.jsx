@@ -5,7 +5,6 @@ import "./BannerCarousel.css";
 function BannCarousel() {
   return (
     <>
-      {/* <h2>Carousel</h2> */}
       <section className="carousel-section">
         <div
           id="carouselExampleCaptions"
@@ -17,7 +16,7 @@ function BannCarousel() {
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>

@@ -102,7 +102,7 @@ function PrizeGallery({
     { quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336" },
     { quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141" },
   ];
-  const [Url, setUrl] = useState(source); //////////
+  const [Url, setUrl] = useState(source[0]); //////////
 
   // const [Show, setShow] = useState(false);
 
@@ -251,7 +251,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze" onClick={""}>
+            <figure className="pryze">
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -263,7 +263,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={""}>
+            <figure className="disable">
               <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
@@ -323,7 +323,13 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure
+              className="disable"
+              onClick={() => {
+                setUrl({ quiz: source[2] }); ///
+                console.log(Url.quiz); ////
+              }}
+            >
               <img className="notReady" alt="voucher" src={voucher} />
             </figure>
             <figcaption
@@ -339,6 +345,7 @@ function PrizeGallery({
               className="disable"
               onClick={() => {
                 setUrl({ quiz: source[1] }); ///
+                console.log(Url.quiz); ////
               }}
             >
               <img
