@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer class="footer py-4">
+      <footer className="footer py-4">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4 text-lg-start">
@@ -16,21 +16,21 @@ function Footer() {
                 href="https://www.twitter.com/theflipchall"
                 aria-label="Twitter"
               >
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a
                 className="btn btn-dark btn-social mx-2"
                 href="https://www.facebook.com/profile.php?id=100092369855002"
                 aria-label="Facebook"
               >
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               <a
                 className="btn btn-dark btn-social mx-2"
                 href="https://www.instagram.com/flipchall/"
                 aria-label="LinkedIn"
               >
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
             <div className="col-lg-4 text-lg-end">
