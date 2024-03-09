@@ -77,7 +77,7 @@ function App() {
         {/* <Nav /> */}
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route path='/' element={<PrizeGallery changeUrl={changeQuiz} quizSrc={Url} />} />
+          <Route path='/' element={<PrizeGallery sisi={Url} changeUrl={changeQuiz} quizSrc={Url} />} />
           <Route path='how' element={<HowtoWin />} />
           <Route path='quiz' element={<ShowFrame /> }/>
           <Route path='contact' element={<Contact />} />

@@ -96,11 +96,24 @@ function PrizeGallery({
   const source = [
     {
       quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
+      prize: "1000 US Dollars",
     },
-    { quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767" },
-    { quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496" },
-    { quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336" },
-    { quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141" },
+    {
+      quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
+      prize: "20, 000 naira",
+    },
+    {
+      quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496",
+      prize: "Shopping Voucher",
+    },
+    {
+      quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336",
+      prize: "Vacation in London",
+    },
+    {
+      quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141",
+      prize: "Vacation in Ghana",
+    },
   ];
   const [Url, setUrl] = useState(source[0]); //////////
 
