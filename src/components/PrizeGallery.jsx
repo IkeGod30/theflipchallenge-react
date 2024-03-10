@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useReducer } from "react";
 
 import Prize from "./Prize";
 import PrizeImg from "./PrizeImg";
@@ -91,7 +92,6 @@ function PrizeGallery({
   // theUrl,
   LoadUrl,
   changeUrl,
-  // source,
 }) {
   const source = [
     {
@@ -115,7 +115,19 @@ function PrizeGallery({
       prize: "Vacation in Ghana",
     },
   ];
-  const [Url, setUrl] = useState(source[0]); //////////
+  const [Url, dispatch] = useReducer(urlReducer, source); //////////
+
+  function nairaPrize() {
+    dispatch({
+      type: "naira",
+    });
+  }
+
+  function dollarPrize() {
+    dispatch({
+      type: "dollar",
+    });
+  }
 
   // const [Show, setShow] = useState(false);
 
@@ -339,7 +351,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={() => {
-                setUrl({ quiz: source[2] }); ///
+                // setUrl({ quiz: source[2] }); ///
                 console.log(Url.quiz); ////
               }}
             >
@@ -357,7 +369,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={() => {
-                setUrl({ quiz: source[1] }); ///
+                // setUrl({ quiz: source[1] }); ///
                 console.log(Url.quiz); ////
               }}
             >
@@ -401,3 +413,28 @@ function PrizeGallery({
 // };
 
 export default PrizeGallery;
+
+function urlReducer(source, action) {
+  switch (action.type) {
+    case "naira": {
+      return {
+        ...source,
+        quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
+      };
+    }
+    case "laptop": {
+      return {
+        ...source,
+        quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
+      };
+    }
+    case "dollar": {
+      return {
+        ...source,
+        quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496",
+      };
+    }
+    default:
+      return "https://www.theflipchallenge.com";
+  }
+}
