@@ -288,7 +288,8 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={nairaPrize}>
+              {console.log(source[0].quiz)}
               <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
@@ -300,7 +301,8 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure className="disable" onClick={dollarPrize}>
+              {console.log(source[1].quiz)}
               <img className="notReady" alt="lease document" src={rent} />
             </figure>
             <figcaption

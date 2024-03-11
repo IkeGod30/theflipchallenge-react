@@ -1,4 +1,4 @@
-function Frame({ resource, quizSrc, sisi }) {
+function Frame({ resource, quizSrc, sisi, Url }) {
   return (
     <>
       <h2>Welcome to the Quiz Page</h2>
