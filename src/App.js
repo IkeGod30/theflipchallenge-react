@@ -29,6 +29,7 @@ import ShowFrame from "./components/TheFrame";
 // import './App.css';
 
 function App() {
+
   const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
   const [Url, setUrl] = useState(quizes); // State for iframe src 
@@ -60,6 +61,7 @@ function App() {
       <BrowserRouter>
       <Nav />
       </BrowserRouter>
+      <Banner />
       
     <>
       <header>
