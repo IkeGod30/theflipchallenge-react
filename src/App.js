@@ -68,15 +68,8 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        
       </header>
-        
-      {/* <Nav /> */}
-
-      {/* <Banner /> */}
-
-      {/* <Nav /> */}
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <BrowserRouter>
-        {/* <Nav /> */}
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
           <Route path='/' element={<PrizeGallery sisi={Url} changeUrl={changeQuiz} quizSrc={Url} />} />
