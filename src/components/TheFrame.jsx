@@ -72,3 +72,21 @@ function ShowFrame() {
 }
 
 export default ShowFrame;
+
+// #### Iframe Source Reducer function ### //
+
+function framesourceReducer(Url, action) {
+  switch (action.type) {
+    case "laptop": {
+      return { ...frameSrc, quiz: "www.yahoo.com" };
+    }
+    case "iphone": {
+      return { ...frameSrc, quiz: "www.google.com" };
+    }
+    case "cruise": {
+      return { ...frameSrc, quiz: "www.fox.com" };
+    }
+    default:
+      return { ...frameSrc, quiz: "www.theflipchallenge.com" };
+  }
+}
