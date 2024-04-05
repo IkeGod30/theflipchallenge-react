@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useReducer } from "react";
 
 import Frame from "../pages/QuizForm/Quiz";
 // import App from "../App";
@@ -35,7 +36,8 @@ function ShowFrame() {
 
   // const [Url, setUrl] = useState(frameUrl.cruise); // State for iframe src
 
-  const [Url, setUrl] = useState(source[0]);
+  // const [Url, setUrl] = useState(source[0]);
+  const [Url, dispatch] = useReducer(framesourceReducer, {});
 
   // function changeSrc(source) {
   //   setUrl(source[0]);
