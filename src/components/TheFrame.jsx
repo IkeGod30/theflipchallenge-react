@@ -34,8 +34,6 @@ function ShowFrame() {
   // Option 1: const [Url, setUrl] = useState(source); // State for iframe src
   // Option 2: const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src
 
-  // const [Url, setUrl] = useState(frameUrl.cruise); // State for iframe src
-
   // const [Url, setUrl] = useState(source[0]);
   const [Url, dispatch] = useReducer(framesourceReducer, {});
 
