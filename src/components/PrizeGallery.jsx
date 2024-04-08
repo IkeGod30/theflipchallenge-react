@@ -92,42 +92,45 @@ function PrizeGallery({
   // theUrl,
   LoadUrl,
   changeUrl,
+  imgClick,
+  frameSrc,
 }) {
-  const source = [
-    {
-      quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
-      prize: "1000 US Dollars",
-    },
-    {
-      quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
-      prize: "20, 000 naira",
-    },
-    {
-      quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496",
-      prize: "Shopping Voucher",
-    },
-    {
-      quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336",
-      prize: "Vacation in London",
-    },
-    {
-      quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141",
-      prize: "Vacation in Ghana",
-    },
-  ];
-  const [Url, dispatch] = useReducer(urlReducer, source); //////////
+  // const source = [
+  //   {
+  //     quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
+  //     prize: "1000 US Dollars",
+  //   },
+  //   {
+  //     quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
+  //     prize: "20, 000 naira",
+  //   },
+  //   {
+  //     quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496",
+  //     prize: "Shopping Voucher",
+  //   },
+  //   {
+  //     quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336",
+  //     prize: "Vacation in London",
+  //   },
+  //   {
+  //     quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141",
+  //     prize: "Vacation in Ghana",
+  //   },
+  // ];
 
-  function nairaPrize() {
-    dispatch({
-      type: "naira",
-    });
-  }
+  // const [Url, dispatch] = useReducer(urlReducer, source); //////////
 
-  function dollarPrize() {
-    dispatch({
-      type: "dollar",
-    });
-  }
+  // function nairaPrize() {
+  //   dispatch({
+  //     type: "naira",
+  //   });
+  // }
+
+  // function dollarPrize() {
+  //   dispatch({
+  //     type: "dollar",
+  //   });
+  // }
 
   // const [Show, setShow] = useState(false);
 
@@ -162,6 +165,10 @@ function PrizeGallery({
   // }
 
   // console.log(Show);
+
+  const onPrizeImageClick = () => {
+    imgClick(frameSrc);
+  };
 
   return (
     <>
@@ -263,7 +270,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={LoadUrl}>
+            <figure className="disable" onClick={quizLoad}>
               {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>
@@ -276,7 +283,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze">
+            <figure className="pryze" onClick={onPrizeImageClick}>
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -288,8 +295,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={nairaPrize}>
-              {console.log(source[0].quiz)}
+            <figure className="disable" onClick={""}>
               <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
@@ -301,8 +307,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={dollarPrize}>
-              {console.log(source[1].quiz)}
+            <figure className="disable" onClick={""}>
               <img className="notReady" alt="lease document" src={rent} />
             </figure>
             <figcaption
@@ -354,7 +359,7 @@ function PrizeGallery({
               className="disable"
               onClick={() => {
                 // setUrl({ quiz: source[2] }); ///
-                console.log(Url.quiz); ////
+                // console.log(Url.quiz); ////
               }}
             >
               <img className="notReady" alt="voucher" src={voucher} />
@@ -368,19 +373,8 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure
-              className="disable"
-              onClick={() => {
-                // setUrl({ quiz: source[1] }); ///
-                console.log(Url.quiz); ////
-              }}
-            >
-              <img
-                // onClick={quizLoad}
-                className="notReady"
-                alt="vacation"
-                src={accra}
-              />
+            <figure className="disable" onClick={onPrizeImageClick}>
+              <img className="notReady" alt="vacation" src={accra} />
             </figure>
             <figcaption
               data-bs-toggle="tooltip"

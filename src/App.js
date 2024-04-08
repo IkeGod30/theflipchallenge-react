@@ -30,31 +30,20 @@ import ShowFrame from "./components/TheFrame";
 
 function App() {
 
-  const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
+  // const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
-  const [Url, setUrl] = useState(quizes); // State for iframe src 
+  const [Url, setUrl] = useState('https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'); // State for iframe src 
   // const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src 
 
-  function changeQuiz(quiz) {
-    // setUrl(source)
-    setUrl(
-      Url.map((q) => {
-        if(q.id === quiz.id) {
-          return quiz;
-        } else {
-          return q;
-        }
-      })
-    );
+
+
+  
+  const onPrizeClick = (frameSrc) => {
+    setUrl(frameSrc);
   }
 
  
-  function changeSource(i) {
-    const nextUrl = Url.slice();
-    nextUrl[i] = Url;
-    setUrl(nextUrl)
-    // changeSrc(source)
-  }
+  
 
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
@@ -72,9 +61,9 @@ function App() {
         <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route path='/' element={<PrizeGallery sisi={Url} changeUrl={changeQuiz} quizSrc={Url} />} />
+          <Route path='/' element={<PrizeGallery imgClick={onPrizeClick} />} />
           <Route path='how' element={<HowtoWin />} />
-          <Route path='quiz' element={<ShowFrame /> }/>
+          <Route path='quiz' element={<ShowFrame frameSrc={Url} /> }/>
           <Route path='contact' element={<Contact />} />
           <Route path='faq' element={<Faq />} />
           <Route path='*' element={<NoPage />} />
@@ -100,11 +89,11 @@ function App() {
   );
 }
 
-const quizes = [
-  {id: 0, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884'},
-  {id: 1, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/animal-farm/quiz-493767'},
-  {id: 2, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496'},
-  {id: 3, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'}
-];
+// const quizes = [
+//   {id: 0, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884'},
+//   {id: 1, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/animal-farm/quiz-493767'},
+//   {id: 2, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496'},
+//   {id: 3, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'}
+// ];
 
 export default App;
