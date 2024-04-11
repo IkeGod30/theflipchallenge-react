@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useReducer } from "react";
 
 import Prize from "./Prize";
-import PrizeImg from "./PrizeImg";
+// import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
 import laptop from "./assets/laptop.jpg";
 import dollar from "./assets/dollar.jpg";
@@ -170,6 +170,10 @@ function PrizeGallery({
     imgClick(frameSrc);
   };
 
+  // function onPrizeImageClick() {
+  //   imgClick(frameSrc);
+  // }
+
   return (
     <>
       <BannCarousel />
@@ -218,7 +222,6 @@ function PrizeGallery({
               {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={noquizload}> */}
               <img className="notReady" alt="cruise" src={vacation} />
-              {/* <PrizeImg /> */}
             </figure>
             <figcaption
               data-bs-toggle="tooltip"
