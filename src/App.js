@@ -56,7 +56,6 @@ function App() {
       
     <>
       <header>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
        
       </header>
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
