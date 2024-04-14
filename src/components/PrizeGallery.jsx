@@ -286,7 +286,12 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="pryze" onClick={onPrizeImageClick}>
+            <figure
+              className="pryze"
+              onClick={onPrizeImageClick}
+              frameSrc="https://www.google.com"
+            >
+              {alert(frameSrc)}
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -298,7 +303,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={""}>
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.bbcnews.com"}
+            >
               <img className="notReady" alt="student" src={scholarship} />
             </figure>
             <figcaption
@@ -310,7 +319,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={""}>
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.google.com"}
+            >
               <img className="notReady" alt="lease document" src={rent} />
             </figure>
             <figcaption
@@ -322,7 +335,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.google.com"}
+            >
               <img className="notReady" alt="iphone" src={iphone} />
             </figure>
             <figcaption
@@ -334,7 +351,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.google.com"}
+            >
               <img className="notReady" alt="naira" src={naira} />
             </figure>
             <figcaption
@@ -346,7 +367,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.google.com"}
+            >
               <img className="notReady" alt="airtime" src={airtime} />
             </figure>
             <figcaption
@@ -376,7 +401,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={onPrizeImageClick}>
+            <figure
+              className="disable"
+              onClick={onPrizeImageClick}
+              frameSrc={"https://www.google.com"}
+            >
               <img className="notReady" alt="vacation" src={accra} />
             </figure>
             <figcaption
