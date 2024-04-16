@@ -4,7 +4,7 @@
 import Frame from "../pages/QuizForm/Quiz";
 // import App from "../App";
 
-function ShowFrame({ frameSrc}) {
+function ShowFrame({ frameSrc }) {
   // const source = [
   //   "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
   //   "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
@@ -22,7 +22,6 @@ function ShowFrame({ frameSrc}) {
     <div>
       <Frame resource={frameSrc} />
       {/* <Frame resource={Url} LoadUrl={() => setUrl(source)} /> */}
-      {/* <Frame resource={Url} LoadUrl={changeSrc} /> */}
     </div>
   );
 }

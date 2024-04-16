@@ -20,7 +20,6 @@ function Frame({ resource, quizSrc, Url, frameSrc }) {
           title="Welcome to The Challenge"
           src={resource}
           // src={resource}
-          // src={sisi}
           // src={quizSrc}
           width="60%"
           height="250px"
