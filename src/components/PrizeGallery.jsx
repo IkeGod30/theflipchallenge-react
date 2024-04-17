@@ -93,7 +93,7 @@ function PrizeGallery({
   LoadUrl,
   changeUrl,
   imgClick,
-  frameSrc,
+  framesrc,
 }) {
   // const source = [
   //   {
@@ -166,8 +166,8 @@ function PrizeGallery({
 
   // console.log(Show);
 
-  const onPrizeImageClick = () => {
-    imgClick(frameSrc);
+  const onPrizeImageClick = (framesrc) => {
+    imgClick(framesrc);
   };
 
   // function onPrizeImageClick() {
@@ -217,7 +217,8 @@ function PrizeGallery({
         </marquee>
         <div className="row mainRow">
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={noquizload}>
+            <figure className="disable" onClick={quizLoad}>
+              {/* <figure className="disable" onClick={noquizload}> */}
               {/* <figure className="disable" onClick={() => noquizload(resource)}> */}
               {/* <figure className="disable" onClick={LoadUrl}> */}
               {/* <figure className="disable" onClick={noquizload}> */}
@@ -289,9 +290,9 @@ function PrizeGallery({
             <figure
               className="pryze"
               onClick={onPrizeImageClick}
-              frameSrc="https://www.google.com"
+              framesrc={"https://www.google.com"}
             >
-              {alert(frameSrc)}
+              {/* {alert(frameSrc)} */}
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -306,7 +307,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.bbcnews.com"}
+              framesrc={"https://www.bbcnews.com"}
             >
               <img className="notReady" alt="student" src={scholarship} />
             </figure>

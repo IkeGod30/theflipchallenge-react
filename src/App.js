@@ -36,14 +36,14 @@ function App() {
 
 
   
-  const onPrizeClick = (frameSrc) => {
-    setUrl(frameSrc);
-  }
+  // const onPrizeClick = (framesrc) => {
+  //   setUrl(framesrc);
+  // }
 
  
-  // function onPrizeClick() {
-  //   setUrl('https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141');
-  // }
+  function onPrizeClick() {
+    setUrl('https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141');
+  }
 
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
