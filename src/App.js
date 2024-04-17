@@ -9,8 +9,6 @@ import Banner from "./components/Banner";
 import { useState } from 'react';
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
 import Nav from "./components/Nav/Nav";
-// import ShowFrame from "./components/TheFrame";
-
 import { Outlet } from "react-router-dom";
 
 
