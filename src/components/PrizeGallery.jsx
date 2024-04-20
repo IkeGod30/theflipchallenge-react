@@ -339,7 +339,9 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.google.com"}
+              frameSrc={
+                "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884"
+              }
             >
               <img className="notReady" alt="iphone" src={iphone} />
             </figure>

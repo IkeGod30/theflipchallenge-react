@@ -7,6 +7,7 @@ import React, { Suspense } from 'react';
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import { useState } from 'react';
+import { useReducer } from 'react'; // 
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
 import Nav from "./components/Nav/Nav";
 import { Outlet } from "react-router-dom";
@@ -28,7 +29,20 @@ import ShowFrame from "./components/TheFrame";
 
 function App() {
 
-  // const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
+const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336')
+
+function laptopQuiz() {
+  dispatch({
+    type: "laptop"
+  });
+}
+
+function vacationQuiz() {
+  dispatch({
+    type: "vacation"
+  });
+}
+// const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
   const [Url, setUrl] = useState('https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'); // State for iframe src 
   // const [Url, setUrl] = useState(Array(5).fill(source)); // State for iframe src 
@@ -96,3 +110,26 @@ function App() {
 // ];
 
 export default App;
+
+
+// Reducer function alternative to useState // 
+function quizReducer(quiz, action) {
+  switch (action.type) {
+    case "laptop": {
+      return 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336';
+    }
+    case "vacation": {
+      return 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496';
+    }
+    case "scholarship": {
+      return 'https://www.onlinequizcreator.com/animal-farm/quiz-493767';
+    }
+    case "twentyFivek": {
+      return 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884';
+    }
+    default:
+      return 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884';
+  }
+}
+
+
