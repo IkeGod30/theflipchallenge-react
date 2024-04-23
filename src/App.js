@@ -50,14 +50,14 @@ function vacationQuiz() {
 
 
   
-  // const onPrizeClick = (framesrc) => {
-  //   setUrl(framesrc);
-  // }
+  const onPrizeClick = (framesrc) => {
+    setUrl(framesrc);
+  }
 
  
-  function onPrizeClick() {
-    setUrl('https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884');
-  }
+  // function onPrizeClick() {
+  //   setUrl('https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884');
+  // }
 
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
@@ -74,9 +74,9 @@ function vacationQuiz() {
         <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route path='/' element={<PrizeGallery imgClick={onPrizeClick} frameSrc={Url} />} />
+          <Route path='/' element={<PrizeGallery imgClick={onPrizeClick} framesrc={Url} />} />
           <Route path='how' element={<HowtoWin />} />
-          <Route path='quiz' element={<ShowFrame frameSrc={Url} /> }/>
+          <Route path='quiz' element={<ShowFrame framesrc={Url} /> }/>
           <Route path='contact' element={<Contact />} />
           <Route path='faq' element={<Faq />} />
           <Route path='*' element={<NoPage />} />

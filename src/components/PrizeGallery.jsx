@@ -286,13 +286,19 @@ function PrizeGallery({
               Brand New HP Laptop
             </figcaption>
           </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          <div
+            onClick={onPrizeImageClick}
+            framesrc={"https://www.google.com"}
+            className="col-xl-4 col-md-6 col-xxl-3"
+          >
+            {console.log(framesrc)}
+            {/* {alert(framesrc.target)} */}
             <figure
               className="pryze"
-              onClick={onPrizeImageClick}
-              framesrc={"https://www.google.com"}
+              // framesrc="https://www.google.com"
             >
-              {/* {alert(frameSrc)} */}
+              {/* {console.log(framesrc)}
+              {alert(framesrc)} */}
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -323,7 +329,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.google.com"}
+              framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="lease document" src={rent} />
             </figure>
@@ -339,7 +345,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={
+              framesrc={
                 "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884"
               }
             >
@@ -357,7 +363,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.google.com"}
+              framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="naira" src={naira} />
             </figure>
@@ -373,7 +379,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.google.com"}
+              framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="airtime" src={airtime} />
             </figure>
@@ -407,7 +413,7 @@ function PrizeGallery({
             <figure
               className="disable"
               onClick={onPrizeImageClick}
-              frameSrc={"https://www.google.com"}
+              framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="vacation" src={accra} />
             </figure>
