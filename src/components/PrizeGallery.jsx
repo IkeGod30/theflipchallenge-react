@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useReducer } from "react";
 
 import Prize from "./Prize";
-import PrizeItem from "./PrizeItemComponent";
+import PrizeItem from "./PrizeItemS";
 // import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
 import laptop from "./assets/laptop.jpg";
