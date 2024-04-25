@@ -55,7 +55,10 @@ function vacationQuiz() {
   }
 
  
+// ()=> {
+//   setUrl('https://www.google.com')
 
+// }
 
 
   
