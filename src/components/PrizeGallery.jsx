@@ -429,6 +429,7 @@ function PrizeGallery({
         </div>
         {/* <Outlet /> */}
       </section>
+      <PrizeItem />
     </>
   );
 }
