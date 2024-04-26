@@ -1,6 +1,6 @@
 import vacation from "./assets/vacate.jpg";
 
-export default function PrizeItem() {
+export default function PrizeItem(props) {
   return (
     <div>
       <div>
