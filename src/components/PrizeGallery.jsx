@@ -429,7 +429,7 @@ function PrizeGallery({
         </div>
         {/* <Outlet /> */}
       </section>
-      <PrizeItem image={accra} description={"Vacation in Ghana"} />
+      <PrizeItem image={accra} description={"Vacation in Ghana"} alt={"Picture of Accra Gate"} title={"Source: Things Fall Apart by Chinua Achebe"}/>
       <PrizeItem image={vacation} description={"Cruise Tour NY-Miama"} />
     </>
   );
