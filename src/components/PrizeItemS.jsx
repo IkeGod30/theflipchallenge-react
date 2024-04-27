@@ -5,14 +5,14 @@ export default function PrizeItem(props) {
     <div>
       <div>
         <figure className="disable">
-          <img className="notReady" alt="cruise" src={vacation} />
+          <img className="notReady" alt="cruise" src={props.image} />
         </figure>
         <figcaption
           data-bs-toggle="tooltip"
           title="Source: 'NA'"
           data-bs-placement="top"
         >
-          Vacation in Ghana
+          {props.description}
         </figcaption>
       </div>
     </div>

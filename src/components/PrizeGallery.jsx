@@ -429,8 +429,8 @@ function PrizeGallery({
         </div>
         {/* <Outlet /> */}
       </section>
-      <PrizeItem image={""} description={""} />
-      <PrizeItem />
+      <PrizeItem image={accra} description={"Vacation in Ghana"} />
+      <PrizeItem image={vacation} description={"Cruise Tour NY-Miama"} />
     </>
   );
 }
