@@ -262,6 +262,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
+            {/* THIRD */}
             <figure className="disable" onClick={quizLoad}>
               {/* <figure className="disable" onClick={change4}> */}
               <img className="notReady" alt="england" src={england} />
@@ -427,20 +428,31 @@ function PrizeGallery({
             </figcaption>
           </div>
         </div>
-        {/* <Outlet /> */}
       </section>
-      <PrizeItem
-        image={accra}
-        description={"Vacation in Ghana"}
-        alt={"Picture of Accra Gate"}
-        title={"Source: Things Fall Apart by Chinua Achebe"}
-      />
-      <PrizeItem
-        image={vacation}
-        description={"Cruise Tour NY-Miama"}
-        alt={"Picture of Cruise Ship"}
-        title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-      />
+      <div
+      // onClick={quizLoad}
+      // onMouseMove={(framesrc) => {
+      //   onPrizeImageClick(framesrc);
+      // }}
+      >
+        <PrizeItem
+          onClick={quizLoad}
+          onMouseMove={(framesrc) => {
+            onPrizeImageClick(framesrc);
+          }}
+          // framesrc={"https://www.bbcnews.com"}
+          image={accra}
+          description={"Vacation in Ghana"}
+          alt={"Picture of Accra Gate"}
+          title={"Source: Things Fall Apart by Chinua Achebe"}
+        />
+        <PrizeItem
+          image={vacation}
+          description={"Cruise Tour NY-Miama"}
+          alt={"Picture of Cruise Ship"}
+          title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+        />
+      </div>
     </>
   );
 }
