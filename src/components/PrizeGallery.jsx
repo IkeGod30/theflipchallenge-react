@@ -452,6 +452,12 @@ function PrizeGallery({
           alt={"Picture of Cruise Ship"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
         />
+        <PrizeItem
+          image={vacation}
+          description={"Cruise Tour NY-Miama"}
+          alt={"Picture of Cruise Ship"}
+          title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+        />
       </div>
     </>
   );
