@@ -454,8 +454,8 @@ function PrizeGallery({
         />
         <PrizeItem
           image={vacation}
-          description={"Cruise Tour NY-Miama"}
-          alt={"Picture of Cruise Ship"}
+          description={"$1000"}
+          alt={"Picture of Money"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
         />
       </div>
