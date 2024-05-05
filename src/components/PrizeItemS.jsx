@@ -1,8 +1,11 @@
 import vacation from "./assets/vacate.jpg";
 
 export default function PrizeItem(props) {
+  const onPrizeImageClick = () => {
+    props.onClick(props.framesrc);
+  };
   return (
-    <div>
+    <div onClick={onPrizeImageClick}>
       <div>
         <figure className="disable">
           <img className="notReady" alt={props.alt} src={props.image} />

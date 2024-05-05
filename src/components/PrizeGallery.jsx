@@ -80,22 +80,8 @@ function noquizload() {
   );
 }
 
-function PrizeGallery({
-  resource,
-  // change,
-  // change2, //
-  // change3,
-  // change4,
-  // pic,
-  // sus,
-  // source,
-  // alter,
-  // theUrl,
-  LoadUrl,
-  changeUrl,
-  imgClick,
-  framesrc,
-}) {
+// function PrizeGallery({ changeUrl, imgClick, framesrc }) {
+function PrizeGallery(props) {
   // const source = [
   //   {
   //     quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
@@ -167,9 +153,9 @@ function PrizeGallery({
 
   // console.log(Show);
 
-  const onPrizeImageClick = (framesrc) => {
-    imgClick(framesrc);
-  };
+  // const onPrizeImageClick = (framesrc) => {
+  //   props.imgClick(framesrc);
+  // };
 
   // function onPrizeImageClick() {
   //   imgClick(frameSrc);
@@ -234,7 +220,7 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={changeUrl}>
+            <figure className="disable">
               {/* <figure
               className="disable"
               onClick={() => {
@@ -289,11 +275,11 @@ function PrizeGallery({
             </figcaption>
           </div>
           <div
-            onClick={onPrizeImageClick}
+            onClick={props.imgClick}
             framesrc={"https://www.google.com"}
             className="col-xl-4 col-md-6 col-xxl-3"
           >
-            {console.log(framesrc)}
+            {console.log(props.framesrc)}
             {/* {alert(framesrc.target)} */}
             <figure
               className="pryze"
@@ -314,7 +300,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={"https://www.bbcnews.com"}
             >
               <img className="notReady" alt="student" src={scholarship} />
@@ -330,7 +316,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="lease document" src={rent} />
@@ -346,7 +332,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={
                 "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884"
               }
@@ -364,7 +350,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="naira" src={naira} />
@@ -380,7 +366,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="airtime" src={airtime} />
@@ -396,10 +382,8 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={() => {
-                // setUrl({ quiz: source[2] }); ///
-                // console.log(Url.quiz); ////
-              }}
+              // onClick={() => {
+              // }}
             >
               <img className="notReady" alt="voucher" src={voucher} />
             </figure>
@@ -414,7 +398,7 @@ function PrizeGallery({
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
-              onClick={onPrizeImageClick}
+              onClick={props.imgClick}
               framesrc={"https://www.google.com"}
             >
               <img className="notReady" alt="vacation" src={accra} />
@@ -435,29 +419,33 @@ function PrizeGallery({
       //   onPrizeImageClick(framesrc);
       // }}
       >
-        <PrizeItem
-          onClick={quizLoad}
-          onMouseMove={(framesrc) => {
-            onPrizeImageClick(framesrc);
-          }}
-          // framesrc={"https://www.bbcnews.com"}
-          image={accra}
-          description={"Vacation in Ghana"}
-          alt={"Picture of Accra Gate"}
-          title={"Source: Things Fall Apart by Chinua Achebe"}
-        />
-        <PrizeItem
+        <div
+        // onClick={props.imgClick}
+        // onClick={quizLoad}
+        // onMouseMove={props.imgClick}
+        // framesrc="https://www.bbcnews.com"
+        >
+          <PrizeItem
+            onClick={props.imgClick}
+            framesrc="https://www.bbcnews.com"
+            image={accra}
+            description={"Vacation in Ghana"}
+            alt={"Picture of Accra Gate"}
+            title={"Source: Things Fall Apart by Chinua Achebe"}
+          />
+        </div>
+        {/* <PrizeItem
           image={vacation}
           description={"Cruise Tour NY-Miama"}
           alt={"Picture of Cruise Ship"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        />
-        <PrizeItem
+        /> */}
+        {/* <PrizeItem
           image={vacation}
           description={"$1000"}
           alt={"Picture of Money"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        />
+        /> */}
       </div>
     </>
   );
