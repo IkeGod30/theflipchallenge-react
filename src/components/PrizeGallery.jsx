@@ -202,7 +202,11 @@ function PrizeGallery(props) {
         <marquee>
           <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
         </marquee>
-        <div className="row mainRow">
+        <div
+          className="row mainRow"
+          // onMouseOver={props.imgClick}
+          // framesrc="https://www.cnn.com"
+        >
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={quizLoad}>
               {/* <figure className="disable" onClick={noquizload}> */}
@@ -420,6 +424,7 @@ function PrizeGallery(props) {
       // }}
       >
         <div
+        // onMouseOver={quizLoad}
         // onClick={props.imgClick}
         // onClick={quizLoad}
         // onMouseMove={props.imgClick}
@@ -428,18 +433,22 @@ function PrizeGallery(props) {
           <PrizeItem
             onClick={props.imgClick}
             framesrc="https://www.bbcnews.com"
+            // onMouseOver={props.imgClick}
+            // onMouseMove={quizLoad}
             image={accra}
             description={"Vacation in Ghana"}
             alt={"Picture of Accra Gate"}
             title={"Source: Things Fall Apart by Chinua Achebe"}
           />
         </div>
-        {/* <PrizeItem
+        <PrizeItem
+          onClick={props.imgClick}
+          framesrc="https://www.cnn.com"
           image={vacation}
           description={"Cruise Tour NY-Miama"}
           alt={"Picture of Cruise Ship"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        /> */}
+        />
         {/* <PrizeItem
           image={vacation}
           description={"$1000"}

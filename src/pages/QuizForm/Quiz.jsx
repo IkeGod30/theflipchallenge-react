@@ -1,9 +1,12 @@
-function Frame({ resource }) {
+function Frame({ resource, onPrizeImageClick, imgClick }) {
   return (
     <>
       <h2>Welcome to the Quiz Page</h2>
       <div>
         <iframe
+          // onLoad={onPrizeImageClick}
+          onLoad={console.log(resource)}
+          // onLoad={imgClick}
           title="Welcome to The Challenge"
           src={resource}
           width="60%"
