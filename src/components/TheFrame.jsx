@@ -2,7 +2,6 @@
 // import { useReducer } from "react";
 
 import Frame from "../pages/QuizForm/Quiz";
-// import App from "../App";
 
 function ShowFrame({ framesrc, imgClick }) {
   // const source = [
