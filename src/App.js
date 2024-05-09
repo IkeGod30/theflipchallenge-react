@@ -13,6 +13,8 @@ import Nav from "./components/Nav/Nav";
 import { Outlet } from "react-router-dom";
 
 
+
+
 // Pages for routing
 // import PrizeGallery from './pages/PrizeGallery';
 import Frame from './pages/QuizForm/Quiz';

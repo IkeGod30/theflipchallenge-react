@@ -1,5 +1,7 @@
 import "./Nav.css";
 
+import Login from "../Login/Login";
+
 // import Frame from "../../pages/QuizForm/Quiz";
 // import Contact from "../../pages/Contact/Contact";
 // import HowtoWin from "../../pages/How/How";
@@ -43,6 +45,11 @@ function Nav() {
                 />
                 Contact Us
               </Link> */}
+            </li>
+            <li className="nav-li">
+              <a href="/login">
+                <Login />
+              </a>
             </li>
           </ul>
         </nav>
