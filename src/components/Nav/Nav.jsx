@@ -1,6 +1,6 @@
 import "./Nav.css";
 
-import Login from "../Login/Login";
+import Login from "../../pages/Login/Login";
 
 // import Frame from "../../pages/QuizForm/Quiz";
 // import Contact from "../../pages/Contact/Contact";
@@ -47,9 +47,7 @@ function Nav() {
               </Link> */}
             </li>
             <li className="nav-li">
-              <a href="/login">
-                <Login />
-              </a>
+              <a href="/login">Login</a>
             </li>
           </ul>
         </nav>

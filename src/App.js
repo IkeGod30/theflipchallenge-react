@@ -23,6 +23,7 @@ import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
 import ShowFrame from "./components/TheFrame";
+import Login from "./pages/Login/Login";
 
 
 
@@ -89,8 +90,10 @@ function vacationQuiz() {
           <Route path='how' element={<HowtoWin />} />
           <Route path='quiz' element={<ShowFrame framesrc={Url} imgClick={onPrizeClick} /> }/>
           <Route path='contact' element={<Contact />} />
+          <Route path='login' element={<Login />} />
           <Route path='faq' element={<Faq />} />
           <Route path='*' element={<NoPage />} />
+          
           {/* </Route> */}
         </Routes>
         </BrowserRouter>
