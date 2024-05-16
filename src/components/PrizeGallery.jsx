@@ -462,21 +462,6 @@ function PrizeGallery(props) {
 
 //  #### Put all data in a separate util directory and export to components that need them ###
 
-// const frameUrl = {
-//   cruise: source[0],
-//   corolla: source[1],
-//   london: source[2],
-//   laptop: source[3],
-//   onethousandD: source[4],
-//   scholarship: source[5],
-//   rent: source[6],
-//   voucher: source[7],
-//   twentyTNaira: source[8],
-//   airtime: source[9],
-//   voucher2: source[10],
-//   ghana: source[11],
-// };
-
 export default PrizeGallery;
 
 function urlReducer(source, action) {
