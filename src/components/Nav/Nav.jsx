@@ -2,12 +2,6 @@ import "./Nav.css";
 
 import Login from "../../pages/Login/Login";
 
-// import Frame from "../../pages/QuizForm/Quiz";
-// import Contact from "../../pages/Contact/Contact";
-// import HowtoWin from "../../pages/How/How";
-// import Faq from "../../pages/Faq/Faq";
-// import ShowFrame from "../../components/TheFrame";
-
 import { Outlet, Link } from "react-router-dom";
 import { CiCircleChevRight } from "react-icons/ci";
 
