@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
-import { store } from './store/index';
+import  store  from './store/app/store';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Contact from './pages/Contact/Contact';
 // import HowtoWin from './pages/How/How';
