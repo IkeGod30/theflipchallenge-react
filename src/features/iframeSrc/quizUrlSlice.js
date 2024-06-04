@@ -10,18 +10,18 @@ export const quizSlice = createSlice({
             state.value = 'http://www.cnn.com'
         },
         
-        // dollar: (state) => {
-        //     state.value = 'http://www.bbc.com'
-        // },
-        // iphone: (state) => {
-        //     state.value = 'http://www.abc.com'
-        // },
-        // cruise: (state) => {
-        //     state.value = 'http://www.cnn.com'
-        // },
-        // shopping: (state) => {
-        //     state.value = 'http://www.cnn.com'
-        // },
+        dollar: (state) => {
+            state.value = 'http://www.bbc.com'
+        },
+        iphone: (state) => {
+            state.value = 'http://www.abc.com'
+        },
+        cruise: (state) => {
+            state.value = 'http://www.cnn.com'
+        },
+        shopping: (state) => {
+            state.value = 'http://www.cnn.com'
+        },
         
 
     },
