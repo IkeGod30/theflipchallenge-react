@@ -112,12 +112,6 @@ function vacationQuiz() {
   );
 }
 
-// const quizes = [
-//   {id: 0, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884'},
-//   {id: 1, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/animal-farm/quiz-493767'},
-//   {id: 2, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496'},
-//   {id: 3, prize: 'cruise', quiz: 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'}
-// ];
 
 export default App;
 
