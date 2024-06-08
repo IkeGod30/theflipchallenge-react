@@ -5,6 +5,6 @@ import quizReducer from '../../features/iframeSrc/quizUrlSlice';
 
 export default configureStore({
     reducer: {
-        iframeSrc: quizReducer,
+        quiz: quizReducer,
     },
 })

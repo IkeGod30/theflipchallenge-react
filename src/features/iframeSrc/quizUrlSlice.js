@@ -1,30 +1,33 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const quizSlice = createSlice({
-    name: 'iframeSrc',
-    intitialState: {
+    name: 'quiz',
+    initialState: {
         value: 'http://www.google.com',
     },
     reducers:{
-        laptop: (state) => {
+        laptop: state => {
             state.value = 'http://www.cnn.com'
         },
         
-        dollar: (state) => {
+        dollar: state => {
             state.value = 'http://www.bbc.com'
         },
-        iphone: (state) => {
+        iphone: state => {
             state.value = 'http://www.abc.com'
         },
-        cruise: (state) => {
+        cruise: state => {
             state.value = 'http://www.cnn.com'
         },
-        shopping: (state) => {
+        shopping: state => {
             state.value = 'http://www.cnn.com'
         },
+        // changeQuiz: (state, action) => {
+        //     state.value = action.payload
+        // }
         
 
-    },
+    }
     
 })
 
