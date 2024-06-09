@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { useReducer } from "react";
 
+import {
+  laptopC,
+  dollarC,
+  iphoneC,
+  cruise,
+  shopping,
+} from "../features/iframeSrc/quizUrlSlice";
+
 import Prize from "./Prize";
 import PrizeItem from "./PrizeItemS";
 // import PrizeImg from "./PrizeImg";
@@ -25,6 +33,7 @@ import BannCarousel from "./BannerCarousel/BannerCarousel";
 // import { Row, Col, Card } from 'antd';
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
+import { useDispatch, useSelector } from "react-redux";
 // import "./Contact.css";
 
 const prizeClick = () => {
@@ -82,6 +91,8 @@ function noquizload() {
 
 // function PrizeGallery({ changeUrl, imgClick, framesrc }) {
 function PrizeGallery(props) {
+  const source = useSelector((state) => state.quiz.value);
+  const dispatch = useDispatch();
   // const source = [
   //   {
   //     quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
@@ -209,10 +220,6 @@ function PrizeGallery(props) {
         >
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={quizLoad}>
-              {/* <figure className="disable" onClick={noquizload}> */}
-              {/* <figure className="disable" onClick={() => noquizload(resource)}> */}
-              {/* <figure className="disable" onClick={LoadUrl}> */}
-              {/* <figure className="disable" onClick={noquizload}> */}
               <img className="notReady" alt="cruise" src={vacation} />
             </figure>
             <figcaption
@@ -225,17 +232,7 @@ function PrizeGallery(props) {
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable">
-              {/* <figure
-              className="disable"
-              onClick={() => {
-                setUrl(source[0]);
-              }}
-            > */}
-              {/* <figure className="disable" onClick={LoadUrl}> */}
-              {/* <figure className="disable" onClick={LoadUrl}> */}
-              {/* <figure className="disable" onClick={quiziFrame}> */}
               <img
-                // onClick={quizLoad}
                 className="notReady"
                 alt="dollar"
                 height="160"
@@ -252,9 +249,7 @@ function PrizeGallery(props) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            {/* THIRD */}
             <figure className="disable" onClick={quizLoad}>
-              {/* <figure className="disable" onClick={change4}> */}
               <img className="notReady" alt="england" src={england} />
             </figure>
             <figcaption
@@ -267,7 +262,6 @@ function PrizeGallery(props) {
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable" onClick={quizLoad}>
-              {/* <figure className="disable" onClick={change3}> */}
               <img className="notReady" alt="laptop computer" src={laptop_} />
             </figure>
             <figcaption
@@ -284,13 +278,8 @@ function PrizeGallery(props) {
             className="col-xl-4 col-md-6 col-xxl-3"
           >
             {console.log(props.framesrc)}
-            {/* {alert(framesrc.target)} */}
-            <figure
-              className="pryze"
-              // framesrc="https://www.google.com"
-            >
-              {/* {console.log(framesrc)}
-              {alert(framesrc)} */}
+
+            <figure className="pryze">
               <img className="ready" alt="money" src={money} />
             </figure>
             <figcaption
@@ -384,11 +373,7 @@ function PrizeGallery(props) {
             </figcaption>
           </div>
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure
-              className="disable"
-              // onClick={() => {
-              // }}
-            >
+            <figure className="disable">
               <img className="notReady" alt="voucher" src={voucher} />
             </figure>
             <figcaption
@@ -431,10 +416,11 @@ function PrizeGallery(props) {
         // framesrc="https://www.bbcnews.com"
         >
           <PrizeItem
-            onClick={props.imgClick}
-            framesrc="https://www.bbcnews.com"
+            //.... onClick={props.imgClick}
+            //.... framesrc="https://www.bbcnews.com"
             // onMouseOver={props.imgClick}
             // onMouseMove={quizLoad}
+            onClick={() => dispatch(iphoneC())}
             image={accra}
             description={"Vacation in Ghana"}
             alt={"Picture of Accra Gate"}
@@ -442,8 +428,9 @@ function PrizeGallery(props) {
           />
         </div>
         <PrizeItem
-          onClick={props.imgClick}
-          framesrc="https://www.cnn.com"
+          //...onClick={props.imgClick}
+          //... framesrc="https://www.cnn.com"
+          onClick={() => dispatch(dollarC())}
           image={vacation}
           description={"Cruise Tour NY-Miama"}
           alt={"Picture of Cruise Ship"}

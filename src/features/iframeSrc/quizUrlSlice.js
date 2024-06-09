@@ -6,14 +6,14 @@ export const quizSlice = createSlice({
         value: 'http://www.google.com',
     },
     reducers:{
-        laptop: state => {
+        laptopC: state => {
             state.value = 'http://www.cnn.com'
         },
         
-        dollar: state => {
+        dollarC: state => {
             state.value = 'http://www.bbc.com'
         },
-        iphone: state => {
+        iphoneC: state => {
             state.value = 'http://www.abc.com'
         },
         cruise: state => {
@@ -31,5 +31,5 @@ export const quizSlice = createSlice({
     
 })
 
-export const { laptop, dollar, iphone, cruise, shopping } = quizSlice.actions
+export const { laptopC, dollarC, iphoneC, cruise, shopping } = quizSlice.actions
 export default quizSlice.reducer
