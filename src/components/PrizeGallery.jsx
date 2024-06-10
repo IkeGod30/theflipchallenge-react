@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useReducer } from "react";
 
+import Frame from "../pages/QuizForm/Quiz";
+
 import {
   laptopC,
   dollarC,
@@ -219,7 +221,11 @@ function PrizeGallery(props) {
           // framesrc="https://www.cnn.com"
         >
           <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={quizLoad}>
+            <figure
+              className="disable"
+              onMouseOver={() => dispatch(dollarC())}
+              onClick={quizLoad}
+            >
               <img className="notReady" alt="cruise" src={vacation} />
             </figure>
             <figcaption
@@ -443,6 +449,7 @@ function PrizeGallery(props) {
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
         /> */}
       </div>
+      <Frame resource={source} />
     </>
   );
 }

@@ -2,8 +2,11 @@
 // import { useReducer } from "react";
 
 import Frame from "../pages/QuizForm/Quiz";
+import frm from "../features/iframeSrc/quizUrlSlice";
+import { useSelector } from "react-redux";
 
 function ShowFrame({ framesrc, imgClick }) {
+  const source = useSelector((state) => state.quiz.value);
   // const source = [
   //   "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
   //   "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
@@ -19,7 +22,8 @@ function ShowFrame({ framesrc, imgClick }) {
 
   return (
     <div>
-      <Frame resource={framesrc} onLoad={imgClick} />
+      <Frame resource={source} onLoad={imgClick} />
+ {/* <Frame resource={framesrc} onLoad={imgClick} /> */}
       {/* <Frame resource={Url} LoadUrl={() => setUrl(source)} /> */}
     </div>
   );

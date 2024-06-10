@@ -24,13 +24,15 @@ import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
 import ShowFrame from "./components/TheFrame";
 import Login from "./pages/Login/Login";
+import { useSelector } from 'react-redux';
 
 
 
 
 // import './App.css';
 
-function App() {
+function App({resource}) {
+  const source = useSelector((state) => state.quiz.value);
 
 const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336')
 
@@ -106,6 +108,7 @@ function laptopQuiz() {
       {/* <ShowFrame /> */}
       {/* <button onClick={changeSrc2}>Change Source</button> */}
       {/* <Outlet /> */}
+      {/* <Frame  resource={source} /> */}
       <Footer />
     </>
     </Suspense>
