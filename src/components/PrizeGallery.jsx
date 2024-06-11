@@ -95,6 +95,12 @@ function noquizload() {
 function PrizeGallery(props) {
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
+
+  // function showframed() {
+  //   return <p>Nothing</p>;
+  // }
+
+  // const seki = showframed();
   // const source = [
   //   {
   //     quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
@@ -427,6 +433,7 @@ function PrizeGallery(props) {
             // onMouseOver={props.imgClick}
             // onMouseMove={quizLoad}
             onClick={() => dispatch(iphoneC())}
+            // onDoubleClick={seki}
             image={accra}
             description={"Vacation in Ghana"}
             alt={"Picture of Accra Gate"}

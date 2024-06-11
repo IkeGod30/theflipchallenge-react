@@ -31,10 +31,16 @@ import { useSelector } from 'react-redux';
 
 // import './App.css';
 
-function App({resource}) {
+function App() {
   const source = useSelector((state) => state.quiz.value);
 
 const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336')
+
+// const landing = <PrizeGallery />;
+// const quizPage = <Frame />;
+// if (source) {
+//   return quizPage
+// }
 
 function laptopQuiz() {
 //   dispatch({
@@ -55,26 +61,12 @@ function laptopQuiz() {
     setUrl(framesrc);
   }
 
- 
-// ()=> {
-//   setUrl('https://www.google.com')
-
-// }
-
-
-  
-
- 
-  // function onPrizeClick() {
-  //   setUrl('https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884');
-  // }
-
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
       <BrowserRouter>
       <Nav />
       </BrowserRouter>
-      <Banner />
+      {/* <Banner /> */}
       
     <>
       <header>

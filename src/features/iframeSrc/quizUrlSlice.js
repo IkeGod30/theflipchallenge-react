@@ -22,10 +22,7 @@ export const quizSlice = createSlice({
         shopping: state => {
             state.value = 'https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884'
         },
-        // changeQuiz: (state, action) => {
-        //     state.value = action.payload
-        // }
-        
+           
 
     }
     
