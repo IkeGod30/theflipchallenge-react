@@ -185,23 +185,6 @@ function PrizeGallery(props) {
       <BannCarousel />
 
       {/* <Nav /> */}
-      {/* <div>
-        <h4>Home</h4>
-        <Link to="/how">How To Win</Link>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <Link to="/how">Contact Us</Link>
-      </div>
-      <div>
-        <h4>Quiz</h4>
-        <Link to="/quiz">Quiz Page</Link>
-      </div>
-
-      <div>
-        <h4>Frequently Asked Questions</h4>
-        <Link to="/faq">Faq Page</Link>
-      </div> */}
 
       {/* <div>
         {Show ? (
@@ -226,65 +209,66 @@ function PrizeGallery(props) {
           // onMouseOver={props.imgClick}
           // framesrc="https://www.cnn.com"
         >
-          <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure
-              className="disable"
-              onMouseOver={() => dispatch(dollarC())}
-              onClick={quizLoad}
-            >
-              <img className="notReady" alt="cruise" src={vacation} />
-            </figure>
-            <figcaption
-              data-bs-toggle="tooltip"
-              title="Source: 'NA'"
-              data-bs-placement="top"
-            >
-              Apple Iphone 15
-            </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable">
-              <img
-                className="notReady"
-                alt="dollar"
-                height="160"
-                width="300"
-                src={dollar}
-              />
-            </figure>
-            <figcaption
-              data-bs-toggle="tooltip"
-              title="Source: 'NA'"
-              data-bs-placement="top"
-            >
-              Toyota Corolla Sedan
-            </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={quizLoad}>
-              <img className="notReady" alt="england" src={england} />
-            </figure>
-            <figcaption
-              data-bs-toggle="tooltip"
-              title="Source: 'NA'"
-              data-bs-placement="top"
-            >
-              Vacation in London
-            </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
-            <figure className="disable" onClick={quizLoad}>
-              <img className="notReady" alt="laptop computer" src={laptop_} />
-            </figure>
-            <figcaption
-              data-bs-toggle="tooltip"
-              title="Source: 'NA'"
-              data-bs-placement="top"
-            >
-              Brand New HP Laptop
-            </figcaption>
-          </div>
-          <div
+          <div className="whole">
+            <div className="col-xl-4 col-md-6 col-xxl-3">
+              <figure
+                className="disable"
+                onMouseOver={() => dispatch(dollarC())}
+                onClick={quizLoad}
+              >
+                <img className="notReady" alt="cruise" src={vacation} />
+              </figure>
+              <figcaption
+                data-bs-toggle="tooltip"
+                title="Source: 'NA'"
+                data-bs-placement="top"
+              >
+                Apple Iphone 15
+              </figcaption>
+            </div>
+            <div className="col-xl-4 col-md-6 col-xxl-3">
+              <figure className="disable">
+                <img
+                  className="notReady"
+                  alt="dollar"
+                  height="160"
+                  width="300"
+                  src={dollar}
+                />
+              </figure>
+              <figcaption
+                data-bs-toggle="tooltip"
+                title="Source: 'NA'"
+                data-bs-placement="top"
+              >
+                Toyota Corolla Sedan
+              </figcaption>
+            </div>
+            <div className="col-xl-4 col-md-6 col-xxl-3">
+              <figure className="disable" onClick={quizLoad}>
+                <img className="notReady" alt="england" src={england} />
+              </figure>
+              <figcaption
+                data-bs-toggle="tooltip"
+                title="Source: 'NA'"
+                data-bs-placement="top"
+              >
+                Vacation in London
+              </figcaption>
+            </div>
+            <div className="col-xl-4 col-md-6 col-xxl-3">
+              <figure className="disable" onClick={quizLoad}>
+                <img className="notReady" alt="laptop computer" src={laptop_} />
+              </figure>
+              <figcaption
+                data-bs-toggle="tooltip"
+                title="Source: 'NA'"
+                data-bs-placement="top"
+              >
+                Brand New HP Laptop
+              </figcaption>
+            </div>
+            {/* <div
             onClick={props.imgClick}
             framesrc={"https://www.google.com"}
             className="col-xl-4 col-md-6 col-xxl-3"
@@ -301,8 +285,8 @@ function PrizeGallery(props) {
             >
               One Thousand Dollars
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -317,8 +301,8 @@ function PrizeGallery(props) {
             >
               Tertiary Scholarship
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -333,8 +317,8 @@ function PrizeGallery(props) {
             >
               One-year Rent
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -351,8 +335,8 @@ function PrizeGallery(props) {
             >
               100, 000 naira Boutique Voucher
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -367,8 +351,8 @@ function PrizeGallery(props) {
             >
               20, 000 naira cash
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -383,8 +367,8 @@ function PrizeGallery(props) {
             >
               2, 000 naira Call Airtime
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure className="disable">
               <img className="notReady" alt="voucher" src={voucher} />
             </figure>
@@ -395,8 +379,8 @@ function PrizeGallery(props) {
             >
               50, 000 naira Shopping Voucher
             </figcaption>
-          </div>
-          <div className="col-xl-4 col-md-6 col-xxl-3">
+          </div> */}
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
             <figure
               className="disable"
               onClick={props.imgClick}
@@ -411,8 +395,11 @@ function PrizeGallery(props) {
             >
               Vacation in Ghana
             </figcaption>
+          </div> */}
+           <Frame resource={source} />
           </div>
         </div>
+       
       </section>
       <div
       // onClick={quizLoad}
@@ -427,20 +414,20 @@ function PrizeGallery(props) {
         // onMouseMove={props.imgClick}
         // framesrc="https://www.bbcnews.com"
         >
-          <PrizeItem
+          {/* <PrizeItem
             //.... onClick={props.imgClick}
             //.... framesrc="https://www.bbcnews.com"
             // onMouseOver={props.imgClick}
             // onMouseMove={quizLoad}
             onClick={() => dispatch(iphoneC())}
-            // onDoubleClick={seki}
             image={accra}
             description={"Vacation in Ghana"}
             alt={"Picture of Accra Gate"}
             title={"Source: Things Fall Apart by Chinua Achebe"}
-          />
+          /> */}
         </div>
-        <PrizeItem
+
+        {/* <PrizeItem
           //...onClick={props.imgClick}
           //... framesrc="https://www.cnn.com"
           onClick={() => dispatch(dollarC())}
@@ -448,7 +435,7 @@ function PrizeGallery(props) {
           description={"Cruise Tour NY-Miama"}
           alt={"Picture of Cruise Ship"}
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        />
+        /> */}
         {/* <PrizeItem
           image={vacation}
           description={"$1000"}
@@ -456,7 +443,7 @@ function PrizeGallery(props) {
           title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
         /> */}
       </div>
-      <Frame resource={source} />
+      {/* <Frame resource={source} /> */}
     </>
   );
 }
