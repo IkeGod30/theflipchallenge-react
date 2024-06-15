@@ -42,17 +42,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
 //   return quizPage
 // }
 
-function laptopQuiz() {
-//   dispatch({
-//     type: "laptop"
-//   });
-// }
 
-// function vacationQuiz() {
-//   dispatch({
-//     type: "vacation"
-//   });
-}
 // const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
   const [Url, setUrl] = useState('https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'); // State for iframe src 
@@ -88,19 +78,6 @@ function laptopQuiz() {
         </Routes>
         </BrowserRouter>
       </div>
-
-     
-   
-      {/* <HowtoWin /> */}
-      {/* <PrizeGallery resource={Url} alter={changeSrc} change={() => changeSource} change2={changeSrc1} change_={changeSrc} change3={changeSrc3} change4={changeSrc4} /> */}
-      {/* <PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> */}
-      {/* <Main /> */}
-      {/* <Second title={'The Secondary Content'} /> */}
-      {/* <Frame resource={Url} /> */}
-      {/* <ShowFrame /> */}
-      {/* <button onClick={changeSrc2}>Change Source</button> */}
-      {/* <Outlet /> */}
-      {/* <Frame  resource={source} /> */}
       <Footer />
     </>
     </Suspense>
