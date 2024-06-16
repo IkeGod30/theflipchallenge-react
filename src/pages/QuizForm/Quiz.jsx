@@ -1,7 +1,7 @@
 function Frame({ resource, onPrizeImageClick, imgClick }) {
   return (
     <>
-      <h2>Welcome to the Quiz Page</h2>
+      <h2 className="quizPageTitle">Welcome to the Quiz Page</h2>
       <div>
         <iframe
           // onLoad={onPrizeImageClick}

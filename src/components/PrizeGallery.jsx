@@ -209,6 +209,7 @@ function PrizeGallery(props) {
           // onMouseOver={props.imgClick}
           // framesrc="https://www.cnn.com"
         >
+          {/* <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}></div> */}
           <div className="whole">
             <div className="col-xl-4 col-md-6 col-xxl-3">
               <figure
@@ -396,10 +397,9 @@ function PrizeGallery(props) {
               Vacation in Ghana
             </figcaption>
           </div> */}
-           <Frame resource={source} />
+            <Frame resource={source} />
           </div>
         </div>
-       
       </section>
       <div
       // onClick={quizLoad}
