@@ -26,6 +26,7 @@ import naira from "./assets/naira-min.jpg";
 import rent from "./assets/rent-min.jpg";
 import scholarship from "./assets/scholarship-min.jpg";
 import vacation from "./assets/vacate.jpg";
+import Vacation from "./assets/Vacation.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 import { BrowserRouter, Link, Outlet } from "react-router-dom";
@@ -200,6 +201,79 @@ function PrizeGallery(props) {
       <button onClick={changeSrc2}>Four</button>
       <h1>{Url}</h1> */}
 
+      <section
+        className="firsty"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          <div className="col-sm-3 col-md-6 col-xxl-3">
+            <figure
+              className="disable"
+              onMouseOver={() => dispatch(dollarC())}
+              onClick={quizLoad}
+            >
+              <img className="notReady" alt="cruise" src={vacation} />
+            </figure>
+            <figcaption
+              data-bs-toggle="tooltip"
+              title="Source: 'NA'"
+              data-bs-placement="top"
+            >
+              Apple Iphone 15
+            </figcaption>
+          </div>
+          <div className="col-xl-3 col-md-6 col-xxl-3">
+            <figure className="disable">
+              <img
+                className="notReady"
+                alt="dollar"
+                height="160"
+                width="300"
+                src={dollar}
+              />
+            </figure>
+            <figcaption
+              data-bs-toggle="tooltip"
+              title="Source: 'NA'"
+              data-bs-placement="top"
+            >
+              Toyota Corolla Sedan
+            </figcaption>
+          </div>
+          <div className="col-xl-3 col-md-6 col-xxl-3">
+            <figure className="disable" onClick={quizLoad}>
+              <img className="notReady" alt="england" src={england} />
+            </figure>
+            <figcaption
+              data-bs-toggle="tooltip"
+              title="Source: 'NA'"
+              data-bs-placement="top"
+            >
+              Vacation in London
+            </figcaption>
+          </div>
+          <div className="col-xl-3 col-md-6 col-xxl-3">
+            <figure className="disable" onClick={quizLoad}>
+              <img className="notReady" alt="laptop computer" src={laptop_} />
+            </figure>
+            <figcaption
+              data-bs-toggle="tooltip"
+              title="Source: 'NA'"
+              data-bs-placement="top"
+            >
+              Brand New HP Laptop
+            </figcaption>
+          </div>
+          <div>
+            <Frame resource={source} />
+          </div>
+        </div>
+      </section>
+
       <section className="container-lg">
         <marquee>
           <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
@@ -211,7 +285,7 @@ function PrizeGallery(props) {
         >
           {/* <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}></div> */}
           <div className="whole">
-            <div className="col-xl-4 col-md-6 col-xxl-3">
+            {/* <div className="col-xl-4 col-md-6 col-xxl-3">
               <figure
                 className="disable"
                 onMouseOver={() => dispatch(dollarC())}
@@ -268,7 +342,7 @@ function PrizeGallery(props) {
               >
                 Brand New HP Laptop
               </figcaption>
-            </div>
+            </div> */}
             {/* <div
             onClick={props.imgClick}
             framesrc={"https://www.google.com"}
@@ -426,23 +500,63 @@ function PrizeGallery(props) {
             title={"Source: Things Fall Apart by Chinua Achebe"}
           /> */}
         </div>
-
-        {/* <PrizeItem
-          //...onClick={props.imgClick}
-          //... framesrc="https://www.cnn.com"
-          onClick={() => dispatch(dollarC())}
-          image={vacation}
-          description={"Cruise Tour NY-Miama"}
-          alt={"Picture of Cruise Ship"}
-          title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        /> */}
-        {/* <PrizeItem
-          image={vacation}
-          description={"$1000"}
-          alt={"Picture of Money"}
-          title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-        /> */}
+        <div>
+          <PrizeItem
+            //...onClick={props.imgClick}
+            //... framesrc="https://www.cnn.com"
+            onClick={() => dispatch(dollarC())}
+            image={vacation}
+            description={"Cruise Tour NY-Miama"}
+            alt={"Picture of Cruise Ship"}
+            title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+          />
+        </div>
+        <div>
+          <PrizeItem
+            image={vacation}
+            description={"$1000"}
+            alt={"Picture of Money"}
+            title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+          />
+        </div>
       </div>
+
+      <section>
+        <div className="row">
+          <div className="col-sm-3">
+            <PrizeItem
+              //...onClick={props.imgClick}
+              //... framesrc="https://www.cnn.com"
+              onClick={() => dispatch(dollarC())}
+              image={vacation}
+              description={"Cruise Tour NY-Miama"}
+              alt={"Picture of Cruise Ship"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+          <div className="col-sm-3">
+            <PrizeItem
+              image={vacation}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+
+          <div className="col-sm-6">
+            {/* <Frame resource={source} /> */}
+            <PrizeItem
+              image={vacation}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+        </div>
+
+        {/* <Frame resource={source} /> */}
+      </section>
+
       {/* <Frame resource={source} /> */}
     </>
   );
