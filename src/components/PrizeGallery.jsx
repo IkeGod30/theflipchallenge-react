@@ -185,6 +185,63 @@ function PrizeGallery(props) {
     <>
       <BannCarousel />
 
+      <section>
+        <div className="row">
+          <div className="col-sm-3">
+            <PrizeItem
+              //...onClick={props.imgClick}
+              //... framesrc="https://www.cnn.com"
+              onClick={() => dispatch(dollarC())}
+              image={vacation}
+              description={"Cruise Tour NY-Miama"}
+              alt={"Picture of Cruise Ship"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+          <div className="col-sm-3">
+            <PrizeItem
+              onClick={() => dispatch(cruise())}
+              image={dollar}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+
+          <div className="col-sm-3">
+            <PrizeItem
+              onClick={() => dispatch(iphoneC())}
+              image={iphone}
+              description={"Iphone 15 pro max"}
+              alt={"Picture of Iphone"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+
+          <div className="col-sm-3">
+            <PrizeItem
+              onClick={() => dispatch(laptopC())}
+              image={laptop_}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div>
+          {/* <div className="row">
+            <div className="col-sm-12">
+              <Frame resource={source} />
+            </div>
+          </div> */}
+        </div>
+        <div className="row">
+          <div className="col-sm-12">
+            <Frame resource={source} />
+          </div>
+        </div>
+
+        {/* <Frame resource={source} /> */}
+      </section>
+
       {/* <Nav /> */}
 
       {/* <div>
@@ -520,42 +577,6 @@ function PrizeGallery(props) {
           />
         </div>
       </div>
-
-      <section>
-        <div className="row">
-          <div className="col-sm-3">
-            <PrizeItem
-              //...onClick={props.imgClick}
-              //... framesrc="https://www.cnn.com"
-              onClick={() => dispatch(dollarC())}
-              image={vacation}
-              description={"Cruise Tour NY-Miama"}
-              alt={"Picture of Cruise Ship"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
-          </div>
-          <div className="col-sm-3">
-            <PrizeItem
-              image={vacation}
-              description={"$1000"}
-              alt={"Picture of Money"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
-          </div>
-
-          <div className="col-sm-6">
-            {/* <Frame resource={source} /> */}
-            <PrizeItem
-              image={vacation}
-              description={"$1000"}
-              alt={"Picture of Money"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
-          </div>
-        </div>
-
-        {/* <Frame resource={source} /> */}
-      </section>
 
       {/* <Frame resource={source} /> */}
     </>
