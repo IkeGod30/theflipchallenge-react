@@ -97,34 +97,6 @@ function PrizeGallery(props) {
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
 
-  // function showframed() {
-  //   return <p>Nothing</p>;
-  // }
-
-  // const seki = showframed();
-  // const source = [
-  //   {
-  //     quiz: "https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884",
-  //     prize: "1000 US Dollars",
-  //   },
-  //   {
-  //     quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-493767",
-  //     prize: "20, 000 naira",
-  //   },
-  //   {
-  //     quiz: "https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496",
-  //     prize: "Shopping Voucher",
-  //   },
-  //   {
-  //     quiz: "https://www.onlinequizcreator.com/things-fall-apart/quiz-492336",
-  //     prize: "Vacation in London",
-  //   },
-  //   {
-  //     quiz: "https://www.onlinequizcreator.com/animal-farm/quiz-492141",
-  //     prize: "Vacation in Ghana",
-  //   },
-  // ];
-
   // const [Url, dispatch] = useReducer(urlReducer, source); //////////
 
   // function nairaPrize() {
@@ -185,12 +157,10 @@ function PrizeGallery(props) {
     <>
       <BannCarousel />
 
-      <section>
+      <section className="container-lg">
         <div className="row">
           <div className="col-sm-3">
             <PrizeItem
-              //...onClick={props.imgClick}
-              //... framesrc="https://www.cnn.com"
               onClick={() => dispatch(dollarC())}
               image={vacation}
               description={"Cruise Tour NY-Miama"}
@@ -227,22 +197,13 @@ function PrizeGallery(props) {
               title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
             />
           </div>
-          {/* <div className="row">
-            <div className="col-sm-12">
-              <Frame resource={source} />
-            </div>
-          </div> */}
         </div>
         <div className="row">
           <div className="col-sm-12">
             <Frame resource={source} />
           </div>
         </div>
-
-        {/* <Frame resource={source} /> */}
       </section>
-
-      {/* <Nav /> */}
 
       {/* <div>
         {Show ? (
@@ -258,7 +219,7 @@ function PrizeGallery(props) {
       <button onClick={changeSrc2}>Four</button>
       <h1>{Url}</h1> */}
 
-      <section
+      {/* <section
         className="firsty"
         style={{
           display: "flex",
@@ -329,7 +290,7 @@ function PrizeGallery(props) {
             <Frame resource={source} />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="container-lg">
         <marquee>
@@ -528,7 +489,7 @@ function PrizeGallery(props) {
               Vacation in Ghana
             </figcaption>
           </div> */}
-            <Frame resource={source} />
+            {/* <Frame resource={source} /> */}
           </div>
         </div>
       </section>
@@ -544,38 +505,7 @@ function PrizeGallery(props) {
         // onClick={quizLoad}
         // onMouseMove={props.imgClick}
         // framesrc="https://www.bbcnews.com"
-        >
-          {/* <PrizeItem
-            //.... onClick={props.imgClick}
-            //.... framesrc="https://www.bbcnews.com"
-            // onMouseOver={props.imgClick}
-            // onMouseMove={quizLoad}
-            onClick={() => dispatch(iphoneC())}
-            image={accra}
-            description={"Vacation in Ghana"}
-            alt={"Picture of Accra Gate"}
-            title={"Source: Things Fall Apart by Chinua Achebe"}
-          /> */}
-        </div>
-        <div>
-          <PrizeItem
-            //...onClick={props.imgClick}
-            //... framesrc="https://www.cnn.com"
-            onClick={() => dispatch(dollarC())}
-            image={vacation}
-            description={"Cruise Tour NY-Miama"}
-            alt={"Picture of Cruise Ship"}
-            title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-          />
-        </div>
-        <div>
-          <PrizeItem
-            image={vacation}
-            description={"$1000"}
-            alt={"Picture of Money"}
-            title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-          />
-        </div>
+        ></div>
       </div>
 
       {/* <Frame resource={source} /> */}
