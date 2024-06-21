@@ -12,6 +12,7 @@ import {
 } from "../features/iframeSrc/quizUrlSlice";
 
 import Prize from "./Prize";
+import PartnerBanner from "./Partners/Partners";
 import PrizeItem from "./PrizeItemS";
 // import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
@@ -158,6 +159,10 @@ function PrizeGallery(props) {
     <>
       <BannCarousel />
 
+      <marquee>
+        <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
+      </marquee>
+
       <section className="container-lg">
         <div className="row">
           <div className="col-sm-3">
@@ -168,7 +173,6 @@ function PrizeGallery(props) {
               alt={"Picture of Cruise Ship"}
               title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
             />
-         
           </div>
           <div className="col-sm-3">
             <PrizeItem
@@ -206,6 +210,8 @@ function PrizeGallery(props) {
           </div>
         </div>
       </section>
+
+      <PartnerBanner />
 
       {/* <div>
         {Show ? (
@@ -295,9 +301,9 @@ function PrizeGallery(props) {
       </section> */}
 
       <section className="container-lg">
-        <marquee>
+        {/* <marquee>
           <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
-        </marquee>
+        </marquee> */}
         <div
           className="row mainRow"
           // onMouseOver={props.imgClick}
