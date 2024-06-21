@@ -1,0 +1,10 @@
+.frameDiv {
+  margin-top: 50px;
+}
+
+.quizPageTitle {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}

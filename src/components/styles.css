@@ -277,14 +277,15 @@ p.mail {
 /* ###### css for Quiz page #####*/
 
 iframe {
-  border: 10px ridge rgb(0, 128, 0);
+  /* border: 10px ridge rgb(0, 128, 0); */
   width: 100%;
   border-radius: 10px;
   margin-bottom: 17px;
   height: 810px;
   overflow-y: scroll;
-  display: flex;
+  /* display: flex; */
   margin: 0 auto;
+  /* background: green; */
   /* justify-content: center;
   align-items: center; */
 }

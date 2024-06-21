@@ -37,6 +37,7 @@ import BannCarousel from "./BannerCarousel/BannerCarousel";
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
+import { Button } from "antd/es/radio";
 // import "./Contact.css";
 
 const prizeClick = () => {
@@ -167,6 +168,7 @@ function PrizeGallery(props) {
               alt={"Picture of Cruise Ship"}
               title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
             />
+         
           </div>
           <div className="col-sm-3">
             <PrizeItem
