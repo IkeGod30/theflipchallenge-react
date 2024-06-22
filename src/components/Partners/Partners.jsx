@@ -1,8 +1,8 @@
 import "./Partners.css";
 
-import one from "../assets/libry.png";
-import two from "../assets/walmart_.png";
-import three from "../assets/target.png";
+import library from "../assets/libry.png";
+import walmart from "../assets/walmart_.png";
+import target from "../assets/target.png";
 
 function PartnerBanner() {
   return (
@@ -10,9 +10,9 @@ function PartnerBanner() {
       <h1>Our Partners</h1>
       <div>
         <marquee behavior="scroll" direction="left">
-          <img src={one} alt="logo of Richardson Library" />
-          <img src={two} alt="logo of Walmart" />
-          <img src={three} alt="logo of Target" />
+          <img src={library} alt="logo of Richardson Library" />
+          <img src={walmart} alt="logo of Walmart" />
+          <img src={target} alt="logo of Target" />
         </marquee>
       </div>
     </div>
