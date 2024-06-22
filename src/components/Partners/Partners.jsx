@@ -10,9 +10,9 @@ function PartnerBanner() {
       <h1>Our Partners</h1>
       <div>
         <marquee behavior="scroll" direction="left">
-          <img src={one} />
-          <img src={two} />
-          <img src={three} />
+          <img src={one} alt="logo of Richardson Library" />
+          <img src={two} alt="logo of Walmart" />
+          <img src={three} alt="logo of Target" />
         </marquee>
       </div>
     </div>
