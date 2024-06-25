@@ -157,7 +157,7 @@ function PrizeGallery(props) {
 
   return (
     <>
-      <BannCarousel />
+      {/* <BannCarousel /> */}
 
       <marquee>
         <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
