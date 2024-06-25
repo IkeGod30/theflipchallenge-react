@@ -10,7 +10,7 @@ function Nav() {
     <>
       <section className="priNav">
         <nav
-          className="navbar navbar-expand-lg navbar-dark fixed-top flexContainer"
+          className="navbar navbar-expand-lg navbar-dark flexContainer"
           id="mainNav"
         >
           <div className="container-fluid">
