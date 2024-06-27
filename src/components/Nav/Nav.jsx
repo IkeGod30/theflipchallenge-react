@@ -19,6 +19,7 @@ function Nav() {
               The Flip Challenge
             </a>
             <button
+              style={{ color: "inherit" }}
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"

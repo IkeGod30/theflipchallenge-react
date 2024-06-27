@@ -1,8 +1,14 @@
-h1 {
+h2 {
   text-align: center;
+  color: grey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 img {
   margin: 30px;
   border-radius: 5px;
+}
+
+.partners {
+  margin-top: 80px;
 }

@@ -7,8 +7,8 @@ import barnes from "../assets/barnes.png";
 
 function PartnerBanner() {
   return (
-    <div>
-      <h1>Our Partners</h1>
+    <div className="partners">
+      <h2>SPONSORSHIP PARTNERS</h2>
       <div>
         <marquee behavior="scroll" direction="left">
           <img src={library} alt="logo of Richardson Library" />

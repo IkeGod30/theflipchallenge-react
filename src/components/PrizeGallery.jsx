@@ -164,7 +164,7 @@ function PrizeGallery(props) {
       </marquee>
 
       <section className="container-lg">
-        <div className="row">
+        <div className="row prizeRow">
           <div className="col-sm-3">
             <PrizeItem
               onClick={() => dispatch(dollarC())}
@@ -203,6 +203,26 @@ function PrizeGallery(props) {
               title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
             />
           </div>
+
+          {/* <div className="col-sm-2">
+            <PrizeItem
+              onClick={() => dispatch(laptopC())}
+              image={laptop_}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div> */}
+
+          {/* <div className="col-sm-2">
+            <PrizeItem
+              onClick={() => dispatch(laptopC())}
+              image={laptop_}
+              description={"$1000"}
+              alt={"Picture of Money"}
+              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+            />
+          </div> */}
         </div>
         <div className="row">
           <div className="col-sm-12">
