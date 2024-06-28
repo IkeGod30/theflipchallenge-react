@@ -28,7 +28,6 @@ function Nav() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              Menu
               <i className="fas fa-bars ms-1"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
