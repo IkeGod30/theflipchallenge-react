@@ -162,10 +162,9 @@ function PrizeGallery(props) {
       {/* <marquee>
         <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
       </marquee> */}
-      
 
       <section className="container-lg">
-      <h2 className="quizPageTitle">Prize Gallery</h2>
+        <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
           <div className="col-sm-3">
             <PrizeItem

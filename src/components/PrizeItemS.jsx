@@ -8,7 +8,12 @@ export default function PrizeItem(props) {
     <div onClick={onPrizeImageClick}>
       <div>
         <figure className="disable">
-          <img className="notReady" alt={props.alt} src={props.image} />
+          <img
+            className="notReady"
+            // style={{ width: 300}}
+            alt={props.alt}
+            src={props.image}
+          />
         </figure>
         <figcaption
           data-bs-toggle="tooltip"
