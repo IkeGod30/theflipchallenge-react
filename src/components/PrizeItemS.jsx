@@ -1,4 +1,4 @@
-import vacation from "./assets/vacate.jpg";
+// import vacation from "./assets/vacate.jpg";
 
 export default function PrizeItem(props) {
   const onPrizeImageClick = () => {

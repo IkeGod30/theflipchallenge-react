@@ -30,7 +30,7 @@ import vacation from "./assets/vacate.jpg";
 import Vacation from "./assets/Vacation.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
-import { BrowserRouter, Link, Outlet } from "react-router-dom";
+import { BrowserRouter, Link, Outlet, useNavigate } from "react-router-dom";
 
 import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
@@ -38,6 +38,7 @@ import BannCarousel from "./BannerCarousel/BannerCarousel";
 // import { row, col } from "react-bootstrap";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
+// import { useNavigate } from 'react-router-dom';
 import { Button } from "antd/es/radio";
 // import "./Contact.css";
 
@@ -50,7 +51,9 @@ const prizeClick = () => {
 };
 
 const quiziFrame = () => {
+  // const navigate = useNavigate();
   window.open("quiz", "_self"); //Load page for actual quiz
+  // navigate("/login");
 };
 
 // function quiziFrame() {
@@ -96,6 +99,7 @@ function noquizload() {
 
 // function PrizeGallery({ changeUrl, imgClick, framesrc }) {
 function PrizeGallery(props) {
+  const navigate = useNavigate(); // Remove if not used
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
 
