@@ -44,6 +44,7 @@ function Nav() {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/login">
+                    {/* <Link to={"/login"}>Sign in</Link> */}
                     Login
                   </a>
                 </li>

@@ -2,18 +2,42 @@ import "./Login.css";
 
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const submit = (e) => {
+    console.log("submitted", email, password);
+    e.preventDefault();
+  };
+
+  console.log(email, password);
   return (
     <div className="formContainer">
       <h2 className="title">
         Sign In <br />
         to play and win
       </h2>
-      <form className="formGroup">
-        <input className="input" type="text" placeholder="Email" />
-        <input className="input" type="password" placeholder="Password"/>
-        <Button className="button" variant="contained">
+      <form onSubmit={submit} className="formGroup">
+        <input
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          className="input"
+          type="text"
+          placeholder="Email"
+        />
+        <input
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+          className="input"
+          type="password"
+          placeholder="Password"
+        />
+        <Button type="submit" className="button" variant="contained">
           Sign In
         </Button>
         <span>
@@ -21,26 +45,6 @@ function Login() {
         </span>
       </form>
     </div>
-    // <div className="container">
-    //   <div className="header">
-    //     <div className="text">Sign Up</div>
-    //     <div className="underline"></div>
-    //   </div>
-    //   <div className="inputs">
-    //     <div className="input">
-    //       <img src={""} alt={""} />
-    //       <input type="text" />
-    //     </div>
-    //     <div className="input">
-    //       <img src={""} alt={""} />
-    //       <input type="email" />
-    //     </div>
-    //     <div className="input">
-    //       <img src={""} alt={""} />
-    //       <input type="password" />
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 

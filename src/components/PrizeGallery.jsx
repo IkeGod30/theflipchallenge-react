@@ -31,6 +31,7 @@ import Vacation from "./assets/Vacation.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 import { BrowserRouter, Link, Outlet, useNavigate } from "react-router-dom";
+import Loadquiz from "./Quizload";
 
 import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
@@ -80,7 +81,8 @@ function quizLoad() {
   // }
 
   // The quiz iframe function is called
-  quiziFrame();
+  // quiziFrame();
+  return <Loadquiz />;
 }
 
 // Disable images for prizes that are not yet available for the challenge
@@ -161,6 +163,7 @@ function PrizeGallery(props) {
 
   return (
     <>
+    <Loadquiz />
       {/* <BannCarousel /> */}
 
       {/* <marquee>
@@ -202,6 +205,7 @@ function PrizeGallery(props) {
           <div className="col-sm-3">
             <PrizeItem
               onClick={() => dispatch(laptopC())}
+              // onClick={quizLoad}
               image={laptop_}
               description={"$1000"}
               alt={"Picture of Money"}
