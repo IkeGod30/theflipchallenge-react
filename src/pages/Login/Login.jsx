@@ -3,14 +3,20 @@ import "./Login.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { setUser } from "../../features/iframeSrc/auth-slice";
+import { AuthApi } from "../../api/auth";
+import { useDispatch } from "react-redux";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
-  const submit = (e) => {
-    console.log("submitted", email, password);
+  const submit = async (e) => {
     e.preventDefault();
+    console.log("submitted", email, password);
+    const user = await AuthApi.signin(email, password);
+    dispatch(setUser(user));
   };
 
   console.log(email, password);
