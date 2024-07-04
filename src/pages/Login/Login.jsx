@@ -14,12 +14,16 @@ function Login() {
 
   const submit = async (e) => {
     e.preventDefault();
-    console.log("submitted", email, password);
-    const user = await AuthApi.signin(email, password);
-    dispatch(setUser(user));
+    console.log("submitted", email, password); // Remove after dev
+    try {
+      const user = await AuthApi.signin(email, password);
+      dispatch(setUser(user));
+    } catch (err) {
+      alert("Auth Failed");
+    }
   };
 
-  console.log(email, password);
+  console.log(email, password); // Remove after dev
   return (
     <div className="formContainer">
       <h2 className="title">
