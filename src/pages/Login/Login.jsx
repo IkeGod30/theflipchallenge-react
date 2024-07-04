@@ -6,11 +6,13 @@ import { useState } from "react";
 import { setUser } from "../../features/iframeSrc/auth-slice";
 import { AuthApi } from "../../api/auth";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const submit = async (e) => {
     e.preventDefault();
@@ -18,6 +20,7 @@ function Login() {
     try {
       const user = await AuthApi.signin(email, password);
       dispatch(setUser(user));
+      navigate("/");
     } catch (err) {
       alert("Auth Failed");
     }
