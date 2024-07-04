@@ -7,6 +7,7 @@ import { setUser } from "../../features/iframeSrc/auth-slice";
 import { AuthApi } from "../../api/auth";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { toast } from "../../utils/sweetalert";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -20,9 +21,12 @@ function Login() {
     try {
       const user = await AuthApi.signin(email, password);
       dispatch(setUser(user));
+      toast("success", "Successful Login");
       navigate("/");
     } catch (err) {
-      alert("Auth Failed");
+      toast("error", "Invalid login credentials");
+      navigate("/login");
+      // alert("Auth Failed");
     }
   };
 
