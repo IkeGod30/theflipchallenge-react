@@ -1,6 +1,7 @@
+import { withAuthRequired } from "../../hoc/withAuthRequired";
 import "./QuizForm.css";
 
-function Frame({ resource, onPrizeImageClick, imgClick }) {
+export default function Frame({ resource, onPrizeImageClick, imgClick }) {
   return (
     <div className="frameDiv">
       <h2 className="quizPageTitle">Quiz Portal</h2>
@@ -16,4 +17,6 @@ function Frame({ resource, onPrizeImageClick, imgClick }) {
   );
 }
 
-export default Frame;
+// export default Frame;
+
+export const ProtectedFrame = withAuthRequired(Frame);

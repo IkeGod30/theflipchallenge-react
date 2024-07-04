@@ -18,6 +18,7 @@ import { Outlet } from "react-router-dom";
 // Pages for routing
 // import PrizeGallery from './pages/PrizeGallery';
 import Frame from './pages/QuizForm/Quiz';
+import ProtectedFrame from './pages/QuizForm/Quiz';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
@@ -68,7 +69,8 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
           <Route path='/' element={<PrizeGallery imgClick={onPrizeClick} framesrc={Url} />} />
           <Route path='how' element={<HowtoWin />} />
-          <Route path='quiz' element={<ShowFrame framesrc={Url} imgClick={onPrizeClick} /> }/>
+          {/* <Route path='quiz' element={<ShowFrame framesrc={Url} imgClick={onPrizeClick} /> }/> */}
+          <Route path='quiz' element={<ProtectedFrame /> }/>
           <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
           <Route path='faq' element={<Faq />} />

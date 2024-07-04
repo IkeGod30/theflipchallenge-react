@@ -4,8 +4,17 @@ import Login from "../../pages/Login/Login";
 
 import { Outlet, Link } from "react-router-dom";
 import { CiCircleChevRight } from "react-icons/ci";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { selectUser } from "../../features/iframeSrc/authSelectors";
 
 function Nav() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const user = useSelector(selectUser);
+  const userProfile = () => {
+    return <p>Welcome, </p>;
+  };
   return (
     <>
       <section className="priNav">
@@ -46,6 +55,11 @@ function Nav() {
                   <a className="nav-link" href="/login">
                     {/* <Link to={"/login"}>Sign in</Link> */}
                     Login
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/contact">
+                    {userProfile()}
                   </a>
                 </li>
               </ul>

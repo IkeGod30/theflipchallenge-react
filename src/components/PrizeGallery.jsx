@@ -30,8 +30,9 @@ import vacation from "./assets/vacate.jpg";
 import Vacation from "./assets/Vacation.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
-import { BrowserRouter, Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import Loadquiz from "./Quizload";
+import { ProtectedFrame } from "../pages/QuizForm/Quiz";
 
 import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
@@ -163,7 +164,7 @@ function PrizeGallery(props) {
 
   return (
     <>
-    <Loadquiz />
+      <Loadquiz />
       {/* <BannCarousel /> */}
 
       {/* <marquee>
@@ -236,6 +237,8 @@ function PrizeGallery(props) {
         <div className="row">
           <div className="col-sm-12">
             <Frame resource={source} />
+
+            {/* <ProtectedFrame resource={source} /> */}
           </div>
         </div>
       </section>
@@ -249,12 +252,6 @@ function PrizeGallery(props) {
           <h1 style={{ color: "green" }}>I am NOT showing</h1>
         )}
       </div> */}
-
-      {/* <button onClick={Showing}>One</button>
-      <button onClick={showTwo}>Two</button>
-      <button onClick={changeSrc}>Three</button>
-      <button onClick={changeSrc2}>Four</button>
-      <h1>{Url}</h1> */}
 
       {/* <section
         className="firsty"
