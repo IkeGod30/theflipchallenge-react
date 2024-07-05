@@ -32,7 +32,9 @@ import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import Loadquiz from "./Quizload";
-import { ProtectedFrame } from "../pages/QuizForm/Quiz";
+// import { withAuthRequired } from "../../hoc/withAuthRequired";
+import { withAuthRequired } from "../hoc/withAuthRequired";
+// import { ProtectedFrame } from "../pages/QuizForm/Quiz";
 
 import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
@@ -542,7 +544,7 @@ function PrizeGallery(props) {
         ></div>
       </div>
 
-      {/* <Frame resource={source} /> */}
+      <Frame resource={source} />
     </>
   );
 }
@@ -550,6 +552,7 @@ function PrizeGallery(props) {
 //  #### Put all data in a separate util directory and export to components that need them ###
 
 export default PrizeGallery;
+export const ProtectedGallery = withAuthRequired(PrizeGallery);
 
 function urlReducer(source, action) {
   switch (action.type) {

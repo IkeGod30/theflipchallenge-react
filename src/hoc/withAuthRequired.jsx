@@ -10,7 +10,7 @@ export function withAuthRequired(Component) {
       if (!user) {
         navigate("/");
       }
-    }, []);
+    }, [user]);
 
     return user && <Component />;
   };

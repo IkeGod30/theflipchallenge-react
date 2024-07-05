@@ -1,5 +1,5 @@
 
-import PrizeGallery from "./components/PrizeGallery";
+import PrizeGallery, { ProtectedGallery } from "./components/PrizeGallery";
 import React, { Suspense } from 'react';
 // import Main from "./components/Pages.js";
 // import { Second } from './components/Pages.js';
@@ -18,13 +18,15 @@ import { Outlet } from "react-router-dom";
 // Pages for routing
 // import PrizeGallery from './pages/PrizeGallery';
 import Frame from './pages/QuizForm/Quiz';
-import ProtectedFrame from './pages/QuizForm/Quiz';
+// import ProtectedFrame from './pages/QuizForm/Quiz';
+// import { ProtectedGallery } from "./components/PrizeGallery";
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
 import ShowFrame from "./components/TheFrame";
 import Login from "./pages/Login/Login";
+import { LandingPage } from "./pages/Landing/LandingPage";
 import { useSelector } from 'react-redux';
 
 
@@ -66,11 +68,13 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <BrowserRouter>
         <Routes>
+        <Route path='/' element={<LandingPage />} />
           {/* <Route exact path="/" component={(<PrizeGallery change2={changeSrc1} change3={changeSrc3} change4={changeSrc4} /> )} /> */}
-          <Route path='/' element={<PrizeGallery imgClick={onPrizeClick} framesrc={Url} />} />
+          {/* <Route path='gallery' element={<PrizeGallery imgClick={onPrizeClick} framesrc={Url} />} /> */}
+          <Route path='gallery' element={<ProtectedGallery />} />
           <Route path='how' element={<HowtoWin />} />
           {/* <Route path='quiz' element={<ShowFrame framesrc={Url} imgClick={onPrizeClick} /> }/> */}
-          <Route path='quiz' element={<ProtectedFrame /> }/>
+          {/* <Route path='quiz' element={<ProtectedFrame /> }/> */}
           <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
           <Route path='faq' element={<Faq />} />

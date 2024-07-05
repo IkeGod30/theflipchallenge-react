@@ -13,7 +13,11 @@ function Nav() {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const userProfile = () => {
-    return <p>Welcome, </p>;
+    return (
+      <p style={{ fontSize: "13px", fontFamily: "Sans-serif", color: 'blue' }}>
+        Welcome, {}
+      </p>
+    );
   };
   return (
     <>
@@ -58,9 +62,9 @@ function Nav() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/contact">
-                    {userProfile()}
-                  </a>
+                  {/* <a className="nav-link" href="/contact"> */}
+                  {userProfile()}
+                  {/* </a> */}
                 </li>
               </ul>
             </div>

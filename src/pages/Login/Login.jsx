@@ -22,7 +22,7 @@ function Login() {
       const user = await AuthApi.signin(email, password);
       dispatch(setUser(user));
       toast("success", "Successful Login");
-      navigate("/");
+      navigate("/gallery");
     } catch (err) {
       toast("error", "Invalid login credentials");
       navigate("/login");
