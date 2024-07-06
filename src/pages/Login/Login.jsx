@@ -26,7 +26,6 @@ function Login() {
     } catch (err) {
       toast("error", "Invalid login credentials");
       navigate("/login");
-      // alert("Auth Failed");
     }
   };
 
@@ -58,7 +57,7 @@ function Login() {
           Sign In
         </Button>
         <span>
-          Don't have an account? <Link>Sign Up</Link>
+          Don't have an account? <Link to={"/signup"}>Sign Up</Link>
         </span>
       </form>
     </div>
