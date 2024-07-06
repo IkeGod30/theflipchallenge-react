@@ -26,6 +26,7 @@ import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
 import ShowFrame from "./components/TheFrame";
 import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 import { LandingPage } from "./pages/Landing/LandingPage";
 import { useSelector } from 'react-redux';
 
@@ -77,6 +78,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
           {/* <Route path='quiz' element={<ProtectedFrame /> }/> */}
           <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
+          <Route path='signup' element={<Signup />} />
           <Route path='faq' element={<Faq />} />
           <Route path='*' element={<NoPage />} />
           
