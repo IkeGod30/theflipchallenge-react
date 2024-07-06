@@ -9,16 +9,6 @@ import { useNavigate } from "react-router-dom";
 import { selectUser } from "../../features/iframeSrc/authSelectors";
 
 function Nav() {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const user = useSelector(selectUser);
-  const userProfile = () => {
-    return (
-      <p style={{ fontSize: "13px", fontFamily: "Sans-serif", color: 'blue' }}>
-        Welcome, {}
-      </p>
-    );
-  };
   return (
     <>
       <section className="priNav">
@@ -63,7 +53,7 @@ function Nav() {
                 </li>
                 <li className="nav-item">
                   {/* <a className="nav-link" href="/contact"> */}
-                  {userProfile()}
+                  {/* {userProfile()} */}
                   {/* </a> */}
                 </li>
               </ul>

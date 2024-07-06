@@ -32,6 +32,7 @@ import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import Loadquiz from "./Quizload";
+import { selectUser } from "../features/iframeSrc/authSelectors";
 // import { withAuthRequired } from "../../hoc/withAuthRequired";
 import { withAuthRequired } from "../hoc/withAuthRequired";
 // import { ProtectedFrame } from "../pages/QuizForm/Quiz";
@@ -44,6 +45,8 @@ import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
 // import { useNavigate } from 'react-router-dom';
 import { Button } from "antd/es/radio";
+import { AuthApi } from "../api/auth";
+import { setUser } from "../features/iframeSrc/auth-slice";
 // import "./Contact.css";
 
 const prizeClick = () => {
@@ -107,6 +110,26 @@ function PrizeGallery(props) {
   const navigate = useNavigate(); // Remove if not used
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
+
+  const logout = () => {
+    AuthApi.signout();
+    dispatch(setUser(null));
+  };
+  const userProfile = () => {
+    return (
+      <div>
+        <p
+          style={{ fontSize: "13px", fontFamily: "Sans-serif", color: "blue" }}
+        >
+          Welcome, {user.email}
+        </p>
+        <Link to="#" onClick={logout}>
+          Logout
+        </Link>
+      </div>
+    );
+  };
 
   // const [Url, dispatch] = useReducer(urlReducer, source); //////////
 
@@ -166,6 +189,7 @@ function PrizeGallery(props) {
 
   return (
     <>
+      {userProfile()}
       <Loadquiz />
       {/* <BannCarousel /> */}
 
@@ -544,7 +568,7 @@ function PrizeGallery(props) {
         ></div>
       </div>
 
-      <Frame resource={source} />
+      {/* <Frame resource={source} /> */}
     </>
   );
 }
