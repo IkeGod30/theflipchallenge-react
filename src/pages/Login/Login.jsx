@@ -17,7 +17,7 @@ function Login() {
 
   const submit = async (e) => {
     e.preventDefault();
-    console.log("submitted", email, password); // Remove after dev
+    // console.log("submitted", email, password);
     try {
       const user = await AuthApi.signin(email, password);
       dispatch(setUser(user));
@@ -29,7 +29,7 @@ function Login() {
     }
   };
 
-  console.log(email, password); // Remove after dev
+  // console.log(email, password);
   return (
     <div className="formContainer">
       <h2 className="title">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useReducer } from "react";
 
 import Frame from "../pages/QuizForm/Quiz";
+import ResponsiveDrawer from "./Drawer";
 
 import {
   laptopC,
@@ -189,6 +190,7 @@ function PrizeGallery(props) {
 
   return (
     <>
+      <ResponsiveDrawer />
       {userProfile()}
       <Loadquiz />
       {/* <BannCarousel /> */}
