@@ -112,6 +112,7 @@ function PrizeGallery(props) {
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const [isLoading, setIsLoading] = useState(true);
 
   const logout = () => {
     AuthApi.signout();
@@ -124,7 +125,9 @@ function PrizeGallery(props) {
           style={{ fontSize: "13px", fontFamily: "Sans-serif", color: "blue" }}
         >
           Welcome, {user.email}
+          {/* {isLoading && <div className="spinner-border" role="status" />} */}
         </p>
+
         <Link to="#" onClick={logout}>
           Logout
         </Link>
@@ -192,7 +195,7 @@ function PrizeGallery(props) {
     <>
       <ResponsiveDrawer />
       {userProfile()}
-      <Loadquiz />
+      {/* <Loadquiz /> */}
       {/* <BannCarousel /> */}
 
       {/* <marquee>
@@ -265,7 +268,7 @@ function PrizeGallery(props) {
         <div className="row">
           <div className="col-sm-12">
             <Frame resource={source} />
-
+            {/* {isLoading && <div className="spinner-border" role="status" />} */}
             {/* <ProtectedFrame resource={source} /> */}
           </div>
         </div>
