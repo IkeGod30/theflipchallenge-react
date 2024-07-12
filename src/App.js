@@ -1,5 +1,5 @@
 
-import PrizeGallery, { ProtectedGallery } from "./components/PrizeGallery";
+import { ProtectedGallery } from "./components/PrizeGallery";
 import React, { Suspense } from 'react';
 // import Main from "./components/Pages.js";
 // import { Second } from './components/Pages.js';
