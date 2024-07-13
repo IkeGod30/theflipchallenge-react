@@ -120,7 +120,7 @@ function PrizeGallery(props) {
   };
   const userProfile = () => {
     return (
-      <div>
+      <div className="profile">
         <p
           style={{ fontSize: "13px", fontFamily: "Sans-serif", color: "blue" }}
         >
