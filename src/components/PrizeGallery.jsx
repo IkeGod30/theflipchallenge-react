@@ -122,7 +122,11 @@ function PrizeGallery(props) {
     return (
       <div className="profile">
         <p
-          style={{ fontSize: "13px", fontFamily: "Sans-serif", color: "blue" }}
+          style={{
+            fontSize: "13px",
+            fontFamily: "Sans-serif",
+            color: "red",
+          }}
         >
           Welcome, {user.email}
           {/* {isLoading && <div className="spinner-border" role="status" />} */}
