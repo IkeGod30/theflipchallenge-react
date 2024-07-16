@@ -7,8 +7,15 @@ import { CiCircleChevRight } from "react-icons/ci";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { selectUser } from "../../features/iframeSrc/authSelectors";
+import { AuthApi } from "../../api/auth";
+import { setUser } from "../../features/iframeSrc/auth-slice";
 
 function Nav() {
+  const dispatch = useDispatch();
+  const logout = () => {
+    AuthApi.signout();
+    dispatch(setUser(null));
+  };
   return (
     <>
       <section className="priNav">
@@ -46,15 +53,15 @@ function Nav() {
                   </a>
                 </li>
                 <li className="nav-item">
+                  {/* <Link to={"/login"}>Login</Link> */}
                   <a className="nav-link" href="/login">
-                    {/* <Link to={"/login"}>Sign in</Link> */}
                     Login
                   </a>
                 </li>
                 <li className="nav-item">
-                  {/* <a className="nav-link" href="/contact"> */}
-                  {/* {userProfile()} */}
-                  {/* </a> */}
+                  {/* <Link to="#" onClick={logout}>
+                    Logout
+                  </Link> */}
                 </li>
               </ul>
             </div>

@@ -48,6 +48,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button } from "antd/es/radio";
 import { AuthApi } from "../api/auth";
 import { setUser } from "../features/iframeSrc/auth-slice";
+import LoggedIn from "../pages/Logged-in-profile/Logged-in-profile";
 // import "./Contact.css";
 
 const prizeClick = () => {
@@ -120,24 +121,28 @@ function PrizeGallery(props) {
   };
   const userProfile = () => {
     return (
-      <div className="profile">
-        <p
+      <div
+        className="container"
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h3
           style={{
-            fontSize: "13px",
+            // fontSize: "20px",
             fontFamily: "Sans-serif",
-            color: "red",
+            color: "grey",
           }}
         >
           Welcome, {user.email}
-          {/* {isLoading && <div className="spinner-border" role="status" />} */}
-        </p>
+        </h3>
 
-        <Link to="#" onClick={logout}>
+        {/* <Link to="#" onClick={logout}>
           Logout
-        </Link>
+        </Link> */}
       </div>
     );
   };
+
+  // <LoggedIn />;
 
   // const [Url, dispatch] = useReducer(urlReducer, source); //////////
 
@@ -197,8 +202,9 @@ function PrizeGallery(props) {
 
   return (
     <>
-      <ResponsiveDrawer />
+      {/* <ResponsiveDrawer /> */}
       {userProfile()}
+      {/* {LoggedIn} */}
       {/* <Loadquiz /> */}
       {/* <BannCarousel /> */}
 
