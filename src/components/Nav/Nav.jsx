@@ -59,9 +59,9 @@ function Nav() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  {/* <Link to="#" onClick={logout}>
+                  <Link className="nav-link" href="/" onClick={logout}>
                     Logout
-                  </Link> */}
+                  </Link>
                 </li>
               </ul>
             </div>
