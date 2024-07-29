@@ -8,12 +8,12 @@ function Frame({ resource, onPrizeImageClick, imgClick }) {
     <div className="frameDiv">
       <h2 className="quizPageTitle">Quiz Portal</h2>
       <div>
-        {isLoading && (
+        {/* {isLoading && (
           <span
             className="spinner-border d-flex justify-content-center"
             role="status"
           />
-        )}
+        )} */}
         <iframe
           title="Welcome to The Challenge"
           src={resource}

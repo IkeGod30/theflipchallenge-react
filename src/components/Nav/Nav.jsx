@@ -1,6 +1,11 @@
 import "./Nav.css";
 
-import Login from "../../pages/Login/Login";
+import book from "../assets/bookIcon.jpg";
+
+import Login from "./Log/Login";
+import Logout from "./Log/Logout";
+
+import LogToggle from "../LogToggle/LogToggle";
 
 import { Outlet, Link } from "react-router-dom";
 import { CiCircleChevRight } from "react-icons/ci";
@@ -10,12 +15,23 @@ import { selectUser } from "../../features/iframeSrc/authSelectors";
 import { AuthApi } from "../../api/auth";
 import { setUser } from "../../features/iframeSrc/auth-slice";
 
+import { useState } from "react";
+
 function Nav() {
+  const [isLogged, setIsLogged] = useState("login");
   const dispatch = useDispatch();
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
   };
+
+  function changeLog() {
+    if (isLogged === "login") {
+      setIsLogged("logout");
+    }
+    setIsLogged("signout");
+  }
+
   return (
     <>
       <section className="priNav">
@@ -28,6 +44,8 @@ function Nav() {
               {" "}
               The Flip Challenge
             </a>
+            {/* <a className="brand" href="/"><img src={book} width="100" height="100"/>
+            </a> */}
             <button
               style={{ color: "inherit" }}
               className="navbar-toggler"
@@ -47,22 +65,24 @@ function Nav() {
                     How to Win
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link" href="/contact">
                     Contact Us
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                  {/* <Link to={"/login"}>Login</Link> */}
                   <a className="nav-link" href="/login">
                     Login
+                    {/* {isLogged} */}
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" href="/" onClick={logout}>
                     Logout
                   </Link>
-                </li>
+                  <LogToggle />
+                  <Logout />
+                </li> */}
               </ul>
             </div>
           </div>

@@ -202,7 +202,7 @@ function PrizeGallery(props) {
 
   return (
     <>
-      {/* <ResponsiveDrawer /> */}
+      <ResponsiveDrawer />
       {userProfile()}
       {/* {LoggedIn} */}
       {/* <Loadquiz /> */}
