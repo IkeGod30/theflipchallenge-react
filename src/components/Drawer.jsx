@@ -19,6 +19,8 @@ import { selectUser } from "../features/iframeSrc/authSelectors";
 
 //////
 
+import Logout from "./Nav/Log/Logout";
+
 export default function TemporaryDrawer() {
   ///////
   const navigate = useNavigate(); // Remove if not used
@@ -61,7 +63,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {["Change Password", "Delete Account"].map((text, index) => (
+        {["Change Password", "Delete Account", "Logout"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -71,6 +73,7 @@ export default function TemporaryDrawer() {
             </ListItemButton>
           </ListItem>
         ))}
+        <Logout />
       </List>
     </Box>
   );

@@ -49,6 +49,8 @@ import { Button } from "antd/es/radio";
 import { AuthApi } from "../api/auth";
 import { setUser } from "../features/iframeSrc/auth-slice";
 import LoggedIn from "../pages/Logged-in-profile/Logged-in-profile";
+import LogToggle from "./LogToggle/LogToggle";
+import Logout from "./Nav/Log/Logout";
 // import "./Contact.css";
 
 const prizeClick = () => {
@@ -115,6 +117,15 @@ function PrizeGallery(props) {
   const user = useSelector(selectUser);
   const [isLoading, setIsLoading] = useState(true);
 
+  // const [isLogged, setIsLogged] = useState("");
+
+  // const changeLog = () => {
+  //   if (isLogged === "login") {
+  //     setIsLogged("logout");
+  //   }
+  //   setIsLogged("signout");
+  // };
+
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
@@ -127,14 +138,17 @@ function PrizeGallery(props) {
       >
         <h3
           style={{
-            // fontSize: "20px",
             fontFamily: "Sans-serif",
             color: "grey",
           }}
         >
           Welcome, {user.email}
         </h3>
+       
+        {/* <LogToggle /> */}
+        {/* {changeLog} */}
 
+        {/* <LogToggle /> */}
         {/* <Link to="#" onClick={logout}>
           Logout
         </Link> */}
@@ -203,7 +217,8 @@ function PrizeGallery(props) {
   return (
     <>
       <ResponsiveDrawer />
-      {userProfile()}
+      <div>{userProfile()}</div>
+
       {/* {LoggedIn} */}
       {/* <Loadquiz /> */}
       {/* <BannCarousel /> */}

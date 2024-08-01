@@ -70,12 +70,11 @@ function Nav() {
                     Contact Us
                   </a>
                 </li> */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link" href="/login">
                     Login
-                    {/* {isLogged} */}
                   </a>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                   <Link className="nav-link" href="/" onClick={logout}>
                     Logout
