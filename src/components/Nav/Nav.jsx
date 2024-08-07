@@ -18,18 +18,23 @@ import { setUser } from "../../features/iframeSrc/auth-slice";
 import { useState } from "react";
 
 function Nav() {
+  const [logstatus, setlogstatus] = useState(false); //
   const [isLogged, setIsLogged] = useState("login");
   const dispatch = useDispatch();
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
+    // changeLog();
+    // setlogstatus(true); //
   };
 
   function changeLog() {
-    if (isLogged === "login") {
-      setIsLogged("logout");
+    if (logstatus) {
+      setIsLogged("login");
+      // return <p>Logged In</p>;
     }
     setIsLogged("signout");
+    // return <p>Logged Out</p>;
   }
 
   return (

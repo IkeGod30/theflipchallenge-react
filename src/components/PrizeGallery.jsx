@@ -3,6 +3,7 @@ import { useReducer } from "react";
 
 import Frame from "../pages/QuizForm/Quiz";
 import ResponsiveDrawer from "./Drawer";
+import SwipeableTemporaryDrawer from "./Drawer_";
 
 import {
   laptopC,
@@ -144,7 +145,7 @@ function PrizeGallery(props) {
         >
           Welcome, {user.email}
         </h3>
-       
+
         {/* <LogToggle /> */}
         {/* {changeLog} */}
 
@@ -216,16 +217,17 @@ function PrizeGallery(props) {
 
   return (
     <>
-      <ResponsiveDrawer />
+      {/* <ResponsiveDrawer /> */}
+      <div
+        className="container"
+        style={{ display: "flex", justifyContent: "end" }}
+      >
+        <SwipeableTemporaryDrawer />
+      </div>
+
+      {/* <div style={{display: 'flex'}}> */}
+      {/* <button>My Account</button> */}
       <div>{userProfile()}</div>
-
-      {/* {LoggedIn} */}
-      {/* <Loadquiz /> */}
-      {/* <BannCarousel /> */}
-
-      {/* <marquee>
-        <h2 className="text-center mt-3 PrizeHead">Prize Gallery</h2>
-      </marquee> */}
 
       <section className="container-lg">
         <h2 className="quizPageTitle">Prize Gallery</h2>

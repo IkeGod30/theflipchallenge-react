@@ -80,7 +80,7 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>{user.email}</Button>
+      <Button onClick={toggleDrawer(true)}>My Account</Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
