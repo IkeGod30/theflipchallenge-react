@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useReducer } from "react";
 
+import { HashLink as Linkme } from "react-router-hash-link";
+
 import Frame from "../pages/QuizForm/Quiz";
 import ResponsiveDrawer from "./Drawer";
 import SwipeableTemporaryDrawer from "./Drawer_";
@@ -233,7 +235,7 @@ function PrizeGallery(props) {
         <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
           <div className="col-sm-3">
-            <a href="#Quiz_Portal"></a>
+            <Linkme href="#Quiz_Portal"></Linkme>
             <PrizeItem
               onClick={() => dispatch(dollarC())}
               image={vacation}
