@@ -14,6 +14,7 @@ function LogToggle() {
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
+    
   };
   const [btnTitle, setbtnTitle] = useState("login");
 

@@ -233,6 +233,7 @@ function PrizeGallery(props) {
         <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
           <div className="col-sm-3">
+            <a href="#Quiz_Portal"></a>
             <PrizeItem
               onClick={() => dispatch(dollarC())}
               image={vacation}
@@ -292,7 +293,7 @@ function PrizeGallery(props) {
             />
           </div> */}
         </div>
-        <div className="row">
+        <div className="row" id="Quiz_Portal">
           <div className="col-sm-12">
             <Frame resource={source} />
             {/* {isLoading && <div className="spinner-border" role="status" />} */}
