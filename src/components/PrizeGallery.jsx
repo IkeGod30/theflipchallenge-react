@@ -235,44 +235,51 @@ function PrizeGallery(props) {
         <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
           <div className="col-sm-3">
-            <Linkme href="#Quiz_Portal"></Linkme>
-            <PrizeItem
-              onClick={() => dispatch(dollarC())}
-              image={vacation}
-              description={"Cruise Tour NY-Miama"}
-              alt={"Picture of Cruise Ship"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
+            <Linkme to="#Quiz_Portal">
+              <PrizeItem
+                onClick={() => dispatch(dollarC())}
+                image={vacation}
+                description={"Cruise Tour NY-Miama"}
+                alt={"Picture of Cruise Ship"}
+                title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+              />
+            </Linkme>
           </div>
           <div className="col-sm-3">
-            <PrizeItem
-              onClick={() => dispatch(cruise())}
-              image={dollar}
-              description={"$1000"}
-              alt={"Picture of Money"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
-          </div>
-
-          <div className="col-sm-3">
-            <PrizeItem
-              onClick={() => dispatch(iphoneC())}
-              image={iphone}
-              description={"Iphone 15 pro max"}
-              alt={"Picture of Iphone"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
+            <Linkme to="#Quiz_Portal">
+              <PrizeItem
+                onClick={() => dispatch(cruise())}
+                image={dollar}
+                description={"$1000"}
+                alt={"Picture of Money"}
+                title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+              />
+            </Linkme>
           </div>
 
           <div className="col-sm-3">
-            <PrizeItem
-              onClick={() => dispatch(laptopC())}
-              // onClick={quizLoad}
-              image={laptop_}
-              description={"$1000"}
-              alt={"Picture of Money"}
-              title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
-            />
+            <Linkme to="#Quiz_Portal">
+              <PrizeItem
+                onClick={() => dispatch(iphoneC())}
+                image={iphone}
+                description={"Iphone 15 pro max"}
+                alt={"Picture of Iphone"}
+                title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+              />
+            </Linkme>
+          </div>
+
+          <div className="col-sm-3">
+            <Linkme to="#Quiz_Portal">
+              <PrizeItem
+                onClick={() => dispatch(laptopC())}
+                // onClick={quizLoad}
+                image={laptop_}
+                description={"$1000"}
+                alt={"Picture of Money"}
+                title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
+              />
+            </Linkme>
           </div>
 
           {/* <div className="col-sm-2">
