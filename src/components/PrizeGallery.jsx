@@ -235,7 +235,7 @@ function PrizeGallery(props) {
         <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
           <div className="col-sm-3">
-            <Linkme to="#Quiz_Portal">
+            <Linkme className="linkme" to="#Quiz_Portal">
               <PrizeItem
                 onClick={() => dispatch(dollarC())}
                 image={vacation}
@@ -246,7 +246,7 @@ function PrizeGallery(props) {
             </Linkme>
           </div>
           <div className="col-sm-3">
-            <Linkme to="#Quiz_Portal">
+            <Linkme className="linkme" to="#Quiz_Portal">
               <PrizeItem
                 onClick={() => dispatch(cruise())}
                 image={dollar}
@@ -258,7 +258,7 @@ function PrizeGallery(props) {
           </div>
 
           <div className="col-sm-3">
-            <Linkme to="#Quiz_Portal">
+            <Linkme className="linkme" to="#Quiz_Portal">
               <PrizeItem
                 onClick={() => dispatch(iphoneC())}
                 image={iphone}
@@ -270,7 +270,7 @@ function PrizeGallery(props) {
           </div>
 
           <div className="col-sm-3">
-            <Linkme to="#Quiz_Portal">
+            <Linkme className="linkme" to="#Quiz_Portal">
               <PrizeItem
                 onClick={() => dispatch(laptopC())}
                 // onClick={quizLoad}
