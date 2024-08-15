@@ -1,7 +1,6 @@
-import "./Login.css";
-
-import Button from "@mui/material/Button";
+import React from "react";
 import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
 import { useState } from "react";
 import { setUser } from "../../features/iframeSrc/auth-slice";
 import { AuthApi } from "../../api/auth";
@@ -9,32 +8,37 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "../../utils/sweetalert";
 
-function Login() {
+import "./Reset.css";
+
+function Reset() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const submit = async (e) => {
-    e.preventDefault();
-    // console.log("submitted", email, password);
-    try {
-      const user = await AuthApi.signin(email, password);
-      dispatch(setUser(user));
-      toast("success", "Successful Login");
-      navigate("/gallery");
-    } catch (err) {
-      toast("error", "Invalid login credentials");
-      navigate("/login");
+    if (password === password2) {
+      e.preventDefault();
+      //   console.log("submitted", email, password);
+      try {
+        const user = await AuthApi.signup(email, password);
+        dispatch(setUser(user));
+        toast("success", "Successful Signup");
+        navigate("/");
+      } catch (err) {
+        toast("error", "Sign up unsuccessful");
+        // navigate("/");
+      }
+    } else {
+      toast("error", "Password don't match");
+      //   navigate("/signup");
     }
   };
-
-  // console.log(email, password);
   return (
     <div className="formContainer">
       <h2 className="title">
-        Sign In <br />
-        to play and win
+        Sign Up <br />
       </h2>
       <form onSubmit={submit} className="formGroup">
         <input
@@ -53,18 +57,24 @@ function Login() {
           type="password"
           placeholder="Password"
         />
+
+        <input
+          onChange={(e) => {
+            setPassword2(e.target.value);
+          }}
+          className="input"
+          type="password"
+          placeholder="Repeat Password"
+        />
         <Button type="submit" className="button" variant="contained">
-          Sign In
+          Reset
         </Button>
-        <span>
-          Don't have an account? <Link to={"/signup"}>Sign Up</Link>
-        </span>
-        <span>
-          Forgot password? <Link to={"/reset"}>Reset Password</Link>
-        </span>
+        {/* <span>
+          Already have an account? <Link to={"/login"}>Sign In</Link>
+        </span> */}
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Reset;
