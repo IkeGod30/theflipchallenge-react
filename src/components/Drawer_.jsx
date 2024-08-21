@@ -14,6 +14,7 @@ import MailIcon from "@mui/icons-material/Mail";
 ///
 
 import Logout from "./Nav/Log/Logout";
+import UpdatePassword from "../pages/ChangePassword/ChangePassword";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({

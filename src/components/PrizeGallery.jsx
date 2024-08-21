@@ -227,8 +227,6 @@ function PrizeGallery(props) {
         <SwipeableTemporaryDrawer />
       </div>
 
-      {/* <div style={{display: 'flex'}}> */}
-      {/* <button>My Account</button> */}
       <div>{userProfile()}</div>
 
       <section className="container-lg">

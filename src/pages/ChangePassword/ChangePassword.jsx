@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "../../utils/sweetalert";
 
-import "./Reset.css";
+import "./ChangePassword.css";
 
 function UpdatePassword() {
   const [email, setEmail] = useState("");
