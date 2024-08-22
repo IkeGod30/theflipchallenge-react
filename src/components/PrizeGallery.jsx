@@ -129,10 +129,10 @@ function PrizeGallery(props) {
   //   setIsLogged("signout");
   // };
 
-  const logout = () => {
-    AuthApi.signout();
-    dispatch(setUser(null));
-  };
+  // const logout = () => {
+  //   AuthApi.signout();
+  //   dispatch(setUser(null));
+  // };
   const userProfile = () => {
     return (
       <div
