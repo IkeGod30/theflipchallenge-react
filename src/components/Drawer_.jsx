@@ -14,7 +14,8 @@ import MailIcon from "@mui/icons-material/Mail";
 ///
 
 import Logout from "./Nav/Log/Logout";
-import UpdatePassword from "../pages/ChangePassword/ChangePassword";
+import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
+import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -59,7 +60,7 @@ export default function SwipeableTemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {["Change Password", "Delete Account", <Logout />].map(
+        {[<UpdatePassword />, <DeleteAccount />, <Logout />].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
