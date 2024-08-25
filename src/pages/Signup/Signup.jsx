@@ -20,7 +20,6 @@ function Signup() {
   const submit = async (e) => {
     if (password === password2) {
       e.preventDefault();
-      //   console.log("submitted", email, password);
       try {
         const user = await AuthApi.signup(email, password);
         dispatch(setUser(user));
