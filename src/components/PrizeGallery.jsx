@@ -177,46 +177,6 @@ function PrizeGallery(props) {
 
   // const [Show, setShow] = useState(false);
 
-  // const source = [
-  //   "https://www.bbc.com",
-  //   "https://www.go.com",
-  //   "https://www.info.com",
-  //   "https://www.cnn.com",
-  // ];
-
-  // const [Url, setUrl] = useState("https://www.theflipchallenge.com"); // State for iframe src
-
-  // const [Url, setUrl] = useState(Array(12).fill(null)); // State for iframe src
-
-  // function changeSrc() {
-  //   setUrl(source[1]);
-  // }
-  // function changeSrc2() {
-  //   setUrl(source[2]);
-  // }
-
-  // function changeSrc3() {
-  //   setUrl(source[3]);
-  // }
-
-  // function Showing() {
-  //   setShow(true);
-  // }
-
-  // function showTwo() {
-  //   setShow(false);
-  // }
-
-  // console.log(Show);
-
-  // const onPrizeImageClick = (framesrc) => {
-  //   props.imgClick(framesrc);
-  // };
-
-  // function onPrizeImageClick() {
-  //   imgClick(frameSrc);
-  // }
-
   return (
     <>
       {/* <ResponsiveDrawer /> */}
