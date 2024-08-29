@@ -1,5 +1,5 @@
 import { FirebaseApp } from "../utils/firebase";
-import { signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
+import { signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, updatePassword, deleteUser } from 'firebase/auth'
 
 export class AuthApi {
     static async signin(email, password) {
