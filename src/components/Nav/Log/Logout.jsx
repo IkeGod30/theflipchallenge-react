@@ -11,6 +11,8 @@ function Logout() {
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
+
+    // NEEDED ACTION: Put a code to reset state to initial value after logout ///
   };
   return (
     <div>
