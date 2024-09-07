@@ -1,35 +1,39 @@
 
-import { ProtectedGallery } from "./components/PrizeGallery";
 import React, { Suspense } from 'react';
+import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useReducer } from 'react'; // Remove before build
+import {Route, Routes, BrowserRouter } from 'react-router-dom';
+// import { Outlet } from "react-router-dom";
+
+
+// **** GLOBAL COMPONENTS **** //
+
 // import Main from "./components/Pages.js";
 // import { Second } from './components/Pages.js';
 // import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
-import { useState } from 'react';
-import { useReducer } from 'react'; // 
-import {Route, Routes, BrowserRouter } from 'react-router-dom';
 import Nav from "./components/Nav/Nav";
-import { Outlet } from "react-router-dom";
 
 
 
 
-// Pages for routing
+// **** ROUTABLE PAGES **** //
+
 // import PrizeGallery from './pages/PrizeGallery';
-import Frame from './pages/QuizForm/Quiz';
+// import Frame from './pages/QuizForm/Quiz';
 // import ProtectedFrame from './pages/QuizForm/Quiz';
-// import { ProtectedGallery } from "./components/PrizeGallery";
+import { ProtectedGallery } from "./components/PrizeGallery";
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
-import ShowFrame from "./components/TheFrame";
+// import ShowFrame from "./components/TheFrame";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Reset from './pages/Reset/Reset'
 import { LandingPage } from "./pages/Landing/LandingPage";
-import { useSelector } from 'react-redux';
 
 
 
