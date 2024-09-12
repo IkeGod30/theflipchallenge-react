@@ -45,8 +45,6 @@ function App() {
 
 const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336')
 
-
-// const source = ['https://www.onlinequizcreator.com/the-merchant-of-venice/quiz-493884', 'https://www.onlinequizcreator.com/animal-farm/quiz-493767', 'https://www.onlinequizcreator.com/purple-hibiscus/quiz-492496', 'https://www.onlinequizcreator.com/things-fall-apart/quiz-492336', 'https://www.onlinequizcreator.com/animal-farm/quiz-492141']
   
   const [Url, setUrl] = useState('https://www.onlinequizcreator.com/things-fall-apart/quiz-492336'); // State for iframe src 
   
@@ -94,7 +92,8 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
 export default App;
 
 
-// Reducer function alternative to useState // 
+// Reducer function alternative to useState //  REMOVE before build
+
 function quizReducer(quiz, action) {
   switch (action.type) {
     case "laptop": {
