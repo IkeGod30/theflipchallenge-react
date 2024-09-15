@@ -9,9 +9,6 @@ import {Route, Routes, BrowserRouter } from 'react-router-dom';
 
 // **** GLOBAL COMPONENTS **** //
 
-// import Main from "./components/Pages.js";
-// import { Second } from './components/Pages.js';
-// import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav/Nav";
