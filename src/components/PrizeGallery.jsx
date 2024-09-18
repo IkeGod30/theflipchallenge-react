@@ -553,20 +553,6 @@ function PrizeGallery(props) {
           </div>
         </div>
       </section>
-      <div
-      // onClick={quizLoad}
-      // onMouseMove={(framesrc) => {
-      //   onPrizeImageClick(framesrc);
-      // }}
-      >
-        <div
-        // onMouseOver={quizLoad}
-        // onClick={props.imgClick}
-        // onClick={quizLoad}
-        // onMouseMove={props.imgClick}
-        // framesrc="https://www.bbcnews.com"
-        ></div>
-      </div>
 
       {/* <Frame resource={source} /> */}
     </>
