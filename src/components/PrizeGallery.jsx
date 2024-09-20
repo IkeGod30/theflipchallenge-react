@@ -553,8 +553,6 @@ function PrizeGallery(props) {
           </div>
         </div>
       </section>
-
-      {/* <Frame resource={source} /> */}
     </>
   );
 }
