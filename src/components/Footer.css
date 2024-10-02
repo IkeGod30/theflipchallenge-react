@@ -1,21 +1,19 @@
-
 .footer-nav ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-div {
-    background-color: bisque;
-    /* border-radius: 20%; */
+  background-color: bisque;
 }
 
 .footer-a {
-    text-decoration: underline;
-    color: black;
-    font-size: 14px;
+  text-decoration: underline;
+  color: black;
+  font-size: 14px;
 }
 
-.copyright{
-    display: flex;
-    justify-content: center;
+.copyright {
+  display: flex;
+  justify-content: center;
 }
