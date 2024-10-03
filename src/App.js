@@ -54,7 +54,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
       <BrowserRouter>
       <Nav />
       </BrowserRouter>
-      {/* <Banner /> */}
+      
       
     <>
       <header>
