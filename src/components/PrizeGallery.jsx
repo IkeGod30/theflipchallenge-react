@@ -43,8 +43,6 @@ import { withAuthRequired } from "../hoc/withAuthRequired";
 
 import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
-// import { Row, Col, Card } from 'antd';
-// import { row, col } from "react-bootstrap";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
 // import { useNavigate } from 'react-router-dom';
