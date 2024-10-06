@@ -52,7 +52,6 @@ import { setUser } from "../features/iframeSrc/auth-slice";
 import LoggedIn from "../pages/Logged-in-profile/Logged-in-profile";
 import LogToggle from "./LogToggle/LogToggle";
 import Logout from "./Nav/Log/Logout";
-// import "./Contact.css";
 
 const prizeClick = () => {
   const wini = document.getElementsByClassName("pryze"); //pass function prop to each element
