@@ -10,7 +10,6 @@ import {Route, Routes, BrowserRouter } from 'react-router-dom';
 // **** GLOBAL COMPONENTS **** //
 
 import Footer from "./components/Footer";
-// import Banner from "./components/Banner";
 import Nav from "./components/Nav/Nav";
 
 
