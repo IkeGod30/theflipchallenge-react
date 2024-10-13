@@ -1,4 +1,6 @@
 import * as React from "react";
+
+// MUI Imports //
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
@@ -11,8 +13,7 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
-///
-
+// Component Imports //
 import Logout from "./Nav/Log/Logout";
 import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
 import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
