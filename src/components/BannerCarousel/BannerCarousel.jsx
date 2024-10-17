@@ -1,4 +1,3 @@
-// import laptop from "../assets/vacate.jpg";
 import CarouselText from "./CarouselText";
 import "./BannerCarousel.css";
 
