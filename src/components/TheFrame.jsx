@@ -20,8 +20,6 @@ function ShowFrame({ framesrc, imgClick }) {
   return (
     <div>
       <Frame resource={source} onLoad={imgClick} />
-      {/* <Frame resource={framesrc} onLoad={imgClick} /> */}
-      {/* <Frame resource={Url} LoadUrl={() => setUrl(source)} /> */}
     </div>
   );
 }
