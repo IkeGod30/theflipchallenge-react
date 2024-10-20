@@ -20,7 +20,6 @@ import {
 import Prize from "./Prize";
 import PartnerBanner from "./Partners/Partners";
 import PrizeItem from "./PrizeItemS";
-// import PrizeImg from "./PrizeImg";
 import { prize } from "./Data";
 import laptop from "./assets/laptop.jpg";
 import dollar from "./assets/dollar.jpg";
