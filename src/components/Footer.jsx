@@ -8,7 +8,7 @@ function Footer() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4 text-lg-start">
-              Copyright &copy; Zillion Services 2024
+              Copyright &copy; Zillion Services Ltd 2024
             </div>
             <div className="col-lg-4 my-3 my-lg-0">
               <a
