@@ -1,6 +1,6 @@
 import "./Partners.css";
 
-// Image Imports //
+// Image Imports for sponsors //
 import library from "../assets/libry.png";
 import walmart from "../assets/walmart_.png";
 import target from "../assets/target.png";
