@@ -29,7 +29,7 @@ function Login() {
     }
   };
 
-  // console.log(email, password);
+  // console.log(email, password); // DELETE BEFORE BUILD
   return (
     <div className="formContainer">
       <h2 className="title">
