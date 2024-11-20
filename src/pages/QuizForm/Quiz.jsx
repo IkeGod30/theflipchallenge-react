@@ -27,4 +27,5 @@ function Frame({ resource, onPrizeImageClick, imgClick }) {
 
 export default Frame;
 
+// To require user to be authenticated before he can access the component
 // export const ProtectedFrame = withAuthRequired(Frame);
