@@ -3,7 +3,7 @@ function NoPage() {
     <div>
       <h3>
         Unfortunately, the requested page does not exist. Please check and try
-        again
+        again. Thank you.
       </h3>
     </div>
   );
