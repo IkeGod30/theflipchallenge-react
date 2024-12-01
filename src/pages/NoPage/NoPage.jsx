@@ -1,10 +1,10 @@
 function NoPage() {
   return (
     <div>
-      <h3>
+      <h2>
         Unfortunately, the requested page does not exist. Please check and try
         again. Thank you.
-      </h3>
+      </h2>
     </div>
   );
 }
