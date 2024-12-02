@@ -13,8 +13,6 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav/Nav";
 
 
-
-
 // **** ROUTABLE PAGES **** //
 
 // import PrizeGallery from './pages/PrizeGallery';
@@ -52,9 +50,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
     <Suspense fallback={(<div>Loading...</div>)}>
       <BrowserRouter>
       <Nav />
-      </BrowserRouter>
-      
-      
+      </BrowserRouter> 
     <>
       <header>
        
