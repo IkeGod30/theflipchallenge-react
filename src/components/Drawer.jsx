@@ -24,14 +24,14 @@ import { selectUser } from "../features/iframeSrc/authSelectors";
 import Logout from "./Nav/Log/Logout";
 
 export default function TemporaryDrawer() {
-  ///////
+  /////
   const navigate = useNavigate(); // Remove if not used
   const source = useSelector((state) => state.quiz.value);
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const [open, setOpen] = React.useState(false);
 
-  ///////
+  /////
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
