@@ -47,7 +47,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
   }
 
   return (
-    <Suspense fallback={(<div>Loading...</div>)}>
+    <Suspense fallback={(<div>Loading....</div>)}>
       <BrowserRouter>
       <Nav />
       </BrowserRouter> 
