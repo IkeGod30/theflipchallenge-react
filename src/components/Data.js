@@ -1,5 +1,8 @@
 import PrizeImg from "./PrizeImg";
 
+// Data
+
+
 export const prize = [
     {
         description: 'Laptop Computer', 
