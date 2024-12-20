@@ -15,7 +15,7 @@ export const prize = [
         book: 'The Yellow Sun by Ngozi Chimamanda Adochie'
     },
     {
-        description: 'Iphone', 
+        description: 'Iphone 16', 
         photo: '', 
         book: 'Things Fall Apart'
     },
