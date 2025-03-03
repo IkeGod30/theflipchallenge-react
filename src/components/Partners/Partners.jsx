@@ -12,7 +12,7 @@ function PartnerBanner() {
       <h2>SPONSORSHIP PARTNERS</h2>
       <div>
         <marquee behavior="scroll" direction="left">
-          <img src={library} alt="logo of Richardson Library" />
+          <img src={library} alt="logo of Richardson Public Library" />
           <img src={walmart} alt="logo of Walmart" />
           <img src={target} alt="logo of Target" />
           <img src={barnes} alt="logo of Barnes and Noble" />
