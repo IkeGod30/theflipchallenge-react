@@ -15,7 +15,7 @@ function PartnerBanner() {
           <img src={library} alt="logo of Richardson Public Library" />
           <img src={walmart} alt="logo of Walmart" />
           <img src={target} alt="logo of Target" />
-          <img src={barnes} alt="logo of Barnes and Noble" />
+          <img src={barnes} alt="logo of Barnes and Noble Bookshop" />
         </marquee>
       </div>
     </div>
