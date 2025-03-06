@@ -9,7 +9,7 @@ import barnes from "../assets/barnes.png";
 function PartnerBanner() {
   return (
     <div className="partners">
-      <h2>SPONSORSHIP PARTNERS</h2>
+      <h2>OUR SPONSORSHIP PARTNERS</h2>
       <div>
         <marquee behavior="scroll" direction="left">
           <img src={library} alt="logo of Richardson Public Library" />
