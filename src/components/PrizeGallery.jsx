@@ -7,7 +7,7 @@ import Frame from "../pages/QuizForm/Quiz";
 import ResponsiveDrawer from "./Drawer";
 import SwipeableTemporaryDrawer from "./Drawer_";
 
-// Image file imports //
+// Image file imports for prizes //
 
 import {
   laptopC,
