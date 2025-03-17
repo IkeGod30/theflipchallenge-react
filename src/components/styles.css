@@ -5,6 +5,8 @@
   row-gap: 35px;
   column-gap: 11px;
 
+  /* Delete before prod */
+
   /* gap: 25px; */
   /* align-items:baseline; */
   /* flex-flow: row wrap; */
