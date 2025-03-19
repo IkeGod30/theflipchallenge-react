@@ -2,7 +2,7 @@
 import React, { Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
-import { useReducer } from 'react'; // Remove before build
+import { useReducer } from 'react'; // Remove before prod
 import {Route, Routes, BrowserRouter } from 'react-router-dom';
 
 
