@@ -18,7 +18,7 @@ import Nav from "./components/Nav/Nav";
 // import PrizeGallery from './pages/PrizeGallery';
 // import Frame from './pages/QuizForm/Quiz';
 // import ProtectedFrame from './pages/QuizForm/Quiz';
-import { ProtectedGallery } from "./components/PrizeGallery";
+import { ProtectedGallery } from "./components/PrizeGallery"; // For authorized access only
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
