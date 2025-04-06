@@ -1,6 +1,8 @@
 // DELETE ENTIRE COMPONENT BECAUSE IT'S REPLACED BY Drawer_jsx
 
 import * as React from "react";
+
+// MUI Imports
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
