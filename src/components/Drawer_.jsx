@@ -1,4 +1,4 @@
-// RENAME TO Drawer.jsx after deleting previous version //
+// RENAME TO Drawer.jsx after deleting previous version named Drawer_.jsx //
 
 import * as React from "react";
 
