@@ -54,6 +54,8 @@ import LoggedIn from "../pages/Logged-in-profile/Logged-in-profile";
 import LogToggle from "./LogToggle/LogToggle";
 import Logout from "./Nav/Log/Logout";
 
+// OLD vanilla JS dev //
+
 const prizeClick = () => {
   const wini = document.getElementsByClassName("pryze"); //pass function prop to each element
 
