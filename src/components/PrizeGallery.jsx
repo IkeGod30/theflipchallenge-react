@@ -4,7 +4,7 @@ import { useReducer } from "react"; // REMOVE BEFORE BUILD
 import { HashLink as Linkme } from "react-router-hash-link";
 
 import Frame from "../pages/QuizForm/Quiz";
-import ResponsiveDrawer from "./Drawer";
+// import ResponsiveDrawer from "./Drawer";
 import SwipeableTemporaryDrawer from "./Drawer_";
 
 // Image file imports for prizes //
