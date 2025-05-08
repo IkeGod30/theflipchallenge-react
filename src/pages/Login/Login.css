@@ -1,5 +1,8 @@
-/* .formContainer {
-} */
+.formContainer {
+  width: 50%;
+  margin: 0 auto;
+  /* background-color: blue; */
+}
 
 .title {
   font-weight: bold;
