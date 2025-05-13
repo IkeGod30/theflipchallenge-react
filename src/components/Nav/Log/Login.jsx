@@ -3,7 +3,7 @@ import './Log.css';
 
 function Login() {
   return (
-    <div>
+    <div className="signin">
       <ul>
         <li className="nav-item">
           <a className="nav-link" href="/login">

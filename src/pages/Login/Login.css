@@ -1,7 +1,13 @@
+/* .signin {
+  background-color: blue;
+  background-image: linear-gradient(blue, white);
+} */
+
 .formContainer {
   width: 400px;
   margin: 0 auto;
-  /* background-color: blue; */
+  /* border-radius: 8px; */
+  /* background-image: linear-gradient(blue, white); */
 }
 
 .title {
@@ -9,7 +15,6 @@
   text-align: center;
   color: inherit;
 }
-
 
 .formGroup {
   margin-top: 100px;
