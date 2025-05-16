@@ -31,10 +31,7 @@ function Login() {
 
   return (
     <div className="formContainer">
-      <h2 className="title">
-        Sign In <br />
-        to play and win
-      </h2>
+      <h2 className="title">SIGN IN</h2>
       <form onSubmit={submit} className="formGroup">
         <input
           onChange={(e) => {
