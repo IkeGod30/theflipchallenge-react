@@ -1,10 +1,8 @@
-// DELETE ENTIRE COMPONENT BECAUSE IT'S REPLACED BY Drawer_jsx
-
 import * as React from "react";
 
-// MUI Imports
+// MUI Imports //
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -15,32 +13,38 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
-// Hooks Imports
-import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { selectUser } from "../features/iframeSrc/authSelectors";
-
-//////
-
+// Component Imports //
 import Logout from "./Nav/Log/Logout";
+import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
+import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
 
-export default function TemporaryDrawer() {
-  /////
-  const navigate = useNavigate(); // Remove if not used eventually
-  const source = useSelector((state) => state.quiz.value);
-  const dispatch = useDispatch();
-  const user = useSelector(selectUser);
-  const [open, setOpen] = React.useState(false);
+export default function SwipeableTemporaryDrawer() {
+  const [state, setState] = React.useState({
+    // top: false,
+    // left: false,
+    // bottom: false,
+    right: false,
+  });
 
-  /////
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
+    setState({ ...state, [anchor]: open });
   };
 
-  const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
       <List>
         <ListItem disablePadding>
           <ListItemButton
@@ -54,40 +58,52 @@ export default function TemporaryDrawer() {
             {"Account Setting"}
           </ListItemButton>
         </ListItem>
-        {/* {["Account Setting"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
       </List>
       <Divider />
       <List>
-        {["Change Password", "Delete Account", "Logout"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        <Logout />
+        {[<UpdatePassword />, <DeleteAccount />, <Logout />].map(
+          (text, index) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
+        {/* <Logout /> */}
       </List>
     </Box>
   );
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>My Account</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {DrawerList}
-      </Drawer>
+      {["right"].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <Button
+            style={{
+              borderRadius: "15px",
+              backgroundColor: "black",
+              color: "green",
+              padding: "15px",
+              fontWeight: "bolder",
+            }}
+            onClick={toggleDrawer(anchor, true)}
+          >
+            My Account Settings
+          </Button>
+          <SwipeableDrawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+            onOpen={toggleDrawer(anchor, true)}
+          >
+            {list(anchor)}
+          </SwipeableDrawer>
+        </React.Fragment>
+      ))}
     </div>
   );
 }
