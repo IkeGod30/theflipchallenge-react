@@ -5,11 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white !important; /* USING ! due to unidentified conflicting background style for background color */
+  background-color: white !important; /* USING ! due to unidentified conflicting background style for background color. Resolve conflict and remove... */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
