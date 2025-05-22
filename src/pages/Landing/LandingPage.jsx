@@ -10,13 +10,9 @@ export function LandingPage() {
   }
   return (
     <div style={{ textAlign: "center" }}>
-      <button
-        onClick={challenge}
-        // style={{ textAlign: "center", margin: "auto" }}
-        className="btn btn-info"
-      >
+      <Button onClick={challenge} variant="contained" disableElevation>
         Click to Challenge
-      </button>
+      </Button>
       <LandingCarousel />
     </div>
   );
