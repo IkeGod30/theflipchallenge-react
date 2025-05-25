@@ -23,7 +23,7 @@ import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
 import NoPage from './pages/NoPage/NoPage';
-// import ShowFrame from "./components/TheFrame"; // Replaced...
+// import ShowFrame from "./components/TheFrame"; // Replaced with inpage iframe...
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Reset from './pages/Reset/Reset'
