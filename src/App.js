@@ -84,7 +84,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
 export default App;
 
 
-// Reducer function alternative to useState //  REMOVE before build
+// Reducer function alternative to useState //  REMOVE before build ...
 
 function quizReducer(quiz, action) {
   switch (action.type) {
