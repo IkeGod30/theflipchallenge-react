@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useReducer } from "react"; // REMOVE BEFORE BUILD
-
 import { HashLink as Linkme } from "react-router-hash-link";
 
 import Frame from "../pages/QuizForm/Quiz";
 // import ResponsiveDrawer from "./Drawer";
 import SwipeableTemporaryDrawer from "./Drawer";
 
-// Image file imports for prizes //
+// Redux Slices imports //
 
 import {
   laptopC,
@@ -16,6 +15,8 @@ import {
   cruise,
   shopping,
 } from "../features/iframeSrc/quizUrlSlice";
+
+// Image file imports for prizes //
 
 import Prize from "./Prize";
 import PartnerBanner from "./Partners/Partners";
@@ -35,6 +36,7 @@ import vacation from "./assets/vacate.jpg";
 import Vacation from "./assets/Vacation.jpg";
 import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
+
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import Loadquiz from "./Quizload";
 import { selectUser } from "../features/iframeSrc/authSelectors";
