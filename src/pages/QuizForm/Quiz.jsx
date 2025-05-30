@@ -1,4 +1,3 @@
-// import { withAuthRequired } from "../../hoc/withAuthRequired";
 import "./QuizForm.css";
 import { useState } from "react";
 

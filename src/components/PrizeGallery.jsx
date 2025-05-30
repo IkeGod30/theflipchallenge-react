@@ -3,7 +3,6 @@ import { useReducer } from "react"; // REMOVE BEFORE BUILD
 import { HashLink as Linkme } from "react-router-hash-link";
 
 import Frame from "../pages/QuizForm/Quiz";
-// import ResponsiveDrawer from "./Drawer";
 import SwipeableTemporaryDrawer from "./Drawer";
 
 // Redux Slices imports //
@@ -48,7 +47,6 @@ import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
-// import { useNavigate } from 'react-router-dom';
 import { Button } from "antd/es/radio";
 import { AuthApi } from "../api/auth";
 import { setUser } from "../features/iframeSrc/auth-slice";
@@ -135,6 +133,8 @@ function PrizeGallery(props) {
   //   AuthApi.signout();
   //   dispatch(setUser(null));
   // };
+
+  // #### User details rendered on authentication ### //
   const userProfile = () => {
     return (
       <div
