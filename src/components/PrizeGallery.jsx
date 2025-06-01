@@ -2,6 +2,11 @@ import { useState } from "react";
 import { useReducer } from "react"; // REMOVE BEFORE BUILD
 import { HashLink as Linkme } from "react-router-hash-link";
 
+// MUI
+
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+
 import Frame from "../pages/QuizForm/Quiz";
 import SwipeableTemporaryDrawer from "./Drawer";
 
@@ -37,7 +42,7 @@ import voucher from "./assets/voucher-min.jpg";
 import england from "./assets/england2-min.jpg";
 
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import Loadquiz from "./Quizload";
+import Loadquiz from "./Quizload"; // LEGACY SOLUTION
 import { selectUser } from "../features/iframeSrc/authSelectors";
 // import { withAuthRequired } from "../../hoc/withAuthRequired";
 import { withAuthRequired } from "../hoc/withAuthRequired";
@@ -47,7 +52,7 @@ import Nav from "./Nav/Nav";
 import BannCarousel from "./BannerCarousel/BannerCarousel";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
-import { Button } from "antd/es/radio";
+// import { Button } from "antd/es/radio";
 import { AuthApi } from "../api/auth";
 import { setUser } from "../features/iframeSrc/auth-slice";
 import LoggedIn from "../pages/Logged-in-profile/Logged-in-profile";
@@ -141,14 +146,23 @@ function PrizeGallery(props) {
         className="container"
         style={{ display: "flex", justifyContent: "flex-end" }}
       >
-        <h3
+        {/* <h4
           style={{
             fontFamily: "Sans-serif",
             color: "grey",
           }}
         >
-          Welcome, {user.email}
-        </h3>
+          {user.email}
+        </h4> */}
+        <Button
+          onClick={() => {
+            alert("Change ...");
+          }}
+          variant="text"
+        >
+          {" "}
+          {user.email}
+        </Button>
 
         {/* <LogToggle /> */}
         {/* {changeLog} */}
