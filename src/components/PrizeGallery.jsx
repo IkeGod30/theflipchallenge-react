@@ -158,10 +158,11 @@ function PrizeGallery(props) {
           onClick={() => {
             alert("Change ...");
           }}
-          variant="text"
+          variant="contained"
+          size="small"
         >
           {" "}
-          {user.email}
+          {user.email.toLowerCase()}
         </Button>
 
         {/* <LogToggle /> */}
