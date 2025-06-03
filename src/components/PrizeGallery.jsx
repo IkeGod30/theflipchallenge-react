@@ -159,7 +159,7 @@ function PrizeGallery(props) {
             alert("Change ...");
           }}
           variant="contained"
-          size="small"
+          size="medium"
         >
           {" "}
           {user.email.toLowerCase()}
