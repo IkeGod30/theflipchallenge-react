@@ -162,7 +162,7 @@ function PrizeGallery(props) {
           size="medium"
         >
           {" "}
-          {user.email.toLowerCase()}
+          {user.email}
         </Button>
 
         {/* <LogToggle /> */}
@@ -206,6 +206,7 @@ function PrizeGallery(props) {
 
       <div>{userProfile()}</div>
 
+      {/* Use Flex to re-factor the below prize components instead of bootstrap row and column */}
       <section className="container-lg">
         <h2 className="quizPageTitle">Prize Gallery</h2>
         <div className="row prizeRow">
@@ -250,7 +251,7 @@ function PrizeGallery(props) {
                 onClick={() => dispatch(laptopC())}
                 // onClick={quizLoad}
                 image={laptop_}
-                description={"$1000"}
+                description={"$500"}
                 alt={"Picture of Money"}
                 title={"Source: Purple Hibiscus by Ngozi Chimamanda Adiche"}
               />
