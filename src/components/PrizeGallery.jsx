@@ -258,7 +258,7 @@ function PrizeGallery(props) {
             </Linkme>
           </div>
 
-          {/* <div className="col-sm-2">
+          {/* <div className="col">
             <PrizeItem
               onClick={() => dispatch(laptopC())}
               image={laptop_}
@@ -268,7 +268,7 @@ function PrizeGallery(props) {
             />
           </div> */}
 
-          {/* <div className="col-sm-2">
+          {/* <div className="col">
             <PrizeItem
               onClick={() => dispatch(laptopC())}
               image={laptop_}
