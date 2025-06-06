@@ -51,6 +51,7 @@ figure img {
 .prizeRow {
   display: flex;
   overflow-x: hidden;
+  width: 100vw - 25px; /* Still works if this css line is deleted */
 }
 
 .linkme {
@@ -60,8 +61,6 @@ figure img {
 .partners {
   margin-top: 20px;
 }
-
-
 
 /* .caro {
   margin: 0 auto;
