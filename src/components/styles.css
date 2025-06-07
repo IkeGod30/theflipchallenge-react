@@ -35,7 +35,7 @@ body {
   background-attachment: fixed;
   /* background-position: center; */
 }
-
+/* The below is for old elements. Remove before prod */
 figure img {
   width: 350px;
   height: 200px;
