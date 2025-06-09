@@ -73,7 +73,6 @@ export default function SwipeableTemporaryDrawer() {
             </ListItem>
           )
         )}
-        {/* <Logout /> */}
       </List>
     </Box>
   );
