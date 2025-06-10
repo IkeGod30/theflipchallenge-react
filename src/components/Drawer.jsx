@@ -1,4 +1,6 @@
-import * as React from "react";
+// import * as React from "react"; // REMOVE
+
+import { useState, Fragment } from "react";
 
 // MUI Imports //
 import Box from "@mui/material/Box";
@@ -19,7 +21,7 @@ import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
 import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
 
 export default function SwipeableTemporaryDrawer() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     // top: false,
     // left: false,
     // bottom: false,
@@ -80,7 +82,7 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <div>
       {["right"].map((anchor) => (
-        <React.Fragment key={anchor}>
+        <Fragment key={anchor}>
           <Button
             style={{
               borderRadius: "15px",
@@ -101,7 +103,7 @@ export default function SwipeableTemporaryDrawer() {
           >
             {list(anchor)}
           </SwipeableDrawer>
-        </React.Fragment>
+        </Fragment>
       ))}
     </div>
   );
