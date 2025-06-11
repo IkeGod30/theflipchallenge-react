@@ -14,7 +14,6 @@ function LogToggle() {
   const logout = () => {
     AuthApi.signout();
     dispatch(setUser(null));
-    
   };
   const [btnTitle, setbtnTitle] = useState("login");
 
@@ -27,11 +26,14 @@ function LogToggle() {
       //   setbtnTitle("logout");
       //   navigate("/login");
       //   challenge();
+
+      setbtnTitle("logout") && navigate("/login"); // One-line alternative to above
+
       alert("Logging In");
       setbtnTitle("logout");
     } else if (btnTitle === "logout") {
       logout();
-      //   challenge();
+
       setbtnTitle("login");
       //   alert("Logging Out");
 
