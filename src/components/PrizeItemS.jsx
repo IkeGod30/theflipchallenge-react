@@ -1,6 +1,6 @@
 // import vacation from "./assets/vacate.jpg";
 
-export default function PrizeItem(props) {
+export default function PrizeItem({ description }) {
   const onPrizeImageClick = () => {
     props.onClick(props.framesrc);
   };
@@ -20,7 +20,7 @@ export default function PrizeItem(props) {
           title={props.title}
           data-bs-placement="top"
         >
-          {props.description}
+          {description}
         </figcaption>
       </div>
     </div>
