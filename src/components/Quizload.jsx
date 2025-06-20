@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-// import { useState } from 'react';
 
 function Loadquiz({ children }) {
   const navigate = useNavigate();
