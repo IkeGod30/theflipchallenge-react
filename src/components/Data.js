@@ -1,6 +1,6 @@
 import PrizeImg from "./PrizeImg";
 
-// Data
+// Data for the Prizes
 
 
 export const prize = [
