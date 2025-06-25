@@ -50,17 +50,17 @@ export const prize = [
         book: 'Things Fall Apart'
     },
     {
-        description: 'Laptop Computer', 
+        description: 'Mac Laptop', 
         photo: '', 
         book: 'Things Fall Apart'
     },
     {
-        description: 'Laptop Computer', 
+        description: 'HP Laptop', 
         photo: '', 
         book: 'Things Fall Apart'
     },
     {
-        description: 'Laptop Computer', 
+        description: 'Dell Laptop', 
         photo: '', 
         book: 'Things Fall Apart by Chinua Achebe'
     }
