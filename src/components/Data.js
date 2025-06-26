@@ -52,12 +52,12 @@ export const prize = [
     {
         description: 'Mac Laptop', 
         photo: '', 
-        book: 'Things Fall Apart'
+        book: 'Things Fall Apart by Chinua Achebe'
     },
     {
         description: 'HP Laptop', 
         photo: '', 
-        book: 'Things Fall Apart'
+        book: 'Things Fall Apart by Chinua Achebe'
     },
     {
         description: 'Dell Laptop', 
