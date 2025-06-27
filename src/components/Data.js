@@ -17,7 +17,7 @@ export const prize = [
     {
         description: 'Iphone 16 ProMax', 
         photo: '', 
-        book: 'Things Fall Apart'
+        book: 'The Yellow Sun by Ngozi Chimamanda Adochie'
     },
     {
         description: 'Laptop Computer', 
@@ -47,7 +47,7 @@ export const prize = [
     {
         description: 'Laptop Computer', 
         photo: '', 
-        book: 'Things Fall Apart'
+        book: 'Things Fall Apart by Chinua Achebe'
     },
     {
         description: 'Mac Laptop', 
