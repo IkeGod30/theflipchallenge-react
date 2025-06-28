@@ -7,7 +7,7 @@ export const prize = [
     {
         description: 'Laptop Computer', 
         photo: PrizeImg, 
-        book: 'Things Fall Apart by Chinua Achebe'
+        book: 'Americana by Ngozi Chimamanda Adochie'
     },
     {
         description: 'Toyota Camry', 
