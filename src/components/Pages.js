@@ -1,4 +1,4 @@
-// DELETE COMPONENT USED FOR EXP.
+// DELETE COMPONENT; USED FOR EXP.
 
 
 import { useState } from 'react';
