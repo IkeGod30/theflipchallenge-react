@@ -8,7 +8,7 @@ export class FirebaseApp {
     static init() {
         this.FirebaseApp = initializeApp(firebaseConfig)
         this.auth = getAuth()
-        // signInWithEmailAndPassword(this.auth,"tizuogu@gmail.com", "moggizu")
+        
 
     }
 }
