@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 export const quizSlice = createSlice({
     name: 'quiz',
     initialState: {
-        value: 'http://www.abc.com',
+        // Create a custom routable page and use as initial state value ///
+        value: 'https://www.abc.com',
     },
     reducers:{
         laptopC: state => {
