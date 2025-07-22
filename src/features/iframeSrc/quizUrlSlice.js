@@ -4,7 +4,7 @@ export const quizSlice = createSlice({
     name: 'quiz',
     initialState: {
         // Create a custom routable page and use as initial state value ///
-        value: 'https://www.abc.com',
+        value: 'http://localhost:3000/def',
     },
     reducers:{
         laptopC: state => {

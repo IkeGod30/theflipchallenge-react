@@ -19,6 +19,7 @@ import Nav from "./components/Nav/Nav";
 // import Frame from './pages/QuizForm/Quiz';
 // import ProtectedFrame from './pages/QuizForm/Quiz';
 import { ProtectedGallery } from "./components/PrizeGallery"; // For authorized access only
+import { ProtectedDefaultStatePage } from './pages/DefaultStatePage/DefaultStatePage';
 import Contact from './pages/Contact/Contact';
 import HowtoWin from './pages/How/How';
 import Faq from './pages/Faq/Faq';
@@ -27,6 +28,7 @@ import NoPage from './pages/NoPage/NoPage';
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Reset from './pages/Reset/Reset'
+// import DefaultState from './pages/DefaultStatePage/DefaultStatePage';
 import { LandingPage } from "./pages/Landing/LandingPage";
 
 
@@ -70,6 +72,7 @@ const [quiz, dispatch] = useReducer(quizReducer, 'https://www.onlinequizcreator.
           <Route path='signup' element={<Signup />} />
           <Route path='reset' element={<Reset />} />
           <Route path='faq' element={<Faq />} />
+          <Route path="def"  element={<ProtectedDefaultStatePage />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
         </BrowserRouter>
