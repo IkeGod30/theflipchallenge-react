@@ -16,7 +16,7 @@ import {
     PERSIST,
     PURGE,
     REGISTER,
-  } from 'redux-persist'
+  } from 'redux-persist';
 
 // STORE SETUP WITHOUT PERSIST
 
