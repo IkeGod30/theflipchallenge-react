@@ -3,7 +3,6 @@ import { useReducer } from "react"; // REMOVE BEFORE BUILD
 import { HashLink as Linkme } from "react-router-hash-link";
 
 // MUI
-
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
@@ -11,7 +10,6 @@ import Frame from "../pages/QuizForm/Quiz";
 import SwipeableTemporaryDrawer from "./Drawer";
 
 // Redux Slices imports //
-
 import {
   laptopC,
   dollarC,
@@ -21,7 +19,6 @@ import {
 } from "../features/iframeSrc/quizUrlSlice";
 
 // Image file imports for prizes //
-
 import Prize from "./Prize";
 import PartnerBanner from "./Partners/Partners";
 import PrizeItem from "./PrizeItemS";
@@ -146,15 +143,15 @@ function PrizeGallery(props) {
         className="container"
         style={{ display: "flex", justifyContent: "flex-end" }}
       >
-        {/* <h4
+        <h4
           style={{
             fontFamily: "Sans-serif",
-            color: "grey",
+            color: "orangered",
           }}
         >
           {user.email}
-        </h4> */}
-        <Button
+        </h4>
+        {/* <Button
           onClick={() => {
             alert("Change ...");
           }}
@@ -163,7 +160,7 @@ function PrizeGallery(props) {
         >
           {" "}
           {user.email}
-        </Button>
+        </Button> */}
 
         {/* <LogToggle /> */}
         {/* {changeLog} */}
