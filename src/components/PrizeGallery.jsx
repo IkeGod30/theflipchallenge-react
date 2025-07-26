@@ -193,7 +193,6 @@ function PrizeGallery(props) {
 
   return (
     <>
-      {/* <ResponsiveDrawer /> */}
       <div
         className="container"
         style={{ display: "flex", justifyContent: "end" }}
