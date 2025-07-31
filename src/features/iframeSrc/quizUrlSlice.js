@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const quizSlice = createSlice({
     name: 'quiz',
     initialState: {
-        // Create a custom routable page and use as initial state value ///
+        // Create a custom routable page and use as initial state value for iframe src ///
         value: 'http://localhost:3000/def',
     },
     reducers:{
