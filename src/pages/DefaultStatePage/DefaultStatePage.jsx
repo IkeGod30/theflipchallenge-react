@@ -3,7 +3,9 @@ import { withAuthRequired } from "../../hoc/withAuthRequired";
 function DefaultState() {
   return (
     <div>
-      <h1>Welcome to the Competition Screen</h1>
+      <h1>
+        Welcome to the Competition Screen. Click on Prize to load the questions
+      </h1>
     </div>
   );
 }
