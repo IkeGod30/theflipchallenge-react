@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 
 import Frame from "../pages/QuizForm/Quiz";
 import SwipeableTemporaryDrawer from "./Drawer";
+import MenuListComposition from "./AccountMenu";
 
 // Redux Slices imports //
 import {
@@ -139,19 +140,21 @@ function PrizeGallery(props) {
   // #### User details rendered on authentication ### //
   const userProfile = () => {
     return (
-      <div
-        className="container"
-        style={{ display: "flex", justifyContent: "flex-end" }}
-      >
-        <h4
-          style={{
-            fontFamily: "Sans-serif",
-            color: "orangered",
-          }}
+      <>
+        <div
+          className="container"
+          style={{ display: "flex", justifyContent: "flex-end" }}
         >
-          {user.email}
-        </h4>
-        {/* <Button
+          <MenuListComposition />
+          <h4
+            style={{
+              fontFamily: "Sans-serif",
+              color: "orangered",
+            }}
+          >
+            {user.email}
+          </h4>
+          {/* <Button
           onClick={() => {
             alert("Change ...");
           }}
@@ -162,14 +165,15 @@ function PrizeGallery(props) {
           {user.email}
         </Button> */}
 
-        {/* <LogToggle /> */}
-        {/* {changeLog} */}
+          {/* <LogToggle /> */}
+          {/* {changeLog} */}
 
-        {/* <LogToggle /> */}
-        {/* <Link to="#" onClick={logout}>
+          {/* <LogToggle /> */}
+          {/* <Link to="#" onClick={logout}>
           Logout
         </Link> */}
-      </div>
+        </div>
+      </>
     );
   };
 
