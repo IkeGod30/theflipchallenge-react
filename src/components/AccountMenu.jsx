@@ -8,12 +8,34 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
 
+import { selectUser } from "../features/iframeSrc/authSelectors";
+import { withAuthRequired } from "../hoc/withAuthRequired";
+import { useDispatch, useSelector } from "react-redux";
+
+import { AuthApi } from "../api/auth";
+import { setUser } from "../features/iframeSrc/auth-slice";
+
+import Logout from "./Nav/Log/Logout";
+import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
+import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
+
 export default function MenuListComposition() {
+  const source = useSelector((state) => state.quiz.value);
+  const dispatch = useDispatch();
+  const user = useSelector(selectUser);
+
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
+  };
+
+  const logout = () => {
+    AuthApi.signout();
+    dispatch(setUser(null));
+
+    // REQUIRED ACTION: Put a code to reset state to initial value after logout ///
   };
 
   const handleClose = (event) => {
@@ -61,7 +83,7 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          tizuogu@gmail.com
+          {user.email}
         </Button>
         <Popper
           open={open}
@@ -87,9 +109,9 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
                   >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    <MenuItem onClick={logout}>Logout</MenuItem>
+                    <MenuItem onClick={handleClose}>Change Password</MenuItem>
+                    <MenuItem onClick={handleClose}>Delete Account</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

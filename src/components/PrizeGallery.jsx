@@ -146,14 +146,14 @@ function PrizeGallery(props) {
           style={{ display: "flex", justifyContent: "flex-end" }}
         >
           <MenuListComposition />
-          <h4
+          {/* <h4
             style={{
               fontFamily: "Sans-serif",
               color: "orangered",
             }}
           >
             {user.email}
-          </h4>
+          </h4> */}
           {/* <Button
           onClick={() => {
             alert("Change ...");
