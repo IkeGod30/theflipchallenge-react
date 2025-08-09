@@ -197,12 +197,12 @@ function PrizeGallery(props) {
 
   return (
     <>
-      <div
+      {/* <div
         className="container"
         style={{ display: "flex", justifyContent: "end" }}
       >
         <SwipeableTemporaryDrawer />
-      </div>
+      </div> */}
 
       <div>{userProfile()}</div>
 

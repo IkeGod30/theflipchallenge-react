@@ -83,7 +83,7 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          {user.email}
+          <h6>{user.email}</h6>
         </Button>
         <Popper
           open={open}
