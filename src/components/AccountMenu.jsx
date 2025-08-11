@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AuthApi } from "../api/auth";
 import { setUser } from "../features/iframeSrc/auth-slice";
 
-import Logout from "./Nav/Log/Logout";
+// import Logout from "./Nav/Log/Logout";
 import DeleteAccount from "./Nav/Log/DeleteAccount/DeleteAccount";
 import UpdatePassword from "./Nav/Log/ChangePassword/ChangePassword";
 
@@ -36,6 +36,16 @@ export default function MenuListComposition() {
     dispatch(setUser(null));
 
     // REQUIRED ACTION: Put a code to reset state to initial value after logout ///
+  };
+
+  // PLEASE COMPLETE
+  const updatePassword = () => {
+    AuthApi.updatePassword();
+  };
+
+  // PLEASE COMPLETE
+  const deleteAccount = () => {
+    AuthApi.deleteAccount();
   };
 
   const handleClose = (event) => {
