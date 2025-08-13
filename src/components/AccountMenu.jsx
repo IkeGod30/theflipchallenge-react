@@ -35,7 +35,7 @@ export default function MenuListComposition() {
     AuthApi.signout();
     dispatch(setUser(null));
 
-    // REQUIRED ACTION: Put a code to reset state to initial value after logout ///
+    // REQUIRED ACTION: Put a code to reset state to initial value after logout, same with updatePassword and deleteAccount ///
   };
 
   // PLEASE COMPLETE
