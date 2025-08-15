@@ -38,12 +38,12 @@ export default function MenuListComposition() {
     // REQUIRED ACTION: Put a code to reset state to initial value after logout, same with updatePassword and deleteAccount ///
   };
 
-  // PLEASE COMPLETE
+  // PLEASE COMPLETE with Firebase Api
   const updatePassword = () => {
     AuthApi.updatePassword();
   };
 
-  // PLEASE COMPLETE
+  // PLEASE COMPLETE with Firebase Api
   const deleteAccount = () => {
     AuthApi.deleteAccount();
   };
