@@ -13,6 +13,7 @@ export function LandingPage() {
       <Button onClick={challenge} variant="contained" disableElevation>
         Click to Challenge
       </Button>
+
       <LandingCarousel />
     </div>
   );
