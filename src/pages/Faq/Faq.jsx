@@ -5,7 +5,7 @@ import FaqAccordion from "./Accordion";
 function Faq() {
   return (
     <>
-      <img className="imgFaq" src={faqImg} alt="faq image" />
+      <img className="imgFaq" src={faqImg} alt="faq" />
 
       <FaqAccordion />
     </>
