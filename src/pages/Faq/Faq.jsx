@@ -6,7 +6,6 @@ function Faq() {
   return (
     <>
       <img className="imgFaq" src={faqImg} alt="faq" />
-
       <FaqAccordion />
     </>
   );
