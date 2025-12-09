@@ -4,7 +4,7 @@ export const quizSlice = createSlice({
     name: 'quiz',
     initialState: {
         /// Create a routable page and use as initial state value for iframe src ///
-        value: 'http://localhost:3000/def',
+        value: 'http://www.abcnews.com',
     },
     reducers:{
         laptopC: state => {
