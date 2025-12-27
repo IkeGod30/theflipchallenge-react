@@ -18,6 +18,7 @@ function Frame({ resource, onPrizeImageClick, imgClick }) {
           src={resource}
           width="60%"
           height="250px"
+          sandbox=""
         ></iframe>
       </div>
     </div>
