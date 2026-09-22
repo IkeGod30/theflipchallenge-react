@@ -34,8 +34,6 @@ import { LandingPage } from "./pages/Landing/LandingPage";
 
 
 
-// import './App.css'; REMOVE
-
 function App() {
   const source = useSelector((state) => state.quiz.value);
 
